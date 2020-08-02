@@ -6,8 +6,14 @@ body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #000;
-    font-family: 'Merriweather';
+    color: 	#696969;
+    font-family: 'Merriweather', serif;
+}
+
+/* Home Page */
+
+.homequote {
+    font-size: 3.7rem;
 }
 
 /* from Bulma */
