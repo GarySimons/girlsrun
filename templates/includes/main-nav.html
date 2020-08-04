@@ -10,10 +10,10 @@
         <a class="nav-link" href="{% url 'home' %}">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">MY STORY</a>
+        <a class="nav-link" href="{% url 'mystory' %}">MY STORY</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">HER STORIES</a>
+        <a class="nav-link" href="{% url 'herstories' %}">HER STORIES</a>
       </li>
       <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,7 +38,7 @@
         <a class="nav-link" href="{% url 'products' %}">SHOP</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT US</a>
+        <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
       </li>
       <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
