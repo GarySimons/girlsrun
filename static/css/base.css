@@ -10,6 +10,19 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+/* Nav Bar */
+
+.nav-link {
+    font-size: .9rem;
+    color: #696969 !important;
+    text-align: right !important;
+}
+
+.nav-link:hover {
+    color: #3297a8 !important;
+    transition: .1s ease-in-out;
+}
+
 /* Home Page */
 
 .homequote {
