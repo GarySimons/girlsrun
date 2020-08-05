@@ -22,6 +22,7 @@ body {
     font-size: .9rem;
     color: #696969 !important;
     text-align: right !important;
+    font-weight: 900;
 }
 
 .nav-link:hover {
@@ -56,10 +57,34 @@ body {
     z-index: -1;
 }
 
+/* Pages */
+
+.page-header {
+    color: #696969;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.page-title {
+    color: #3297a8;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.page-text {
+    color: #696969;
+    font-size: 0.8rem;
+}
+
+.mystory_image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Footer */
 
 footer {
-    background-color: #ffffff;
+    background-color: #fff;
     position: relative;
     padding-top: 1.6rem;
     margin-top: auto;
