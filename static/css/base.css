@@ -57,6 +57,11 @@ body {
     z-index: -1;
 }
 
+.btn-grey {
+    background: #696969;
+    color: #fff !important; 
+}
+
 /* Pages */
 
 .page-header {
