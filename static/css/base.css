@@ -50,6 +50,48 @@ body {
     z-index: -1;
 }
 
+/* Footer */
+
+.main {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 1.6rem;
+    margin-top: auto;
+    text-align: center !important;
+}
+
+#copyright {
+    color: #696969;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem; 
+    text-align: center;
+    margin-top: -1.8rem;
+}
+
+.sociallinks li a i {
+    color: #696969;
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    line-height: .25rem;
+    text-align: center;
+}
+
+.sociallinks li a i:hover {
+    color: #3297a8;
+    transition: .1s ease-in-out;
+    text-decoration: none !important;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
