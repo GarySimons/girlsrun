@@ -20,23 +20,13 @@ The project required that a user can **create an account,** log in and use that 
 
 The project also needed an **e-commerce** element, using **Stripe** to control payment from users. I have set up an online shop selling branded merchandise. This allows users to browse, add to a shopping bag and purchase the items.
 
-### Site Owner Goals
-* Build awareness of the brand and grow membership.
-* Build a network of women to help and support each other.
-* Sell group running sessions as a revenue stream
-* Sell branded merchandise on site as a revenue stream.
-* Collect user data for market research and promtional purposes.
-* Sell extra services such as personal nutrition and coaching advice.
-
-### Site User Goals
-* Find a supportive group to join to help with personal exercise goals.
-* Build friendships and personal networks.
-* Get fit.
-* Build persoanl confidence.
-* Shop for branded merchandise to feel part of a team.
-* Create an account to track orders and purchases on the website.
-* Visually appealing and Intuitive design.
-* Gain information and advice to help support their goals.
+### Site Owner Stories
+* As the website owner, I want to **build brand awareness** and **grow membership.**
+* As the website owner, I want to **build a network of women** to help and support each other.
+* As the website owner, I want to **sell group running sessions** as a revenue stream
+* As the website owner, I want to **sell branded merchandise** on site as a revenue stream.
+* As the website owner, I want to **collect user data** for market research and promtional purposes.
+* As the website owner, I want to **sell extra services** such as personal nutrition and coaching advice.
 
 ### User Stories
 * As a user of the website, I want to **navigate easily** and find the **information I need quickly**.
@@ -44,18 +34,13 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user of the website, I want **good user experience** to keep the me engaged.
 * As a user of the website, I want to **view it on all devices** and it still to look good and work perfectly.
 * As a user of the website, I want to be able to **contact the site owner**.
-
-#### User one: XXxxxxx
-As a user I xxx xxxx x xx xxxxx x
-
-#### User two: XXxxxxx
-As a user I xxx xxxx x xx xxxxx x
-
-#### User three: XXxxxxx
-As a user I xxx xxxx x xx xxxxx x
-
-#### User four: XXxxxxx
-As a user I xxx xxxx x xx xxxxx x
+* As a user of the website, I want to find a **supportive group** to join to help with personal exercise goals.
+* As a user of the website, I want to **build friendships** and **personal networks.**
+* As a user of the website, I want to **get fit.**
+* As a user of the website, I want to build **persoanal confidence.**
+* As a user of the website, I want to **shop for branded merchandise** to feel part of a team.
+* As a user of the website, I want to **create an account** to track orders and purchases on the website.
+* As a user of the website, I want to **gain information and advice** to help support my fitness goals.
 
 ---
 
