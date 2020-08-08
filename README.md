@@ -112,6 +112,12 @@ This is a members only page which is accessible once logged in. This offers gene
 ### Nutrition
 This is a members only page which is accessible once logged in. This offers general advice, and a link to pay for a personalised nutrition plan.
 
+### Shop
+Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. 
+
+### Contact Us
+The final page is where users can get in touch with site owner. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
+
 ---
 
 ## Database Design
@@ -119,7 +125,29 @@ This is a members only page which is accessible once logged in. This offers gene
 ### Data Models
 The user model used was the inbuilt one provide by Django.
 
+---
 
+## Technologies used
+
+#### Languages
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Python](https://www.python.org/)
+* [Django](https://www.djangoproject.com/)
+* [JavaScript](https://www.javascript.com/)
+* [jQuery](https://jquery.com/)
+
+#### Frameworks and libraries
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [PopperJS](https://popper.js.org/)
+
+#### Tools
+* [Heroku](https://www.heroku.com/)
+* [Balsamiq Wireframes](https://wireframestogo.com/)
+* [TinyPNG](https://tinypng.com/)
+* [Genfavicon](http://www.genfavicon.com/)
 
 ---
 
@@ -141,4 +169,4 @@ All text written by me.
 
 ### Disclaimer
 
-This website is a Milestone Project for the **Full Stack Web Development** course at [Code Institute](https://codeinstitute.net/)
+This website is a Milestone Project for the **Full Stack Web Development** course at [Code Institute](https://codeinstitute.net/). It is for educational purposes only.
