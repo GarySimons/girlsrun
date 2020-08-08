@@ -1,39 +1,42 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Girls On The Run
 
-Welcome GarySimons,
+## Overview
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+This is my fouth milestone project for the Code Institute Full Stack Web Developer course. It is a website to promote running to women. I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
 
-## Gitpod Reminders
+The project has been built using HTML, CSS, JavaScript, Python and Django. It uses SQL databases to store information and Stripe to handle payments.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience
 
-`python3 -m http.server`
+### Project Goals
 
-A blue button should appear to click: *Make Public*,
+This website is aimed at women and encouraging them to engage in running with the help and support of a running club designed around them. 
 
-Another blue button should appear to click: *Open Browser*.
+I wanted it to be able to build a like-minded, supportive and inclusive network of women. This will help them with achieving their exercise goals, making good friends and connecting with others in similar situations.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The project required that a user can create an account, log in and use that account to access their profile and to get extra member content. I achieved this with Django's useful features which quickly allow accounts to be created and tracked.
 
-A blue button should appear to click: *Make Public*,
+The project also needed an e-commerce element, using Stripe to control payment from users. I have set up an online shop selling branded merchandise. This allows users to browse, add to a shopping bag and purchase the items.
 
-Another blue button should appear to click: *Open Browser*.
+### Site Owner Goals
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* Build awareness of the brand and grow membership.
+* Build a network of women to help and support each other.
+* Sell group running sessions as a revenue stream
+* Sell branded merchandise on site as a revenue stream.
+* Collect user data for market research and promtional purposes.
+* Sell extra services such as personal nutrition and coaching advice.
 
-## Updates Since The Instructional Video
+### Site User Goals
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+* Find a supportive group to join to help with personal exercise goals.
+* Build friendships and personal networks.
+* Get fit.
+* Build persoanl confidence.
+* Shop for branded merchandise to feel part of a team.
+* Create an account to track orders and purchases on the website.
+* Visually appealing and Intuitive design.
+* Gain information and advice to help support their goals.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
