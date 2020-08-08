@@ -67,14 +67,15 @@ I've used the serif font [Merriweather](https://fonts.google.com/specimen/Merriw
 
 ### Colours
 I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I simplified the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used.
-* ```Dark Grey: ##696969```
-* ```Turquoise: ##3297a8```
-
 * ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969;
 * ![#3297a8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #3297a8;
 
 ### Grid
 I carried the **same basic grid through** the pages to add consistency and easy of navigation. A large **section header** quickly establishes the page you've landed on, and under that, is a panel holding the content for that page. A footer on each page hold **social media links.**
+
+### Images
+
+All images were sourced from the [iStock](https://www.istockphoto.com/gb) image library. I used images of many different shapes, sizes and ages of women to show the inclusive nature of the site. This will hopefully make women feel more represented and less intimidated. I want any woman or girl to feel like this is a space where the are accepted and not judged.
 
 ---
 
@@ -84,3 +85,60 @@ I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy w
 View my **Balsamiq** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/png">here.</a>
 
 View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/jpg">here.</a>
+
+## Features
+
+### Navigation bar
+**This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey.
+
+### Home
+This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. 
+
+### My Story
+On this page we are introduced to the site owner and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. A Get in touch button links through to the Contact page. 
+
+### Her Stories
+With this page we are able to showcase many of the inspirational women who belong to the running club. An image of them enjoying running with a short inspiration paragraph about their lives and how running has helped them will encourage other women. The images show a wide range of ages and sizes of women to show the inclusiveness of the group. This will help to make women feel included and represented.
+
+### Upcomimg Runs
+This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
+
+### Members login page
+This allows users to create an account of login to an existing one. The background image of running shoes together represents a club of women together.
+
+### Coaching
+This is a members only page which is accessible once logged in. This offers general advice, and a link to pay for a personalised fitness plan.
+
+### Nutrition
+This is a members only page which is accessible once logged in. This offers general advice, and a link to pay for a personalised nutrition plan.
+
+---
+
+## Database Design
+
+### Data Models
+The user model used was the inbuilt one provide by Django.
+
+
+
+---
+
+## Credits
+
+### Thanks
+
+My mentor [Simen Daehlin](https://dehlin.dev/) for all the advice and pointers. And for always pushing me to go further.
+
+All the **tutors** that helped me along the way on the **Tutor Support**. 
+
+### Images
+
+All images were sourced from the [iStock](https://www.istockphoto.com/gb) image library. 
+
+### Text
+
+All text written by me.
+
+### Disclaimer
+
+This website is a Milestone Project for the **Full Stack Web Development** course at [Code Institute](https://codeinstitute.net/)
