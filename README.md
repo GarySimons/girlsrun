@@ -29,11 +29,11 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As the website owner, I want to **sell extra services** such as personal nutrition and coaching advice.
 
 ### User Stories
-* As a user of the website, I want to **navigate easily** and find the **information I need quickly**.
+* As a user of the website, I want to **navigate easily** and find the **information I need quickly.**
 * As a user of the website, I want an **engaging design** that is visually appealing and stimulating.
 * As a user of the website, I want **good user experience** to keep the me engaged.
 * As a user of the website, I want to **view it on all devices** and it still to look good and work perfectly.
-* As a user of the website, I want to be able to **contact the site owner**.
+* As a user of the website, I want to be able to **contact the site owner.**
 * As a user of the website, I want to find a **supportive group** to join to help with personal exercise goals.
 * As a user of the website, I want to **build friendships** and **personal networks.**
 * As a user of the website, I want to **get fit.**
@@ -55,6 +55,9 @@ I created a **simple, complimentary, sophisticated colour scheme** that carries 
 * ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969;
 * ![#3297a8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #3297a8;
 
+* ```dark-grey: #696969```
+* ```turquoise: #3297a8```
+
 ### Grid
 I carried the **same basic grid through** the pages to add consistency and easy of navigation. A large **section header** quickly establishes the page you've landed on, and under that, is a panel holding the content for that page. A footer on each page hold **social media links.**
 
@@ -70,6 +73,7 @@ I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy w
 View my **Balsamiq** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/png">here.</a>
 
 View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/jpg">here.</a>
+
 
 ## Features
 
