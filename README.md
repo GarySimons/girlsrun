@@ -44,14 +44,14 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 
 ---
 
-## design
-I wanted the webiste to have a friendly and welcoming feel, to make it appeal to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
+## Design
+I wanted the website to have a friendly and welcoming feel, to make it appeal to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
 
 ### Fonts
 I've used the serif font [Merriweather](https://fonts.google.com/specimen/Merriweather?query=mer) in two weights, (300 and 900) with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 300 light weight contrast well with bold 900 weight.
 
 ### Colours
-I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I simplified the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used.
+I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used.
 * ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969;
 * ![#3297a8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #3297a8;
 
