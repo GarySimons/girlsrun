@@ -16,6 +16,12 @@ body {
     flex-direction: column;
 }
 
+.update-link,
+.remove-item {
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
 /* Nav Bar */
 
 .nav-link {
