@@ -156,6 +156,10 @@ All images were sourced from the [iStock](https://www.istockphoto.com/gb) image 
 
 All text written by me.
 
+### Code
+
+Much of the code for the e-commerce section of my website was achieved by following the **Django E-Commerce Mini Project** from the Code Institute lessons. I adapted it to suit my website.
+
 ### Disclaimer
 
 This website is a Milestone Project for the **Full Stack Web Development** course at [Code Institute](https://codeinstitute.net/). It is for educational purposes only.
