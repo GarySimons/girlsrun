@@ -38,9 +38,16 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user of the website, I want to **build friendships** and **personal networks.**
 * As a user of the website, I want to **get fit.**
 * As a user of the website, I want to build **persoanal confidence.**
-* As a user of the website, I want to **shop for branded merchandise** to feel part of a team.
 * As a user of the website, I want to **create an account** to track orders and purchases on the website.
+* As a user of the website, I want to **log in and out of my account.**
 * As a user of the website, I want to **gain information and advice** to help support my fitness goals.
+* As a user of the website, I want to **shop for branded merchandise** to feel part of a team.
+* As a user of the website, I want to **view individual product details.**
+* As a user of the website, I want to **view a total cost of my purchases** to track my spending.
+* As a user of the website, I want to **select quantity of products** to add to my shopping bag.
+* As a user of the website, I want to **adjust quantity of products** in my shopping bag.
+* As a user of the website, I want to **remove products** from my shopping bag.
+* As a user of the website, I want to **select sizes of products** to add to my shopping bag.
 
 ---
 
