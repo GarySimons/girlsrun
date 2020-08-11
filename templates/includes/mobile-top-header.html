@@ -1,7 +1,7 @@
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <p class="my-0">MEMBERS</p>
+            <p class="my-0 nav-link">MEMBERS</p>
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -20,7 +20,7 @@
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}§">
         <div class="text-center">
-            <p class="my-0">
+            <p class="my-0 nav-link">
                 {% if grand_total %}
                     £{{ grand_total|floatformat:2 }}
                 {% else %}
