@@ -1,3 +1,5 @@
+<!-- Code used here is adapted from Code Institude's E-Commerce lesson. -->
+
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -7,7 +9,7 @@
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Manage My Account</a>
             {% endif %}
             <a href="" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
