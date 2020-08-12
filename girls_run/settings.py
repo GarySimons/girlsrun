@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'mystory',
     'herstories',
     'contact',
+    'checkout',
 ]
 
 MIDDLEWARE = [

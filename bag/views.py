@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
+# Code used here is adapted from Code Institude's E-Commerce lesson.
 
 def view_bag(request):
     """ A view that renders the bag contents page """
