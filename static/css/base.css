@@ -24,6 +24,10 @@ body {
 
 /* Nav Bar */
 
+.navbar-brand {
+    background-color: red;
+}
+
 #girls-run-logo {
     max-width: 100px;
     height: auto;
@@ -32,8 +36,9 @@ body {
 .nav-link {
     font-size: .9rem;
     color: #696969 !important;
-    text-align: right !important;
+    text-align: left !important;
     font-weight: 900;
+
 }
 
 .nav-link:hover {
