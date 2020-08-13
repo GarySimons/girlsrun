@@ -6,7 +6,6 @@ from django.conf import settings
 
 from products.models import Product
 
-# Create your models here. 
 # Code used here is taken from Code Institude's E-Commerce lesson. 
 
 class Order(models.Model):
