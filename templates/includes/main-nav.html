@@ -1,63 +1,59 @@
 <!-- Code used here is adapted from Code Institude's E-Commerce lesson. -->
 
-<nav class="navbar row bg-white pt-lg-2 d-lg-flex collapse navbar-collapse">
-	<a class="navbar-brand" href="{% url 'home' %}"><img src="/media/GirlsOnTheRunLogo.png" id="girls-run-logo" alt="Girls On The Run Logo"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="{% url 'home' %}">HOME</a>
-			</li>
-			<li class="nav-item"> 
-				<a class="nav-link" href="{% url 'mystory' %}">MY STORY</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="{% url 'herstories' %}">HER STORIES</a>
-			</li>
-			<li class="list-inline-item dropdown">
-				<a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false">
-					<div class="text-center">
-						<p class="my-0">MEMBERS</p>
-					</div>
-				</a>
-				<div class="dropdown-menu border-0" aria-labelledby="user-options">
-					{% if request.user.is_authenticated %}
-					{% if request.user.is_superuser %}
-					    <a href="" class="dropdown-item">Manage My Account</a>
-					{% endif %}
-					    <a href="" class="dropdown-item">My Profile</a>
-					    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-					{% else %}
-					    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-					    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-					{% endif %}
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="{% url 'products' %}">SHOP</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
-			</li>
-			<li class="list-inline-item">
-				<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-					href="{% url 'view_bag' %}">
-					<div class="text-center">
-						<p class="my-0">
-							{% if grand_total %}
-							£{{ grand_total|floatformat:2 }}
-							{% else %}
-							£0.00
-							{% endif %}
-						</p>
-					</div>
-				</a>
-			</li>
-		</ul>
-
+<div class="collapse navbar-collapse" id="main-nav">
+	<div class="navbar row pt-lg-2 d-lg-flex collapse navbar-collapse">
+		<a class="navbar-brand"
+			href="{% url 'home' %}"><img src="/media/GirlsOnTheRunLogo.png" id="girls-run-logo" alt="Girls On The Run Logo"></a>
 	</div>
-</nav>
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'home' %}">HOME</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'mystory' %}">MY STORY</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'herstories' %}">HER STORIES</a>
+		</li>
+		<li class="list-inline-item dropdown">
+			<a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false">
+				<div>
+					<p class="my-0">MEMBERS</p>
+				</div>
+			</a>
+			<div class="dropdown-menu border-0" aria-labelledby="user-options">
+				{% if request.user.is_authenticated %}
+				{% if request.user.is_superuser %}
+				<a href="" class="dropdown-item">Manage My Account</a>
+				{% endif %}
+				<a href="" class="dropdown-item">My Profile</a>
+				<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+				{% else %}
+				<a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+				<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+				{% endif %}
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'products' %}">SHOP</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+		</li>
+		<li class="list-inline-item">
+			<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+				href="{% url 'view_bag' %}">
+				<div>
+					<p class="my-0">
+						{% if grand_total %}
+						£{{ grand_total|floatformat:2 }}
+						{% else %}
+						£0.00
+						{% endif %}
+					</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
