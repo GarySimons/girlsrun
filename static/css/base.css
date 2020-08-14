@@ -133,9 +133,10 @@ body {
 /* Checkout page */
 
 .fieldset-label {
-    font-size: 1rem;
+    font-size: 0.7rem;
     position: relative;
-    color: red;
+    color: green;
+    font-weight: 900;
 }
 
 #payment-form .form-control,
@@ -146,6 +147,7 @@ body {
 
 .checkout-form-text {
     color: red;
+
 }
 
 
@@ -183,6 +185,24 @@ footer {
     transition: .1s ease-in-out;
     text-decoration: none !important;
 }
+
+/* Bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 
 
 /* -------------------------------- Media Queries */
