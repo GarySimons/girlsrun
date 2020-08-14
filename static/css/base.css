@@ -24,10 +24,6 @@ body {
 
 /* Nav Bar */
 
-.navbar-brand {
-    background-color: red;
-}
-
 #girls-run-logo {
     max-width: 100px;
     height: auto;
@@ -133,6 +129,25 @@ body {
 .product_details {
     color: #696969;
 }
+
+/* Checkout page */
+
+.fieldset-label {
+    font-size: 1rem;
+    position: relative;
+    color: red;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #3297a8;
+    border: 1px solid #696969;
+}
+
+.checkout-form-text {
+    color: red;
+}
+
 
 /* Footer */
 
