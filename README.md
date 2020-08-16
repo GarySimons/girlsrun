@@ -124,14 +124,14 @@ The final page is where users can get in touch with site owner. The background i
 
 The **Herstory** model within the **herstories app** holds the following data for the women who are part of the club:
 
-**Name**|**Validation**|**Field Type**
-:-----:|:-----:|:-----:|:-----:
-full\_name|(max\_length=50, null=False, blank=False)|CharField
-age|(null=False, blank=False)|IntegerField
-occupation|(max\_length=200, null=False, blank=False)|CharField
-story|(max\_length=500, null=False, blank=False)|CharField
-image_url|(max\_length=1024, null=True, blank=True)|URLField
-image|(null=True, blank=True)|ImageField
+| Name          | Validation                                 | Field Type   |
+| ------------- | ------------------------------------------ | ------------ |
+| full\_name    | (max\_length=50, null=False, blank=False)  | CharField    |
+| age           | (null=False, blank=False)                  | IntegerField |
+| occupation    | (max\_length=200, null=False, blank=False) | CharField    |
+| story         | (max\_length=500, null=False, blank=False) | CharField    |
+| image_url     | (max\_length=1024, null=True, blank=True)  | URLField     |
+| image         | (null=True, blank=True)                    | ImageField   |
 
 ---
 
