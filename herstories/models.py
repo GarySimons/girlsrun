@@ -7,4 +7,7 @@ class Herstory(models.Model):
     age = models.IntegerField(null=False, blank=False)
     occupation = models.CharField(max_length=200, null=False, blank=False)
     story = models.CharField(max_length=50, null=False, blank=False)
+    image = models.ImageField(null=True, blank=True)
 
+    def __str__(self):
+        return self.full_name
