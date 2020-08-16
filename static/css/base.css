@@ -70,7 +70,7 @@ body {
 }
 
 .shop-container {
-    background-color: yellow;
+    background-color: #fff;
 }
 
 .btn-grey {
@@ -161,7 +161,6 @@ body {
 /* Herstories page */
 
 .herstories-container {
-    background-color: aqua;
     margin-bottom: 0.2rem;
 }
 
@@ -197,6 +196,16 @@ body {
     background-color: #3297a8;
     height: 17rem;
     margin-bottom: 2rem;
+}
+
+.contact-page {
+    background: url('/media/contact_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
 }
 
 /* Footer */
