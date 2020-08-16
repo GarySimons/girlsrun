@@ -11,6 +11,7 @@ class Herstory(models.Model):
     age = models.IntegerField(null=False, blank=False)
     occupation = models.CharField(max_length=200, null=False, blank=False)
     story = models.CharField(max_length=500, null=False, blank=False)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):

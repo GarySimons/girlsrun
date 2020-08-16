@@ -16,13 +16,13 @@
      <div class="container main">
         <div class="row">
             <div class="row justify-content-center"> 
-            <div class="block col-sm-8">
+            <div class="col-10">
                 <h3 class="page-header mb-3">Shop</h3>
             </div>
        </div>
         </div>
-        <div class="row">
-            <div class="shop-container col-10 offset-1">
+        <div class="row justify-content-center">
+            <div class="shop-container col-10">
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4">
@@ -36,13 +36,15 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="card-footer-white">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            <p class="mb-0">{{ product.name }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="">${{ product.price }}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -69,6 +69,10 @@ body {
     z-index: -1;
 }
 
+.shop-container {
+    background-color: yellow;
+}
+
 .btn-grey {
     background: #696969;
     color: #fff !important; 
@@ -130,6 +134,10 @@ body {
     color: #696969;
 }
 
+.card-footer-white {
+    background-color: #fff;
+}
+
 /* Checkout page */
 
 .fieldset-label {
@@ -150,6 +158,46 @@ body {
 
 }
 
+/* Herstories page */
+
+.herstories-container {
+    background-color: aqua;
+    margin-bottom: 0.2rem;
+}
+
+.herstory_name {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #fff;
+    padding: 0.6rem 1rem 0rem 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.herstory_age {
+    font-size: 0.9rem;
+    color: #000;
+    padding: 0rem 1rem;
+}
+
+.herstory_occupation {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #000;
+    padding: 0rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.herstory_story {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0rem 1rem;;
+}
+
+.herstory_box {
+    background-color: #3297a8;
+    height: 17rem;
+    margin-bottom: 2rem;
+}
 
 /* Footer */
 
