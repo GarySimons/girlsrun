@@ -1,5 +1,4 @@
 from django.db import models
-from django.conf import settings
 
 
 class Run(models.Model):
@@ -11,7 +10,6 @@ class Run(models.Model):
     distance = models.IntegerField(null=False, blank=False)
     description = models.TextField(default='some string')
     image = models.ImageField(null=True, blank=True)
-
 
     def __str__(self):
         return self.date

@@ -1,8 +1,8 @@
 from django.contrib import admin
 from .models import Run
 
-# Register your models here.
 
+# Register your models here.
 class RunAdmin(admin.ModelAdmin):
     list_display = (
         'date',
@@ -11,5 +11,6 @@ class RunAdmin(admin.ModelAdmin):
         'description',
         'image',
     )
+
 
 admin.site.register(Run, RunAdmin)
