@@ -223,31 +223,30 @@ body {
 }
 
 .run-date {
-    font-size: 0.9rem;
-    color: red;
+    font-size: 1.8rem;
+    color: #696969;
     text-align: center;
-    padding: 0rem 1rem;
+    margin-bottom: 0.1rem;
 }
 
 .run-location {
-    font-size: 0.9rem;
-    color: goldenrod;
+    font-size: 1.2rem;
+    color: #696969;
     text-align: center;
-    padding: 0rem 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .run-distance {
-    font-size: 0.9rem;
-    color: green;
+    font-size: 0.8rem;
+    color: #696969;
     text-align: center;
-    padding: 0rem 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .run-description {
-    font-size: 0.9rem;
-    color: orange;
+    font-size: 1rem;
+    color: #696969;
     text-align: center;
-    padding: 0rem 1rem;
 }
 
 
