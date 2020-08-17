@@ -3,7 +3,9 @@ from django.conf import settings
 
 
 class Herstory(models.Model):
-
+    """
+    Model for Herstories page
+    """
     class Meta:
         verbose_name_plural = 'Herstories'
 
