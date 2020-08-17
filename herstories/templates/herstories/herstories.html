@@ -26,10 +26,10 @@
 				<div class="col-sm-6 col-md-6 col-lg-4">
 					<div class="">
 						{% if product.image %}
-						<img class="card-img-top img-fluid" src="{{ herstory.image }}" alt="{{ herstory.name }}">
-                                {% else %}
+						    <img class="card-img-top img-fluid" src="{{ herstory.image }}" alt="{{ herstory.name }}">
+                        {% else %}
 						<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ herstory.name }}">
-                                {% endif %}
+                        {% endif %}
 						<div class="herstory_box">
 							<div class="row">
 								<div class="col-12">

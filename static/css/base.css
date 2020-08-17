@@ -210,6 +210,48 @@ body {
     z-index: 1;
 }
 
+/* Upcoming Run Page */
+
+.run-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.runblock {
+    background-color:#fff;
+}
+
+.run-date {
+    font-size: 0.9rem;
+    color: red;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.run-location {
+    font-size: 0.9rem;
+    color: goldenrod;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.run-distance {
+    font-size: 0.9rem;
+    color: green;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.run-description {
+    font-size: 0.9rem;
+    color: orange;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+
+
 /* Footer */
 
 footer {
