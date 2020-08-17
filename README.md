@@ -133,6 +133,19 @@ The **Herstory** model within the **herstories app** holds the following data fo
 | image_url     | (max\_length=1024, null=True, blank=True)  | URLField     |
 | image         | (null=True, blank=True)                    | ImageField   |
 
+
+#### The Run Model:
+
+The **Herstory** model within the **run app** holds the following data for the upcoming running events:
+
+| Name          | Validation                                 | Field Type   |
+| ------------- | ------------------------------------------ | ------------ |
+| date          | (max\_length=100, null=False, blank=False) | CharField    |
+| location      | (max\_length=200, null=False, blank=False) | CharField    |
+| distance      | (null=False, blank=False)                  | IntegerField |
+| description   | default='some string'                      | TextField    |
+| image         | (null=True, blank=True)                    | ImageField   |
+
 ---
 
 ## Technologies used
