@@ -7,6 +7,7 @@ class HerstoryAdmin(admin.ModelAdmin):
         'age',
         'occupation',
         'story',
+        'image',
     )
 
 
