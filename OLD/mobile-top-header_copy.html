@@ -1,13 +1,15 @@
+<!-- Code used here is adapted from Code Institude's E-Commerce lesson. -->
+
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <p class="my-0">MEMBERS</p>
+            <p class="my-0 nav-link">MEMBERS</p>
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Manage My Account</a>
             {% endif %}
             <a href="" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -18,9 +20,9 @@
     </div>
 </li>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}§">
+    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
         <div class="text-center">
-            <p class="my-0">
+            <p class="my-0 nav-link">
                 {% if grand_total %}
                     £{{ grand_total|floatformat:2 }}
                 {% else %}
@@ -29,4 +31,7 @@
             </p>
         </div>
     </a>
+</li>
+<li class="list-inline-item d-lg-none">
+    <a href="{% url 'home' %}"><img src="/media/GirlsOnTheRunLogo.png" id="girls-run-logo" alt="Girls On The Run Logo"></a>
 </li>

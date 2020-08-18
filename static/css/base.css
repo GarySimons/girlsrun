@@ -31,6 +31,11 @@ body {
     height: auto;
 }
 
+#girls-run-logo-mobile {
+    max-width: 90px;
+    height: auto;
+}
+
 .nav-link {
     font-size: .9rem;
     color: #696969 !important;
@@ -86,6 +91,10 @@ body {
 }
 
 /* Pages */
+
+.page-container {
+    background-color: pink;
+}
 
 .page-header {
     color: #696969;
@@ -163,7 +172,14 @@ body {
 /* Herstories page */
 
 .herstories-container {
+    background-color: greenyellow;
     margin-bottom: 0.2rem;
+}
+
+.story-header {
+    color: #696969;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 .herstory_name {
@@ -219,9 +235,15 @@ body {
 }
 
 .runblock {
-    background-color:#fff;
+    background-color: yellow;
+}
+.blue {
+    background-color: lightskyblue;
 }
 
+.green {
+    background-color: lightgreen;
+}
 .run-date {
     font-size: 1.8rem;
     color: #696969;
