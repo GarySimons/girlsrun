@@ -15,27 +15,27 @@
 	<div class="row">
 		<div class="row justify-content-center">
 			<div class="block col-sm-8">
-				<h3 class="page-header mb-3">Herstories</h3>
+				<h3 class="page-header mb-3">Herstories: Our Insprational Women</h3>
 			</div>
 		</div>
 	</div>
 	<div class="row justify-content-center">
 		<div class="herstories-container col-10">
 			<div class="row">
-				{% for herstory in herstories %}
+				{% for story in stories %}
 				<div class="col-sm-6 col-md-6 col-lg-4">
 					<div class="">
-						    <img class="card-img-top img-fluid" src="{{MEDIA_URL}}{{ herstory.image }}" alt="{{ herstory.name }}">
+						    <img class="card-img-top img-fluid" src="{{MEDIA_URL}}{{ story.image }}" alt="{{ story.name }}">
 						<div class="herstory_box">
 							<div class="row">
 								<div class="col-12">
-									<p class="herstory_name">{{ herstory.full_name }}</p>
+									<p class="herstory_name">{{ story.full_name }}</p>
 								</div>
 								<div class="col-12">
-									<p class="herstory_occupation">{{ herstory.age }} | {{ herstory.occupation }}</p>
+									<p class="herstory_occupation">{{ story.age }} | {{ story.occupation }}</p>
 								</div>
 								<div class="col-12">
-									<p class="herstory_story">{{ herstory.story }}</p>
+									<p class="herstory_story">{{ story.details }}</p>
 								</div>
 							</div>
                         </div>

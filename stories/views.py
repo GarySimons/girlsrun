@@ -6,7 +6,7 @@ from .models import Story
 def stories(request):
     """ A view to return the Herstories page """
 
-    herstories = Story.objects.all()
+    stories = Story.objects.all()
 
     context = {
         'stories': stories,

@@ -6,10 +6,10 @@ from .models import Run
 def run(request):
     """ A view to return the Upcoming Runs page """
 
-    run = Run.objects.all()
+    runs = Run.objects.all()
 
     context = {
-        'run': run,
+        'runs': runs,
     }
 
     return render(request, 'run/run.html', context)

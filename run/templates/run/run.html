@@ -20,10 +20,11 @@
 
 	<div class="row justify-content-center runblock">
         
+            
+        {% for run in runs %} 
             <div class="col-sm-8 col-lg-4">
-                <img src="/media/run_1.jpg" class="run-image" alt="Upcoming Runs">
-            </div>
-        {% for run in runs %}    
+                <img src="{{MEDIA_URL}}{{ run.image }}" alt="Run Image" class="run-image" alt="Upcoming Runs">
+            </div>   
             <div class="col-sm-8 col-lg-4">
                 <p class="run-date">{{ run.date }}</p>
                 <p class="run-location">{{ run.location }}</p>
