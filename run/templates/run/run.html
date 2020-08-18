@@ -11,28 +11,28 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container main">
+<div class="container main page-container">
 	<div class="row justify-content-center">
-		<div class="col-sm-8">
+		<div class="block col-sm-4 col-md-10">
 			<h3 class="page-header mb-3">Upcoming Runs</h3>
 		</div>
 	</div>
-
-	<div class="row justify-content-center runblock">
-        
-            
-        {% for run in runs %} 
-            <div class="col-sm-8 col-lg-5 blue">
-                <img src="{{MEDIA_URL}}{{ run.image }}" alt="Run Image" class="run-image" alt="Upcoming Runs">
-            </div>   
-            <div class="col-sm-8 col-lg-5 green">
-                <p class="run-date">{{ run.date }}</p>
-                <p class="run-location">{{ run.location }}</p>
-                <p class="run-distance">{{ run.distance }} miles</p>
-                <p class="run-description">{{ run.description }}</p>
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-md-10">
+			<div class="row">
+				{% for run in runs %}
+				<div class="col-sm-8 col-md-6 blue">
+					<img src="{{MEDIA_URL}}{{ run.image }}" alt="Run Image" class="run-image" alt="Upcoming Runs">
             </div>
-        {% endfor %}
+					<div class="col-sm-8 col-md-6 green">
+						<p class="run-date">{{ run.date }}</p>
+						<p class="run-location">{{ run.location }}</p>
+						<p class="run-distance">{{ run.distance }} miles</p>
+						<p class="run-description">{{ run.description }}</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
 	</div>
-
-</div>
-{% endblock %}
+	{% endblock %}
