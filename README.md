@@ -120,23 +120,22 @@ The final page is where users can get in touch with site owner. The background i
 
 **During development of this website, I worked with the standard <strong>sqlite3</strong> database that comes inbuilt with Django.**
 
-#### The Herstory Model:
+#### The Story Model:
 
-The **Herstory** model within the **herstories app** holds the following data for the women who are part of the club:
+The **Story** model within the **herstories app** holds the following data for the women who are part of the club:
 
 | Name          | Validation                                 | Field Type   |
 | ------------- | ------------------------------------------ | ------------ |
 | full\_name    | (max\_length=50, null=False, blank=False)  | CharField    |
 | age           | (null=False, blank=False)                  | IntegerField |
-| occupation    | (max\_length=200, null=False, blank=False) | CharField    |
-| story         | (max\_length=500, null=False, blank=False) | CharField    |
-| image_url     | (max\_length=1024, null=True, blank=True)  | URLField     |
+| occupation    | (max\_length=254, null=False, blank=False) | CharField    |
+| details       | default='some string'                      | TextField    |
 | image         | (null=True, blank=True)                    | ImageField   |
 
 
 #### The Run Model:
 
-The **Herstory** model within the **run app** holds the following data for the upcoming running events:
+The **Run** model within the **run app** holds the following data for the upcoming running events:
 
 | Name          | Validation                                 | Field Type   |
 | ------------- | ------------------------------------------ | ------------ |
