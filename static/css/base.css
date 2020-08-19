@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: red;
+    background: lightblue;
     z-index: -1;
 }
 
@@ -159,26 +159,6 @@ body {
 
 .card-footer-white {
     background-color: #fff;
-}
-
-/* Checkout page */
-
-.fieldset-label {
-    font-size: 0.7rem;
-    position: relative;
-    color: green;
-    font-weight: 900;
-}
-
-#payment-form .form-control,
-#card-element {
-    color: #3297a8;
-    border: 1px solid #696969;
-}
-
-.checkout-form-text {
-    color: red;
-
 }
 
 /* Herstories page */
