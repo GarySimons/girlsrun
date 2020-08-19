@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'run',
     'stories',
     'nutrition',
+    'coaching',
 
     # Other
     'crispy_forms',

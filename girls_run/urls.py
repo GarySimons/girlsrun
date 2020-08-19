@@ -30,4 +30,5 @@ urlpatterns = [
     path('run/', include('run.urls')),
     path('stories/', include('stories.urls')),
     path('nutrition/', include('nutrition.urls')),
+    path('coaching/', include('coaching.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
