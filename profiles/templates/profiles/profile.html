@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+<!-- Code used here is adapted from Code Institude's E-Commerce lesson.-->
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container main page-container">
+       <div class="row justify-content-center"> 
+            <div class="block col-sm-4 col-md-10">
+                <h3 class="page-header mb-3">My Profile</h3>
+            </div>
+       </div>
+        
+        <div class="row justify-content-center"> 
+            <div class="col-sm-8 col-md-5">
+                <h4 class="page-title">This is the profile page</h4>
+                <p class="page-text">.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
