@@ -22,7 +22,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+    color: #696969;
 }
 
 .fieldset-label {
@@ -34,4 +34,14 @@
 #card-element {
     color: #000;
     border: 1px solid #000;
+}
+
+select,
+select option {
+    color: #000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #696969 !important;
 }
