@@ -6,6 +6,7 @@ from products.models import Product
 import json
 import time
 
+# Code used here is adapted from Code Institude's E-Commerce lesson
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
@@ -32,7 +33,7 @@ class StripeWH_Handler:
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        grand_total = round(intent.data.charges[0].amount / 100, 2)
+        grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         # Clean data in the shipping details
         for field, value in shipping_details.address.items():
@@ -41,7 +42,7 @@ class StripeWH_Handler:
 
         order_exists = False
         attempt = 1
-        while attemp <= 5:
+        while attempt <= 5:
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
@@ -69,7 +70,7 @@ class StripeWH_Handler:
         else:
             order = None
             try:
-                order = Order.ojects.create(
+                order = Order.objects.create(
                     full_name=shipping_details.name,
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
@@ -107,14 +108,13 @@ class StripeWH_Handler:
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
         return HttpResponse(
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            status=200)
+
+    def handle_payment_intent_payment_failed(self, event):
+        """
+        Handle the payment_intent.payment_failed webhook from Stripe
+        """
+        return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
-        
-
-        def handle_payment_intent_payment_failed(self, event):
-            """
-            Handle the payment_intent.payment_failed webhook from Stripe
-            """
-            return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
-                status=200)
