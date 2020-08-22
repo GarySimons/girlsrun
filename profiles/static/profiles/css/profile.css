@@ -1,16 +1,21 @@
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
+}
+
 #profile-update-form .form-control {
-    color: pink;
+    color: #696969;
 }
 
 #profile-update-form input::placeholder {
-    color: green;
+    color: #bababa;
 }
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color: orange;
+    color: #696969;
 }
 
 #id_default_country option:first-child {
-    color: red;
+    color: #bababa;
 }
