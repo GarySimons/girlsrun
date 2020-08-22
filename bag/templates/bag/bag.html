@@ -16,8 +16,8 @@
 <div class="overlay"></div>
     <div class="container main page-container">
        <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">Your Shopping Bag</h2>
+            <div class="block col-sm-4 col-md-12">
+                <h2 class="page-header-indent mb-3">Your Shopping Bag</h2>
             </div>
        </div>
 
@@ -91,7 +91,7 @@
 					<tr>
 						<td colspan="5" class="pt-5 text-right">
 							<h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
-							<h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+							<h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
 							<h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
 							{% if free_delivery_delta > 0 %}
 							<p class="mb-1 text-danger">
@@ -103,17 +103,11 @@
 					</tr>
 					<tr>
 						<td colspan="5" class="text-right">
-							<a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-								<span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
+							<a href="{% url 'products' %}" class="btn btn-blue rounded-0">
 								<span class="text-uppercase">Keep Shopping</span>
 							</a>
-							<a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+							<a href="{% url 'checkout' %}" class="btn btn-grey rounded-0">
 								<span class="text-uppercase">Checkout</span>
-								<span class="icon">
-                                    <i class="fas fa-lock"></i>
-                                </span>
 							</a>
 						</td>
 					</tr>
@@ -121,10 +115,7 @@
 			</div>
 			{% else %}
 			<p class="lead mb-5">Your bag is empty.</p>
-			<a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-				<span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
+			<a href="{% url 'products' %}" class="btn btn-blue rounded-0">
 				<span class="text-uppercase">Keep Shopping</span>
 			</a>
 			{% endif %}
