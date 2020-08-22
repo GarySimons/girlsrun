@@ -90,6 +90,62 @@ body {
     width: 1.5rem;
 }
 
+/* Allauth forms */
+
+.allauth-form-inner-content p{
+    margin-top: 1.5rem;
+    color: #696969;
+}
+
+.allauth-form-inner-content input {
+    border-color: #696969;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #696969;
+}
+
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #696969;
+    border: 1px solid #696969;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #3297a8; /* text-info */
+}
+
+
 /* Shop page */
 
 .shop-container {
@@ -114,7 +170,7 @@ body {
 
 .page-header {
     color: #696969;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -174,7 +230,7 @@ body {
 
 .story-header {
     color: #696969;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -248,7 +304,7 @@ body {
     background-color: lightgreen;
 }
 .run-date {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #696969;
     text-align: center;
     margin-bottom: 0.1rem;
