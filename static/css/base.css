@@ -175,6 +175,7 @@ body {
 
 .page-container {
     background-color: pink;
+    min-height: 80vh;
 }
 
 .page-header {
