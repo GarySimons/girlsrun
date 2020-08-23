@@ -299,12 +299,27 @@ body {
     z-index: -1;
 }
 
+.contact-textbox {
+    background: green;
+}
+
 .contactbox {
-    background-color: #fff;
-    opacity: 0.7;
     padding-top: 2.3rem;
     padding-bottom: 2.8rem;
 }
+
+.contactbox::after {
+    content: "";
+    background: #fff;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 
 .contactbox p {
     color: #3297a8;
