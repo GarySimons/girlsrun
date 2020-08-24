@@ -179,7 +179,7 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: pink;
+    background-color: #fff;
     min-height: 80vh;
 }
 
@@ -208,6 +208,11 @@ body {
 }
 
 .mystory_image {
+    max-width: 100%;
+    height: auto;
+}
+
+.hannah_image {
     max-width: 100%;
     height: auto;
 }
@@ -301,7 +306,7 @@ body {
 }
 
 .herstory_story {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #fff;
     padding: 0rem 1rem;;
 }
