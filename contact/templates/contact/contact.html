@@ -42,11 +42,12 @@
 							<textarea rows="5" name="getintouch" id="getintouch" class="form-control"
                         placeholder="What's on your mind?" required></textarea>
 							<br />
-							<div class="form-row text-center">
-								<div class="col">
-									<button type="submit" id="btn-send">send</button>
-								</div>
-							</div>
+							<div class="text-center">
+                        <a href="{% url 'contact' %}" class="btn btn-grey">
+                            <span>SEND</span>
+                        </a>
+                <br><br>
+            </div>
 						</form>
 					</div>
 				</div>

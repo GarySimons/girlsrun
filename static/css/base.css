@@ -39,6 +39,7 @@ body {
     background: #696969;
     color: #fff !important; 
     font-size: 0.9rem;
+    border-radius: 0;
 }
 
 .btn-grey:hover {
@@ -51,6 +52,7 @@ body {
     background: #3297a8;
     color: #fff !important; 
     font-size: 0.9rem;
+    border-radius: 0;
 }
 
 .btn-blue:hover {
@@ -99,6 +101,8 @@ body {
 
 .homequote {
     font-size: 3.5rem;
+    position: fixed;
+    top: 35%;
 }
 
 /* from Bulma */
