@@ -133,9 +133,9 @@ The **Story** model within the **herstories app** holds the following data for t
 | image         | (null=True, blank=True)                    | ImageField   |
 
 
-#### The Run Model:
+#### The Event Model:
 
-The **Run** model within the **run app** holds the following data for the upcoming running events:
+The **Event** model within the **events app** holds the following data for the upcoming running events:
 
 | Name          | Validation                                 | Field Type   |
 | ------------- | ------------------------------------------ | ------------ |
@@ -190,6 +190,10 @@ All text written by me.
 ### Code
 
 Much of the code for the e-commerce section of my website was achieved by following the **Django E-Commerce Mini Project** from the Code Institute lessons. I adapted it to suit my website.
+
+### Credits
+
+I was very inspired by a couple of websites I found, that made me want to do this project. I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/home.html) website. I also got more professional ideas on what should be included on my site from [She Runs Outside](https://www.sherunsoutdoors.com/). Both these sites were very important in helping me understand what angle to approach my project.
 
 ### Disclaimer
 

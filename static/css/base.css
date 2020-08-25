@@ -43,7 +43,7 @@ body {
 }
 
 .btn-grey:hover {
-    background: #3297a8;
+    background: #8b8b8b;
     color: #fff !important;
     transition: .1s ease-in-out;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .btn-blue:hover {
-    background: #696969;
+    background: #3ac0d1;
     color: #fff !important;
     transition: .1s ease-in-out;
 }
