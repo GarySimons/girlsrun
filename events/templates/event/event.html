@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container main page-container">
+	<div class="row justify-content-center">
+		<div class="block col-sm-4 col-md-10">
+			<h2 class="page-header mb-3">Upcoming Events</h2>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-md-10">
+			<div class="row">
+				{% for event in events %}
+				<div class="col-sm-8 col-md-6 blue">
+					<img src="{{MEDIA_URL}}{{ event.image }}" class="run-image" alt="Runs">
+            </div>
+					<div class="col-sm-8 col-md-6 green">
+						<p class="run-date">{{ event.date }}</p>
+						<p class="run-location">{{ event.location }}</p>
+						<p class="run-distance">{{ event.distance }} miles</p>
+						<p class="run-description">{{ event.description }}</p>
+                        <div class="text-center">
+                        <br><br>
+                            <a href="{% url 'contact' %}" class="btn btn-grey">
+                                <span>FIND OUT MORE</span>
+                            </a>
+                        <br><br>
+            </div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
