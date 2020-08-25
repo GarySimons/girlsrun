@@ -56,9 +56,13 @@ body {
 }
 
 .btn-blue:hover {
-    background: #3ac0d1;
+    background: #90d1da;
     color: #fff !important;
     transition: .1s ease-in-out;
+}
+
+.button {
+    color: red !important;
 }
 
 /* Nav Bar */
@@ -179,7 +183,7 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: #fff;
+    background-color: pink;
     min-height: 80vh;
 }
 
@@ -430,6 +434,15 @@ body {
 .full-width {
     width: 100%;
     height: calc(100vh - 164px);
+}
+
+/* Sign Out Page */
+
+.signoutbox {
+    background: #90d1da;
+    padding-top: 2.3rem;
+    padding-bottom: 2.8rem;
+    text-align: center !important;
 }
 
 /* Footer */
