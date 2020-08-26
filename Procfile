@@ -1,0 +1,1 @@
+web: gunicorn girls_run.wsgi:application
