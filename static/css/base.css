@@ -183,7 +183,7 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: yellow;
+    background-color: red;
     min-height: 80vh;
 }
 
@@ -191,6 +191,7 @@ body {
     color: #696969;
     font-size: 1.8rem;
     font-weight: 900;
+    padding-bottom: 0.5rem;
 }
 
 .page-header-indent {
@@ -208,7 +209,7 @@ body {
 
 .page-text {
     color: #696969;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .mystory_image {
