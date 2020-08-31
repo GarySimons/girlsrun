@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: lightblue;
+    background: #fff;
     z-index: -1;
 }
 
@@ -183,7 +183,7 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: orange;
+    background-color: #fff;
     min-height: 80vh;
 }
 
@@ -278,7 +278,7 @@ body {
 /* Herstories page */
 
 .herstories-container {
-    background-color: greenyellow;
+    background-color: #fff;
     margin-bottom: 0.2rem;
 }
 
@@ -336,7 +336,7 @@ body {
 }
 
 .contact-textbox {
-    background: green;
+    background: #fff;
 }
 
 .contactbox {
@@ -394,14 +394,14 @@ body {
 }
 
 .runblock {
-    background-color: yellow;
+    background-color: #fff;
 }
 .blue {
-    background-color: lightskyblue;
+    background-color: #fff;
 }
 
 .green {
-    background-color: lightgreen;
+    background-color: #fff;
 }
 .run-date {
     font-size: 1.6rem;
