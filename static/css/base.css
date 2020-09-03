@@ -7,7 +7,7 @@ html {
 body {
     background: url('/media/homepage_background.jpg') no-repeat center center;
     background-size: cover;
-    height: calc(90vh - 164px);
+    height: calc(80vh - 164px);
     color: 	#696969;
     font-family: 'Merriweather', serif;
 }
@@ -94,8 +94,20 @@ body {
 
 
 .homequote {
+    text-align: center;
     font-size: 3.5rem;
-    top: 35%;
+}
+
+.homequote2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.flex-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* from Bulma */
