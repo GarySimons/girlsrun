@@ -5,9 +5,9 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background.jpg') no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(90vh - 164px);
     color: 	#696969;
     font-family: 'Merriweather', serif;
 }
@@ -92,20 +92,9 @@ body {
 
 /* Home Page */
 
-.home-image {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: -1;
-}
 
 .homequote {
     font-size: 3.5rem;
-    position: fixed;
     top: 35%;
 }
 

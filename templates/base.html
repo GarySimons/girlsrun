@@ -88,6 +88,54 @@
 
 </body>
 
+{% if request.resolver_match.url_name == 'home' %}
+<div class="container main page-container" id="my-story">
+       <div class="row justify-content-center"> 
+            <div class="block col-sm-4 col-md-10">
+                <h2 class="page-header mb-3">My Story </h2>
+            </div>
+       </div>
+        
+        <div class="row justify-content-center"> 
+            <div class="col-sm-8 col-md-5">
+                <h4 class="page-title">How I found running, and myself</h4>
+                <p class="page-text">I must start by confessing that I used to hate running. 
+                I found it hard, boring and could believe that you could ever make it enjoyable. 
+                Starting to run was a massive achievement for me and has taken me on a fantastic journey. 
+                I have improved both my fitness levels and my mental health, 
+                and made some amazing friends along the way.</p>
+                <p class="page-text">I started this group out of a desire to help women like me start running and 
+                discover the benefits that it can bring. My mission is to provide a group 
+                that is based on women supporting and empowering each other. 
+                I believe that it should be fun and encouraging, so women can 
+                relax and push themselves to do more than they believed they could.</p>
+                <p class="page-text">All our runs are designed around being social, supportive, inclusive and 
+                suitable for all runners. I’ve found some great local routes taking us 
+                to some of Sussex’s most beautiful and interesting locations.</p>
+                <p class="page-text">Please sign up to our membership to access special coaching and nutrition 
+                advice and bespoke plans to help you get the best out of yourself.</p>
+                <p class="page-text">I hope to see you soon</p>
+
+            <div class="col-sm-8 col-md-5">
+               <img src="{{MEDIA_URL}}girlsrun_hannah.jpg" class="hannah_image" alt="Hannah Roberts">
+            </div>
+            <br>
+			<div class="text-center">
+                <a href="{% url 'contact' %}" class="btn btn-grey">
+                    <span>GET IN TOUCH</span>
+                </a>
+                <br><br>
+            </div>
+            </div>
+        
+            <div class="col-sm-8 col-md-5">
+               <img src="{{MEDIA_URL}}mystory.jpg" class="mystory_image" alt="My Story">
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+
 <div class="row">
 	<div class="col">
 		{% include 'includes/footer.html' %}
