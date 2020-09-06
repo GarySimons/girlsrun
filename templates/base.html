@@ -89,36 +89,45 @@
 </body>
 
 {% if request.resolver_match.url_name == 'home' %}
-<div class="container main page-container" id="my-story">
+
        <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">My Story </h2>
+            <div class="block col-sm-8 col-md-8">
+                <h2 class="page-header-home mb-3">What we do </h2>
             </div>
        </div>
-        
         <div class="row justify-content-center"> 
-            <div class="col-sm-8 col-md-5">
-                <h4 class="page-title">How I found running, and myself</h4>
-            <div class="col-sm-8 col-md-5">
-               <img src="{{MEDIA_URL}}girlsrun_hannah.jpg" class="hannah_image" alt="Hannah Roberts">
+            <div class="block col-sm-6 col-md-4 what-panel">
+                <h4 class="page-title">GROUP RUNS</h4>
+                <p class="page-text">Girls on the run offers women to take part in women only runs around brighton and Susex. We plan the routes to take in some of the most beautiful landscapes and locations that our area has to offer. All our runs are suitable for runners of all abilities. We aim to be inclusive, supportive and social. Join us on one of our runs and find out the massive benefits of running with a group.</p>
+                <br>
+			<div class="text-center">
+                <a href="{% url 'event' %}" class="btn btn-grey">
+                    <span>FIND OUT MORE</span>
+                </a>
+                <br><br>
             </div>
             </div>
-        
-            <div class="col-sm-8 col-md-5">
-               <img src="{{MEDIA_URL}}mystory.jpg" class="mystory_image" alt="My Story">
+            <div class="block col-sm-6 col-md-4 what-panel">
+                <h4 class="page-title">ADVICE</h4>
+                <p class="page-text">Our memembers enjoy a wide range of advice, from starting as a non-runner through to experienced veterans. On registering on this website, you'll gain access to all the profeesional advice you need. From choosing kit, eating right to helping your body to take you further. We all need a bit of a helping hand sometimes. You can also sign up for bespoke coaching and nutrition plans with one-on-one service.</p>
+                <div class="text-center">
+                <a href="{% url 'account_signup' %}" class="btn btn-grey">
+                    <span>SIGN UP</span>
+                </a>
+                <br><br>
+            </div>
             </div>
         </div>
-</div>
 
-<div class="container main page-container" id="my-story">
+
        <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">My Story </h2>
+            <div class="block col-sm-4 col-md-8">
+                <h2 class="page-header-home mb-3">My Story </h2>
             </div>
        </div>
         
         <div class="row justify-content-center"> 
-            <div class="col-sm-8 col-md-5">
+            <div class="col-sm-8 col-md-4">
                 <h4 class="page-title">How I found running, and myself</h4>
                 <p class="page-text">I must start by confessing that I used to hate running. 
                 I found it hard, boring and could believe that you could ever make it enjoyable. 
@@ -137,7 +146,7 @@
                 advice and bespoke plans to help you get the best out of yourself.</p>
                 <p class="page-text">I hope to see you soon</p>
 
-            <div class="col-sm-8 col-md-5">
+            <div class="col-sm-8 col-md-4">
                <img src="{{MEDIA_URL}}girlsrun_hannah.jpg" class="hannah_image" alt="Hannah Roberts">
             </div>
             <br>
@@ -149,11 +158,10 @@
             </div>
             </div>
         
-            <div class="col-sm-8 col-md-5">
+            <div class="col-sm-8 col-md-4">
                <img src="{{MEDIA_URL}}mystory.jpg" class="mystory_image" alt="My Story">
             </div>
         </div>
-    </div>
 {% endif %}
 
 

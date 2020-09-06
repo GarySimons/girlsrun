@@ -6,10 +6,9 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center;
     background-size: cover;
-    height: calc(80vh - 164px);
-    color: 	#fff;
+    height: calc(90vh - 164px);
+    color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
@@ -32,7 +31,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: #fff;
+    background: skyblue;
     z-index: -1;
 }
 
@@ -98,6 +97,19 @@ body {
 
 /* Home Page */
 
+#introcontainer {
+    height: 90vh;
+
+    position: relative;
+    margin-top: -4.5rem;
+    
+    background: url('/media/homepage_background_tint.jpg') no-repeat center center; 
+    background-size: cover;
+    
+    align-items: center;
+    justify-content: center;
+}
+
 
 .homequote {
     font-family: 'Oswald', sans-serif;
@@ -113,7 +125,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.25rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .flex-center {
@@ -197,8 +209,20 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: #fff;
+    background-color: yellow;
     min-height: 80vh;
+    margin-top: -2.5rem;
+}
+
+.what-container {
+    background-color: pink;
+}
+
+.what-panel {
+    background-color: lightskyblue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 2rem;
 }
 
 .page-header {
@@ -220,6 +244,18 @@ body {
     font-size: 1.8rem;
     margin-left: 0.2rem;
 }
+
+.page-header-home {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: red;
+    font-size: 1.8rem;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+}
+
 
 .page-title {
     color: #3297a8;
