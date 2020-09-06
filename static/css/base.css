@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_tint.jpg') no-repeat center center;
+    background: url('/media/homepage_background.jpg') no-repeat center center;
     background-size: cover;
     height: calc(80vh - 164px);
     color: 	#fff;
