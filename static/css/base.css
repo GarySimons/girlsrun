@@ -1,15 +1,17 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,300;1,900&display=swap" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap" >
+
 
 html {
     height: 100%;
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center;
+    background: url('/media/homepage_background_tint.jpg') no-repeat center center;
     background-size: cover;
     height: calc(80vh - 164px);
-    color: 	#696969;
-    font-family: 'Merriweather', serif;
+    color: 	#fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 .main {
@@ -39,6 +41,7 @@ body {
     background: #696969;
     color: #fff !important; 
     font-size: 0.8rem;
+    letter-spacing: 0.25rem;
     border-radius: 0;
 }
 
@@ -52,6 +55,7 @@ body {
     background: #3297a8;
     color: #fff !important; 
     font-size: 0.8rem;
+    letter-spacing: 0.25rem;
     border-radius: 0;
 }
 
@@ -78,10 +82,12 @@ body {
 }
 
 .nav-link {
-    font-size: .9rem;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
     color: #696969 !important;
     text-align: left !important;
-    font-weight: 900;
 
 }
 
@@ -94,11 +100,18 @@ body {
 
 
 .homequote {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
     text-align: center;
     font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .homequote2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
     text-align: center;
     font-size: 2rem;
 }
@@ -189,26 +202,37 @@ body {
 }
 
 .page-header {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     color: #696969;
     font-size: 1.8rem;
-    font-weight: 900;
     padding-bottom: 0.5rem;
 }
 
 .page-header-indent {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     color: #696969;
     font-size: 1.8rem;
-    font-weight: 900;
     margin-left: 0.2rem;
 }
 
 .page-title {
     color: #3297a8;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
 }
 
 .page-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #696969;
     font-size: 1rem;
 }
@@ -228,25 +252,34 @@ body {
 .product-name {
     color: #696969;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
 }
 
 .product-size-quantity {
     color: #696969;
     font-size: 1rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     padding-top: 0.5rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 0.25rem;
 }
 
 .product_price {
     color: #3297a8;
     font-size: 1.1rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     margin-top: -1rem;
+    letter-spacing: 0.25rem;
 }
 
 .product_details {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #696969;
 }
 
@@ -286,12 +319,17 @@ body {
 .story-header {
     color: #696969;
     font-size: 1.8rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
 }
 
 .herstory_name {
     font-size: 1.3rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
     color: #fff;
     padding: 0.6rem 1rem 0rem 1rem;
     margin-bottom: 0.2rem;
@@ -299,19 +337,24 @@ body {
 
 .herstory_age {
     font-size: 0.9rem;
+    letter-spacing: 0.25rem;
     color: #000;
     padding: 0rem 1rem;
 }
 
 .herstory_occupation {
     font-size: 0.9rem;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
     color: #000;
     padding: 0rem 1rem;
     margin-bottom: 0.5rem;
 }
 
 .herstory_story {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 0.9rem;
     color: #fff;
     padding: 0rem 1rem;;
@@ -359,6 +402,8 @@ body {
 
 
 .contactbox p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #3297a8;
 }
 
@@ -373,7 +418,10 @@ body {
     background-color: #696969;
     border: #696969;
     color: #fff;
-    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     text-align: center !important;
     text-decoration: none !important;
 }
@@ -405,6 +453,10 @@ body {
     background-color: #fff;
 }
 .run-date {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     font-size: 1.6rem;
     color: #696969;
     text-align: center;
@@ -412,6 +464,10 @@ body {
 }
 
 .run-location {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     font-size: 1.2rem;
     color: #696969;
     text-align: center;
@@ -419,6 +475,9 @@ body {
 }
 
 .run-distance {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
     font-size: 0.8rem;
     color: #696969;
     text-align: center;
@@ -426,6 +485,8 @@ body {
 }
 
 .run-description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     color: #696969;
     text-align: center;
@@ -458,10 +519,11 @@ footer {
 }
 
 #copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #696969;
     font-size: 0.7rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem; 
+    letter-spacing: 0.25rem;
     text-align: center;
     margin-top: -1.8rem;
 }
@@ -485,6 +547,8 @@ footer {
 /* Bootstrap toasts */
 
 .message-container {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     position: fixed;
     top: 72px;
     right: 15px;
@@ -512,6 +576,7 @@ footer {
 }
 
 /* Convenience classes - colors copied from Bootstrap */
+
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
