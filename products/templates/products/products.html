@@ -15,7 +15,7 @@
 <div class="container main page-container">
 	<div class="row justify-content-center">
 		<div class="block col-sm-4 col-md-10">
-			<h2 class="page-header mb-3">Shop</h2>
+			<h2 class="page-header mb-3">Shopping</h2>
 		</div>
 	</div>
 	<div class="row justify-content-center">
@@ -36,12 +36,12 @@
 								<div class="card-footer-white">
 									<div class="row">
 										<div class="col">
-											<p class="mb-0">{{ product.name }}</p>
+											<p class="product-name">{{ product.name }}</p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col">
-											<p class="">£{{ product.price }}</p>
+											<p class="product-price">£{{ product.price }}</p>
 										</div>
 									</div>
                                     {% if request.user.is_superuser %}

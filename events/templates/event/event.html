@@ -21,22 +21,23 @@
 		<div class="col-sm-8 col-md-10">
 			<div class="row">
 				{% for event in events %}
-				<div class="col-sm-8 col-md-6 blue">
+				<div class="col-sm-8 col-md-6">
 					<img src="{{MEDIA_URL}}{{ event.image }}" class="run-image" alt="Runs">
             </div>
-					<div class="col-sm-8 col-md-6 green">
+					<div class="col-sm-8 col-md-6">
 						<p class="run-date">{{ event.date }}</p>
 						<p class="run-location">{{ event.location }}</p>
 						<p class="run-distance">{{ event.distance }} miles</p>
 						<p class="run-description">{{ event.description }}</p>
                         <div class="text-center">
-                        <br><br>
-                            <a href="{% url 'contact' %}" class="btn btn-grey">
+                        <br>
+                            <a href="{% url 'contact' %}" class="btn btn-blue">
                                 <span>FIND OUT MORE</span>
                             </a>
                         <br><br>
             </div>
 					</div>
+                    
 					{% endfor %}
 				</div>
 			</div>
