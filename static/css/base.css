@@ -8,9 +8,9 @@ html {
 body {
     background-size: cover;
     height: calc(90vh - 164px);
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #696969;
 }
 
 .main {
@@ -37,10 +37,13 @@ body {
 
 
 .btn-grey {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
     background: #696969;
     color: #fff !important; 
     font-size: 0.8rem;
-    letter-spacing: 0.25rem;
     border-radius: 0;
 }
 
@@ -51,10 +54,13 @@ body {
 }
 
 .btn-blue {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
     background: #2fbdb8;
     color: #fff !important; 
     font-size: 0.8rem;
-    letter-spacing: 0.25rem;
     border-radius: 0;
 }
 
@@ -71,12 +77,12 @@ body {
 /* Nav Bar */
 
 #girls-run-logo {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
 }
 
 #girls-run-logo-mobile {
-    max-width: 90px;
+    max-width: 70px;
     height: auto;
 }
 
@@ -118,6 +124,7 @@ body {
     text-align: center;
     font-size: 3.5rem;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .homequote2 {
@@ -126,6 +133,7 @@ body {
     letter-spacing: 0.25rem;
     text-align: center;
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .flex-center {
