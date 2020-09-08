@@ -34,14 +34,22 @@
 				{% endif %}
 			</div>
 		</li>
-            {% if request.user.is_authenticated %}
-        <li class="nav-item">
-			<a class="nav-link" href="{% url 'nutrition' %}">NUTRITION</a>
+        {% if request.user.is_authenticated %}
+        <li class="list-inline-item dropdown">
+			<a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false">
+				<div>
+					<p class="nav-item my-0">ADVICE</p>
+				</div>
+			</a>
+			<div class="dropdown-menu border-0" aria-labelledby="user-options">
+                <a href="{% url 'nutrition' %}" class="dropdown-item">NUTRITION</a>
+				<a href="{% url 'coaching' %}" class="dropdown-item">COACHING</a>
+				<a href="{% url 'nutrition' %}" class="dropdown-item">NUTRITION2</a>
+				<a href="{% url 'coaching' %}" class="dropdown-item">COACHING2</a>
+			</div>
 		</li>
-        <li class="nav-item">
-			<a class="nav-link" href="{% url 'coaching' %}">COACHING</a>
-		</li>
-            {% endif %}
+        {% endif %}
 		<li class="nav-item">
 			<a class="nav-link" href="{% url 'products' %}">SHOP</a>
 		</li>

@@ -101,6 +101,16 @@ body {
     transition: .1s ease-in-out;
 }
 
+.dropdown-item {
+    font-size: 0.7rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    color: #696969 !important;
+    text-align: left !important;
+    text-transform: uppercase;
+}
+
 /* Home Page */
 
 #introcontainer {
