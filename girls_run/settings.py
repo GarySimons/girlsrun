@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     'coaching',
     'profiles',
     'events',
+    'beginner',
+    'gear',
 
     # Other
     'crispy_forms',

@@ -3,3 +3,4 @@ env.py
 *.pyc
 __pycache__/
 core.Microsoft* 
+core.python3*
