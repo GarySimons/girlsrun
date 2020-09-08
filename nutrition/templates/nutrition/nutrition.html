@@ -1,48 +1,68 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<div class="overlay"></div>
+<div class="container main page-container">
+  <div class="row justify-content-center">
+    <div class="block col-sm-4 col-md-10">
+      <h2 class="page-header mb-3">Nutrition</h2>
     </div>
-{% endblock %}
+  </div>
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container main page-container">
-       <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">Nutrition</h2>
-            </div>
-       </div>
-        
-        <div class="row justify-content-center"> 
-            <div class="col-sm-8 col-md-5">
-                <h4 class="page-title">Finding The Balance With Food</h4>
-                <p class="page-text">Food is the fuel for our runs. The right kind of fuel will help in you run stronger and longer. The wrong fuel can slow you down or give you digestive problems.</p>
-
-                <p class="page-text">Muscle cells have two main sources of fuel: sugar and fat. These come from the food we eat or from what’s stored in our own bodies.</p>
-
-                <p class="page-text">Carbohydrates are broken down into glucose, a type of sugar, which circulates within the bloodstream and powers your cells. Any glucose that’s not immediately used is stored in your muscles and liver as another form of sugar, glycogen. When running, your body starts by using the sugar in your bloodstream, then uses the stored glycogen as glucose when that runs low.</p>
-
-                <p class="page-text">Fat is the other material that feeds your muscles during exercise. Dietary fats must get broken down into fatty acids and other parts before the muscles can use them. This makes them less readily available than carbs and less efficient as fuel.</p>
-
-                <p class="page-text">Stored body fat on the other hand as even the slimmest of runners has a lot of it. As you run regularly your body adapts of become better at using that fat as fuel.</p>
-
-                
-			<div class="text-center">
-                <a href="{% url 'contact' %}" class="btn btn-grey">
-                    <span>GET YOUR PERSONALISED PLAN</span>
-                </a>
-                <br><br>
-            </div>
-            </div>
-        
-            <div class="col-sm-8 col-md-5">
-               <img src="{{MEDIA_URL}}nutrition.jpg" class="mystory_image" alt="Nutrition">
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-8 col-md-5">
+      <img
+        src="{{MEDIA_URL}}nutrition.jpg"
+        class="mystory_image"
+        alt="Nutrition"
+      />
     </div>
+    <div class="col-sm-8 col-md-5">
+      <h4 class="page-title">Finding The Balance With Food</h4>
+      <p class="page-text">
+        Food is the fuel for our runs. The right kind of fuel will help in you
+        run stronger and longer. The wrong fuel can slow you down or give you
+        digestive problems.
+      </p>
+
+      <p class="page-text">
+        Muscle cells have two main sources of fuel: sugar and fat. These come
+        from the food we eat or from what’s stored in our own bodies.
+      </p>
+      <p class="subhead">Carbohydrates</p>
+      <p class="page-text">
+        Carbohydrates are broken down into glucose, a type of sugar, which
+        circulates within the bloodstream and powers your cells. Any glucose
+        that’s not immediately used is stored in your muscles and liver as
+        another form of sugar, glycogen. When running, your body starts by using
+        the sugar in your bloodstream, then uses the stored glycogen as glucose
+        when that runs low.
+      </p>
+      <p class="subhead">Fats</p>
+      <p class="page-text">
+        Fat is the other material that feeds your muscles during exercise.
+        Dietary fats must get broken down into fatty acids and other parts
+        before the muscles can use them. This makes them less readily available
+        than carbs and less efficient as fuel.
+      </p>
+
+      <p class="page-text">
+        Stored body fat on the other hand as even the slimmest of runners has a
+        lot of it. As you run regularly your body adapts of become better at
+        using that fat as fuel.
+      </p>
+      <br>
+      <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-grey">
+          <span>GET YOUR PERSONALISED PLAN</span>
+        </a>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

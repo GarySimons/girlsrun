@@ -1,40 +1,49 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<div class="overlay"></div>
+<div class="container main page-container">
+  <div class="row justify-content-center">
+    <div class="block col-sm-4 col-md-10">
+      <h2 class="page-header mb-3">Coaching</h2>
     </div>
-{% endblock %}
+  </div>
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container main page-container">
-       <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">Coaching</h2>
-            </div>
-       </div>
-        
-        <div class="row justify-content-center"> 
-            <div class="col-sm-8 col-md-5">
-                <h4 class="page-title">Get the training you need</h4>
-                <p class="page-text">Mauris. Et curae; est commodo Cum accumsan lacus lobortis malesuada porttitor odio condimentum urna taciti pulvinar at dui parturient auctor suscipit. Taciti.<br><br>
-                Nunc at, placerat taciti velit aptent sapien etiam consequat elementum bibendum orci cum accumsan imperdiet duis, sociosqu elementum ridiculus parturient velit mus class litora dui consequat tempus vivamus imperdiet ornare penatibus suscipit pulvinar, velit. Aliquet eleifend phasellus mollis tellus ligula donec.</p>
-                <br><br>
-            <div class="text-center">
-                <a href="{% url 'contact' %}" class="btn btn-grey">
-                    <span>GET YOUR PERSONALISED PLAN</span>
-                </a>
-                <br><br>
-            </div>
-            </div>
-        
-            <div class="col-sm-8 col-md-5">
-               <img src="{{MEDIA_URL}}coaching.jpg" class="mystory_image" alt="Coaching">
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-8 col-md-5">
+      <img
+        src="{{MEDIA_URL}}coaching.jpg"
+        class="mystory_image"
+        alt="Coaching"
+      />
     </div>
+    <div class="col-sm-8 col-md-5">
+      <h4 class="page-title">Get the right training</h4>
+      <p class="page-text">
+        Having a plan will help you figure out the best way to achieve your
+        running goals. It will help you figure out where you are now, and
+        importantly, where you want to get to. This will give you focus,
+        motivations and provide you with an end goal to work towards.
+        <br><br>
+        We all have our own way of running. Some are natural heel-strikers,
+        while others always lead with their toes. The good news is that one
+        style isn’t better than the other.
+        <br><br>
+        With a personal training plan, you will have access to the best advice
+        and will be able to run better, faster, safer and for longer.
+      </p>
+      <br>
+      <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-grey">
+          <span>GET YOUR PERSONALISED PLAN</span>
+        </a>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

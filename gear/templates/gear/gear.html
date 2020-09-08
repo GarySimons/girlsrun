@@ -1,40 +1,76 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<div class="overlay"></div>
+<div class="container main page-container">
+  <div class="row justify-content-center">
+    <div class="block col-sm-4 col-md-10">
+      <h2 class="page-header mb-3">Get kitted out</h2>
     </div>
-{% endblock %}
+  </div>
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container main page-container">
-       <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">Get kitted out</h2>
-            </div>
-       </div>
-        
-        <div class="row justify-content-center"> 
-            <div class="col-sm-8 col-md-5">
-                <h4 class="page-title">Find the right gear</h4>
-                <p class="page-text">Mauris. Et curae; est commodo Cum accumsan lacus lobortis malesuada porttitor odio condimentum urna taciti pulvinar at dui parturient auctor suscipit. Taciti.<br><br>
-                Nunc at, placerat taciti velit aptent sapien etiam consequat elementum bibendum orci cum accumsan imperdiet duis, sociosqu elementum ridiculus parturient velit mus class litora dui consequat tempus vivamus imperdiet ornare penatibus suscipit pulvinar, velit. Aliquet eleifend phasellus mollis tellus ligula donec.</p>
-                <br><br>
-            <div class="text-center">
-                <a href="{% url 'contact' %}" class="btn btn-grey">
-                    <span>GET YOUR PERSONALISED PLAN</span>
-                </a>
-                <br><br>
-            </div>
-            </div>
-        
-            <div class="col-sm-8 col-md-5">
-               <img src="{{MEDIA_URL}}coaching.jpg" class="mystory_image" alt="Coaching">
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-8 col-md-5">
+      <img
+        src="{{MEDIA_URL}}coaching.jpg"
+        class="mystory_image"
+        alt="Coaching"
+      />
     </div>
+    <div class="col-sm-8 col-md-5">
+      <h4 class="page-title">Find the right gear</h4>
+      <p class="subhead">Shoes</p>
+      <p class="page-text">
+        These are the single most important piece of your running kit. If
+        possible, invest in the best pair that you can afford. Your legs will
+        thank you for this! The most important part of any running shoe is
+        comfort. Ideally you should visit a sports shop where you can be advised
+        on the correct pair for your style of running. Have a test in the shop
+        by running up and down, hop and jump to feel how the shoes are when
+        moving. You risk injury and discomfort if you don’t get the right shoes.
+      </p>
+      <p class="subhead">Sports Bra</p>
+      <p class="page-text">
+        You need to invest in a good sports bra. If you are a A or B cup, a
+        compression bra will be best. A C cup would be best with an
+        encapsulation bra. If you are a D cup or above, you’ll need a bra that
+        has both compression and encapsulation.
+      </p>
+      <p class="subhead">Clothing</p>
+      <p class="page-text">
+        You can run in whatever makes you feel the most comfortable, but be
+        aware that some fabrics can retain a lot of moisture or have seams that
+        could rub. There are lots of specialist running clothing on the market
+        that will help to keep you comfortable and less hot and sweaty. These
+        may improve your overall running experience.
+      </p>
+      <p class="subhead">Safety</p>
+      <p class="page-text">
+        If you are going to be running in the dark, it’s vital that you invest
+        in some high visibility clothing to keep you seen and safe. There are
+        many products around from armbands to full reflective jackets and
+        leggings. It’s also important to be seen in the daytime too. Wear bright
+        colours that will stand out and get you noticed.
+      </p>
+      <p class="subhead">Playlist</p>
+      <p class="page-text">
+        Many runners love the quiet and solitude of running. But lots love to
+        run to upbeat music to keep pace and motivation, or podcast and books to
+        keep them company along the way. Whatever you choose, always make sure
+        you are aware of your surroundings and any dangers that there might be.
+      </p>
+      <br />
+      <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-grey">
+          <span>GET YOUR PERSONALISED PLAN</span>
+        </a>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

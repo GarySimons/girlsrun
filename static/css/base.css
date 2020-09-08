@@ -76,6 +76,14 @@ body {
 
 /* Nav Bar */
 
+#main-nav {
+    max-width: 100vw;
+}
+
+.navbar-collapse {
+    background-color: yellow;
+}
+
 #girls-run-logo {
     max-width: 80px;
     height: auto;
@@ -338,10 +346,21 @@ body {
     font-size: 1rem;
 }
 
+.subhead {
+    color: #2fbdb8;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: 0rem;
+}
+
 
 .mystory_image {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .hannah_image {
