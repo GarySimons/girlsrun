@@ -15,6 +15,16 @@ body {
     color: #696969;
 }
 
+.red {
+    background-color: red;
+    height: 89vh;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+
 .main {
     min-height: 87%;
     display: flex;
@@ -220,33 +230,6 @@ body {
 	color: #2fbdb8; /* text-info */
 }
 
-
-/* Shop page */
-
-.shop-container {
-    background-color: #fff;
-}
-
-.product-name {
-    color: #2fbdb8 !important;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    text-align: center;
-    font-size: 1rem !important;
-    padding-top: 1.1rem;
-    padding-bottom: -2rem;
-}
-
-.product-price {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #696969;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-
 /* Pages */
 
 .page-container {
@@ -363,7 +346,46 @@ body {
     height: auto;
 }
 
-/* Shopping pages */
+/* Shop main page */
+
+.shop-container {
+    background-color: #fff;
+}
+
+.product-name-shop {
+    color: #2fbdb8 !important;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    font-size: 1rem !important;
+    padding-top: 1.1rem;
+    padding-bottom: -2rem;
+    text-transform: uppercase;
+}
+
+.product-price-shop {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    color: #696969;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+}
+
+.edit-delete {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center !important; 
+    text-decoration: none !important;
+    color: #696969 !important;
+    margin-bottom: 1rem;
+}
+
+
+/* Shop detail pages */
 
 .product-name {
     color: #696969;
@@ -384,7 +406,7 @@ body {
     letter-spacing: 0.25rem;
 }
 
-.product_price {
+.product-price {
     color: #2fbdb8;
     font-size: 1.1rem;
     font-family: 'Oswald', sans-serif;
@@ -393,7 +415,7 @@ body {
     letter-spacing: 0.25rem;
 }
 
-.product_details {
+.product-details {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #696969;
@@ -617,6 +639,10 @@ body {
     padding-top: 2.3rem;
     padding-bottom: 2.8rem;
     text-align: center !important;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Footer */

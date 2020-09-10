@@ -36,19 +36,21 @@
 								<div class="card-footer-white">
 									<div class="row">
 										<div class="col">
-											<p class="product-name">{{ product.name }}</p>
+											<p class="product-name-shop">{{ product.name }}</p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col">
-											<p class="product-price">£{{ product.price }}</p>
+											<p class="product-price-shop">£{{ product.price }}</p>
 										</div>
 									</div>
                                     {% if request.user.is_superuser %}
-                                        <small class="ml-3">
+                                    <div class="edit-delete justify-content-center">
+                                        <small>
                                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                         </small>
+                                    </div>
                                     {% endif %}
 								</div>
 					</div>
