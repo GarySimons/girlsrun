@@ -15,11 +15,6 @@ body {
     color: #696969;
 }
 
-.red {
-    background-color: red;
-    height: 89vh;
-}
-
 .blue {
     background-color: lightskyblue;
     min-height: 89vh;
@@ -546,7 +541,6 @@ body {
     z-index: -1;
 }
 
-
 .contactbox p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -639,10 +633,16 @@ body {
     height: calc(100vh - 164px);
 }
 
-/* Sign Out Page */
+/* Sign In & Out Pages */
+
+
+.background-panel {
+    background-color: #a3fffc;
+    height: 89vh;
+}
 
 .signoutbox {
-    background: #90d1da;
+    background: #fff;
     padding-top: 2.3rem;
     padding-bottom: 2.8rem;
     text-align: center !important;
