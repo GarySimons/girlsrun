@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block inner_content %}
-<h2 class="page-header mb-3">{% trans "Sign Up" %}</h2>
+<h2 class="page-header-blue mb-3">{% trans "Sign Up" %}</h2>
 
-<p>Sign up for special access to great nutrition advice and coaching tips</p>
+<p class="sign-up">Sign up for MEMBER ONLY ACCESS to great advice on getting started, nutrition, coaching and running gear!</p>
 
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
@@ -17,7 +17,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button type="submit">{% trans "Sign Up" %}</button>
+  <button class="btn-grey" type="submit">{% trans "SIGN UP" %}</button>
 </form>
 
 {% endblock %}

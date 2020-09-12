@@ -105,7 +105,7 @@
                     <fieldset class="px-3">
                         <legend class="fieldset-label small px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
-                        <div class="mb-3" id="card-element"></div>
+                        <div class="mb-3 stripe-text" id="card-element"></div>
 
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
@@ -121,9 +121,6 @@
 							<span>COMPLETE ORDER</span>
 						</button>
 						<p class="small text-danger my-2">
-							<span class="icon">
-								<i class="fas fa-exclamation-circle"></i>
-							</span>
 							<span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>

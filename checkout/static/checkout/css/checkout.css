@@ -5,7 +5,8 @@
   padding: 10px 12px;
   border: 1px solid transparent;
   border-radius: 0px;
-  background-color: white;
+  background-color: #fff;
+  color: red;
   box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
@@ -22,6 +23,9 @@
 }
 
 .stripe-style-input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
     color: #696969;
 }
 
