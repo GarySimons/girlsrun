@@ -20,6 +20,10 @@ body {
     min-height: 89vh;
 }
 
+.yellow {
+    background-color: yellow;
+}
+
 
 .main {
     min-height: 87%;
@@ -41,8 +45,8 @@ body {
     position: fixed;
     background: none;
     z-index: -1;
+    background-color: mediumaquamarine;
 }
-
 
 .btn-grey {
     font-family: 'Oswald', sans-serif;
@@ -80,6 +84,10 @@ body {
 
 .button {
     color: red !important;
+}
+
+.text-white {
+    color: #fff;
 }
 
 /* Nav Bar */
@@ -437,7 +445,7 @@ body {
     position: fixed;
     display: block;
     opacity: 0.7;
-    background-color: #fff;
+    background-color: #90d1da;
     z-index: 99;
     text-align: center;
 }
@@ -691,6 +699,7 @@ footer {
 /* Bootstrap toasts */
 
 .message-container {
+    background-color: pink;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     position: fixed;
@@ -780,7 +789,7 @@ footer {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 140px;
     }
 }
 
