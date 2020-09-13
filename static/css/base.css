@@ -400,6 +400,19 @@ body {
     margin-bottom: 1rem;
 }
 
+.oswald-grey {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    color: #696969;
+}
+
+.opensans-grey {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-decoration: none !important;
+    color: #696969 !important;
+}
 
 /* Shop detail pages */
 
