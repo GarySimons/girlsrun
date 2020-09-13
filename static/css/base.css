@@ -45,7 +45,7 @@ body {
     position: fixed;
     background: none;
     z-index: -1;
-    background-color: mediumaquamarine;
+    background-color: #fff;
 }
 
 .btn-grey {
@@ -368,7 +368,7 @@ body {
     background-color: #fff;
 }
 
-.product-name-shop {
+.product-name-shop  {
     color: #2fbdb8 !important;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -407,6 +407,13 @@ body {
     color: #696969;
 }
 
+.oswald-blue {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    color: #2fbdb8;
+}
+
 .opensans-grey {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -418,6 +425,15 @@ body {
 
 .product-name {
     color: #696969;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+.product-name-blue {
+    color: #2fbdb8;
     font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
