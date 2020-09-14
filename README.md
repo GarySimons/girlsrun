@@ -55,15 +55,19 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 I wanted the website to have a friendly and welcoming feel, to make it appeal to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
 
 ### Fonts
-I've used the serif font [Merriweather](https://fonts.google.com/specimen/Merriweather?query=mer) in two weights, (300 and 900) with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 300 light weight contrast well with bold 900 weight.
+For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 300 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 300 light weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), also in the 300 weight. This font is very readable and compliments the more stylized Oswald.
 
 ### Colours
 I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used.
 * ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969;
-* ![#3297a8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #3297a8;
+* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #2fbdb8;
+
+I have used an alternative lighter turquoise [#90d1da](https://placehold.it/15/90d1da/000000?text=+) and a lighter grey [#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
 
 * ```dark-grey: #696969```
-* ```turquoise: #3297a8```
+* ```light-grey: #8b8b8b```
+* ```turquoise: #2fbdb8```
+* ```light-turquoise: #2fbdb8```
 
 ### Grid
 I carried the **same basic grid through** the pages to add consistency and easy of navigation. A large **section header** quickly establishes the page you've landed on, and under that, is a panel holding the content for that page. A footer on each page hold **social media links.**
