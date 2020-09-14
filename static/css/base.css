@@ -13,6 +13,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #696969;
+    overflow-x: hidden;
 }
 
 .blue {
