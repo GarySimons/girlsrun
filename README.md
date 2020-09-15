@@ -79,7 +79,7 @@ All images were sourced from the [iStock](https://www.istockphoto.com/gb) image 
 ---
 
 ## Wireframes
-I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy way to work out the basic pages and element and how the would interact with each other. I then mocked up more detailed versions using **Adobe InDesign** to allow me to play with fonts, colours and images. The basic structure from my wireframes remained much the same, but colours, styling and some elements were adapted as I built the website and saw how it worked as a whole. The main change to the pages was the home page. It was felt that a user landing on the home page didn't have enough clues as to the purpose of the site. I reduced the height of the main image to introduced a 'What we d 
+I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy way to work out the basic pages and element and how the would interact with each other. I then mocked up more detailed versions using **Adobe InDesign** to allow me to play with fonts, colours and images. The basic structure from my wireframes remained much the same, but colours, styling and some elements were adapted as I built the website and saw how it worked as a whole. The main change to the pages was the home page. It was felt that a user landing on the home page didn't have enough clues as to the purpose of the website. I reduced the height of the main image to introduced a **'What we do'** that would show just above the fold of the page to entice the user to scroll down. I also **moved the 'My Story' page** to the home page to further introduce the idea behind the website and give it a personality.
 
 View my **Balsamiq** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/png">here.</a>
 
@@ -92,10 +92,7 @@ View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/gir
 **This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey.
 
 ### Home
-This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. 
-
-### My Story
-On this page we are introduced to the site owner and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. A Get in touch button links through to the Contact page. 
+This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** with a friendly welcome message, on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
 
 ### Her Stories
 With this page we are able to showcase many of the inspirational women who belong to the running club. An image of them enjoying running with a short inspiration paragraph about their lives and how running has helped them will encourage other women. The images show a wide range of ages and sizes of women to show the inclusiveness of the group. This will help to make women feel included and represented.
@@ -104,7 +101,7 @@ With this page we are able to showcase many of the inspirational women who belon
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members login page
-This allows users to create an account of login to an existing one. The background image of running shoes together represents a club of women together.
+This allows users to create an account of login to an existing one.
 
 ### Coaching
 This is a members only page which is accessible once logged in. This offers general advice, and a link to pay for a personalised fitness plan.
