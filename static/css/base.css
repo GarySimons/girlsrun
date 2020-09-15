@@ -25,7 +25,9 @@ body {
     background-color: yellow;
 }
 
-
+.blue-background {
+    background-color: blueviolet;
+}
 .main {
     min-height: 87%;
     display: flex;

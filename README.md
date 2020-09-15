@@ -58,11 +58,11 @@ I wanted the website to have a friendly and welcoming feel, to make it appeal to
 For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 300 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 300 light weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), also in the 300 weight. This font is very readable and compliments the more stylized Oswald.
 
 ### Colours
-I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used.
+I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
 * ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969;
+* ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) Light Grey: #8b8b8b;
 * ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #2fbdb8;
-
-I have used an alternative lighter turquoise [#90d1da](https://placehold.it/15/90d1da/000000?text=+) and a lighter grey [#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
+* ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) Light Turquoise: #90d1da;
 
 * ```dark-grey: #696969```
 * ```light-grey: #8b8b8b```
@@ -79,7 +79,7 @@ All images were sourced from the [iStock](https://www.istockphoto.com/gb) image 
 ---
 
 ## Wireframes
-I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy way to work out the basic pages and element and how the would interact with each other. I then mocked up more detailed versions using **Adobe InDesign** to allow me to play with fonts, colours and images. The basic structure from my wireframes remained much the same, but colours, styling and some elements were adapted as I built the website and saw how it worked as a whole.   
+I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy way to work out the basic pages and element and how the would interact with each other. I then mocked up more detailed versions using **Adobe InDesign** to allow me to play with fonts, colours and images. The basic structure from my wireframes remained much the same, but colours, styling and some elements were adapted as I built the website and saw how it worked as a whole. The main change to the pages was the home page. It was felt that a user landing on the home page didn't have enough clues as to the purpose of the site. I reduced the height of the main image to introduced a 'What we d 
 
 View my **Balsamiq** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/png">here.</a>
 
