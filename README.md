@@ -59,10 +59,12 @@ For my headings and main text I have used the compressed font [Oswald](https://f
 
 ### Colours
 I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
-* ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969;
-* ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) Light Grey: #8b8b8b;
-* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #2fbdb8;
-* ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) Light Turquoise: #90d1da;
+
+
+* ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969 - This is the main colour for most of the text on the website. It's strong enough to read, but less harsh thank standard black.
+* ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) Light Grey: #8b8b8b - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
+* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #2fbdb8 - This colour is used as a contrast to the dark grey. It's bright fun and brings an energy that brings the pages to life.  
+* ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) Light Turquoise: #90d1da - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
 
 * ```dark-grey: #696969```
 * ```light-grey: #8b8b8b```
@@ -89,7 +91,7 @@ View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/gir
 ## Features
 
 ### Navigation bar
-**This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey.
+**This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey. The **advice** button only shows up once a user has registered and logged in. This active button contains **member only content** on various aspects of training, food and kit on a dropdown menu of four pages. A link on the far right is a link to the **shopping bag** and shows the current total.
 
 ### Home
 This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** with a friendly welcome message, on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
@@ -101,16 +103,21 @@ With this page we are able to showcase many of the inspirational women who belon
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members login page
-This allows users to create an account of login to an existing one.
+This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile** and see their **order history**. If logged in as a **superuser,** there is the option to **add, edit and delete** items on the shopping page.
 
-### Coaching
-This is a members only page which is accessible once logged in. This offers general advice, and a link to pay for a personalised fitness plan.
-
-### Nutrition
-This is a members only page which is accessible once logged in. This offers general advice, and a link to pay for a personalised nutrition plan.
+### Advice
+This is a members only section that is revealed only when the user is logged in. It contains a dropdown menu of four pages:
+#### Getting Started
+For women new to running. This page offers advive on the best was to ease yourself into running and getting motivated. link to pay for a personalised plan.
+link to pay for a personalised nutrition plan.Gear
+giving advice on the best types of running kit needed from shoes and bras to playlists to get you set up right. link to pay for a personalised plan.
+#### Nutrition 
+with a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. link to pay for a personalised plan. 
+#### Coaching 
+with some tips for helping your body to achive the best results. All these pages have a button on the bottom offering a chance to get a personalised plan.
 
 ### Shop
-Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. 
+Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. Super Users have the ability to edit and delete items from the store.
 
 ### Contact Us
 The final page is where users can get in touch with site owner. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
