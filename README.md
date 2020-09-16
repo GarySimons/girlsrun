@@ -12,7 +12,9 @@ The project has been built using HTML, CSS, JavaScript, Python and Django. It us
 
 ### Project Goals
 
-This website is aimed at women and encouraging them to engage in running with the help and support of a running club designed around them. 
+This website is aimed at **women** and **encouraging** them to engage in running with the help and support of a running club designed around them. 
+
+I wanted to build this website after seeing the **disengagement of the women** in my own family with sports and excercise. It's well know that lots of girls and women are put off excercise for many complex and varied reasons. I wanted to build a website that would **inspire and engage women of all ages and abilities** and show that that they can do anything they want. They just have to take that first step.
 
 I wanted it to be able to **build a like-minded, supportive and inclusive network of women.** This will help them with achieving their exercise goals, making good friends and connecting with others in similar situations.
 
@@ -103,24 +105,24 @@ With this page we are able to showcase many of the inspirational women who belon
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members login page
-This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile** and see their **order history**. If logged in as a **superuser,** there is the option to **add, edit and delete** items on the shopping page.
+This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile** and see their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page.
 
 ### Advice
 This is a members only section that is revealed only when the user is logged in. It contains a dropdown menu of four pages:
 #### Getting Started
 For women new to running. This page offers advive on the best was to ease yourself into running and getting motivated. link to pay for a personalised plan.
-link to pay for a personalised nutrition plan.Gear
-giving advice on the best types of running kit needed from shoes and bras to playlists to get you set up right. link to pay for a personalised plan.
+#### Gear
+Giving advice on the best types of running kit needed from shoes and bras to playlists to get you set up right. link to pay for a personalised plan.
 #### Nutrition 
-with a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. link to pay for a personalised plan. 
+With a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. link to pay for a personalised plan. 
 #### Coaching 
 with some tips for helping your body to achive the best results. All these pages have a button on the bottom offering a chance to get a personalised plan.
 
 ### Shop
-Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. Super Users have the ability to edit and delete items from the store.
+Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
 
 ### Contact Us
-The final page is where users can get in touch with site owner. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
+The final page is where users can **get in touch with site owner**. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
 
 ---
 
@@ -201,7 +203,9 @@ Much of the code for the e-commerce section of my website was achieved by follow
 
 ### Credits
 
-I was very inspired by a couple of websites I found, that made me want to do this project. I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/home.html) website. I also got more professional ideas on what should be included on my site from [She Runs Outside](https://www.sherunsoutdoors.com/). Both these sites were very important in helping me understand what angle to approach my project.
+I was very inspired by a few of websites I found, that made me want to do this project. One of the main things I had in my mind when I started this project was the [This Girl Can](https://www.thisgirlcan.co.uk/) campaign that was launched a few years ago. It was great as it wanted to show women of all ages and sizes that they could get involved. It had lovely stories about real women and didn't try and make it too glamorous. I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/home.html) website. I also got more professional ideas on what should be included on my site from [She Runs Outside](https://www.sherunsoutdoors.com/). Another inspiring website I found was [Brighton and Hove Women's Running Club](https://bhwrc.org/) which had some great ideas. 
+
+All these sites were very important in helping me understand what angle to approach my project.
 
 ### Disclaimer
 
