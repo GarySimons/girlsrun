@@ -67,11 +67,7 @@ I created a **simple, complimentary, sophisticated colour scheme** that carries 
 * ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) Light Grey: #8b8b8b - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
 * ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #2fbdb8 - This colour is used as a contrast to the dark grey. It's bright fun and brings an energy that brings the pages to life.  
 * ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) Light Turquoise: #90d1da - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
-
-* ```dark-grey: #696969```
-* ```light-grey: #8b8b8b```
-* ```turquoise: #2fbdb8```
-* ```light-turquoise: #2fbdb8```
+* ![#ff0000](https://placehold.it/15/90d1da/ff0000?text=+) Red: #ff0000 - This is used on the sign in page to highlight the text informing you of the extra content for members.
 
 ### Grid
 I carried the **same basic grid through** the pages to add consistency and easy of navigation. A large **section header** quickly establishes the page you've landed on, and under that, is a panel holding the content for that page. A footer on each page hold **social media links.**
@@ -157,6 +153,22 @@ The **Event** model within the **events app** holds the following data for the u
 
 ---
 
+## Bugs and Problems
+
+### Scroll bar on bottom of website
+had a problem with having a scroll bar on bottom of site. I made coloured backgrounds for all the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, i figured it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
+
+### Bootstrap Flex box and Order
+I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
+
+### Highlighting active nav bar button
+I wanted to show the user which page they were currently on by highlighting the corresponding button in the nav bar. There were a few options offered up by various Google searches, but the one that worked for me and seemed to be the simplest was to add a **with statement** within the nav bar that matched up the url names **{% with url_name=request.resolver_match.url_name %}** which created an active button if they matched **{% if url_name == ‘xxxxx’ %}active{% endif %}**. With an **active** CSS style created, this makes it clear to the user where they are.
+
+### Code stuck in ‘message-container’
+I was having a problem with a couple of my grids when logged in as a SuperUser. Both my ‘order history’ and ‘edit product’ pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
+
+---
+
 ## Technologies used
 
 #### Languages
@@ -187,25 +199,39 @@ The **Event** model within the **events app** holds the following data for the u
 
 My mentor [Simen Daehlin](https://dehlin.dev/) for all the advice and pointers. And for always pushing me to go further.
 
-All the **tutors** that helped me along the way on the **Tutor Support**. 
+All the **tutors** that helped me along the way on the **Tutor Support**. Special thanks to [Michael Park](@michael_ci), who was always there in my early mornings to offer sage advice, solutions and chat.
 
 ### Images
-
 All images were sourced from the [iStock](https://www.istockphoto.com/gb) image library. 
 
 ### Text
+All text written by me. **Advice pages text** adapted from various websites. See **Credits** section.
 
-All text written by me.
+### Shopping pages code
+Much of the code for the **e-commerce section** of my website was achieved by following the **Django E-Commerce Mini Project** from the Code Institute lessons. I adapted it to suit my website.
 
-### Code
+#### Inspiration
+I was very inspired by a few of websites I found, that made me want to do build this project. All these sites were very important in helping me understand what angle to approach the subject:
+* One of the main things I had in my mind when I started this project was the [This Girl Can](https://www.thisgirlcan.co.uk/) campaign that was launched a few years ago. It was great as it wanted to show women of all ages and sizes that they could get involved. It had lovely stories about real women and didn't try and make it too glamorous. 
+* I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/home.html) website. 
+* I also got more professional ideas on what should be included on my site from [She Runs Outside](https://www.sherunsoutdoors.com/). 
+* Another inspiring website I found was [Brighton and Hove Women's Running Club](https://bhwrc.org/) which had some great ideas. 
 
-Much of the code for the e-commerce section of my website was achieved by following the **Django E-Commerce Mini Project** from the Code Institute lessons. I adapted it to suit my website.
+#### Advice
+For the member only **advice pages**, I wanted to get some expert information, which I put it in my own words as much as possible. I found useful information on various sites including: 
+* Nutrition [New York Times](https://www.nytimes.com/guides/well/healthy-eating-for-runners)
+* Beginning to run [New York Times](https://www.nytimes.com/guides/well/how-to-start-running)
+* General Advice [runningtrainingplan.com](https://runningtrainingplan.com/)
 
-### Credits
+#### Technical help
+As much as I could I tried to use find my own solutions to questions and problems that I had. Some of the sites I used to solve my problems included:
+* To **create active links** in the nav bar [Master Code Online - Django Tutorial - Create An Active Link In Django](https://www.youtube.com/watch?v=0StdrQY8074)
+* To create a **transparent box** for my contact us page [css-tricks.com](https://css-tricks.com/snippets/css/transparent-background-images/)
+* For the **loading spinner** on my shopping page [mdbootstrap.com](https://mdbootstrap.com/docs/jquery/components/spinners/)
+* Swapping order of columns at different sizes using **order** [Stack Overflow](https://stackoverflow.com/questions/37814508/order-columns-through-bootstrap4)
+* Swapping order of columns at different sizes using **flex** [codeply.com](https://www.codeply.com/go/6vWQN2ocxe)
+* Getting rid of **horizontal scroll** at the bottom of website [Stack Overflow](https://stackoverflow.com/questions/40418627/how-do-i-remove-horizontal-scroll-bar-at-the-bottom-of-my-page-css)
 
-I was very inspired by a few of websites I found, that made me want to do this project. One of the main things I had in my mind when I started this project was the [This Girl Can](https://www.thisgirlcan.co.uk/) campaign that was launched a few years ago. It was great as it wanted to show women of all ages and sizes that they could get involved. It had lovely stories about real women and didn't try and make it too glamorous. I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/home.html) website. I also got more professional ideas on what should be included on my site from [She Runs Outside](https://www.sherunsoutdoors.com/). Another inspiring website I found was [Brighton and Hove Women's Running Club](https://bhwrc.org/) which had some great ideas. 
-
-All these sites were very important in helping me understand what angle to approach my project.
 
 ### Disclaimer
 
