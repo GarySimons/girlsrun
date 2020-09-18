@@ -118,7 +118,10 @@ with some tips for helping your body to achive the best results. All these pages
 Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
 
 ### Contact Us
-The final page is where users can **get in touch with site owner**. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
+This is where users can **get in touch with site owner**. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
+
+### Shopping bag
+This page in **linked from the shopping bag total** shown on the far right of the nav bar. It show's the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a Stripe payment page where they can input their details.
 
 ---
 
@@ -126,30 +129,46 @@ The final page is where users can **get in touch with site owner**. The backgrou
 
 **During development of this website, I worked with the standard <strong>sqlite3</strong> database that comes inbuilt with Django.**
 
+#### The Product Model:
+
+The **Product** model within the **products app** holds the following data for the items on the shopping page:
+
+| Name          | Validation                                                | Field Type   |
+| ------------- | --------------------------------------------------------- | ------------ |
+| sku           | (max\_length=254, null=True, blank=True                   | CharField    |
+| name          | (max\_length=254)                                         | CharField    |
+| description   | default='some string'                                     | TextField    |
+| has\_sizes    | (default=False, null=True, blank=True)                    | BooleanField |
+| price         | (max\_digits=6, decimal\_places=2)                        | DecimalField |
+| rating        | (max\_digits=6, decimal\_places=2, null=True, blank=True) | DecimalField |
+| image\_url    | (max\_length=1024, null=True, blank=True)                 | URLField     |
+| image         | (max\_length=50, null=False, blank=False)                 | ImageField   |
+
+
 #### The Story Model:
 
 The **Story** model within the **herstories app** holds the following data for the women who are part of the club:
 
-| Name          | Validation                                 | Field Type   |
-| ------------- | ------------------------------------------ | ------------ |
-| full\_name    | (max\_length=50, null=False, blank=False)  | CharField    |
-| age           | (null=False, blank=False)                  | IntegerField |
-| occupation    | (max\_length=254, null=False, blank=False) | CharField    |
-| details       | default='some string'                      | TextField    |
-| image         | (null=True, blank=True)                    | ImageField   |
+| Name          | Validation                                                | Field Type   |
+| ------------- | --------------------------------------------------------- | ------------ |
+| full\_name    | (max\_length=50, null=False, blank=False)                 | CharField    |
+| age           | (null=False, blank=False)                                 | IntegerField |
+| occupation    | (max\_length=254, null=False, blank=False)                | CharField    |
+| details       | default='some string'                                     | TextField    |
+| image         | (null=True, blank=True)                                   | ImageField   |
 
 
 #### The Event Model:
 
 The **Event** model within the **events app** holds the following data for the upcoming running events:
 
-| Name          | Validation                                 | Field Type   |
-| ------------- | ------------------------------------------ | ------------ |
-| date          | (max\_length=100, null=False, blank=False) | CharField    |
-| location      | (max\_length=200, null=False, blank=False) | CharField    |
-| distance      | (null=False, blank=False)                  | IntegerField |
-| description   | default='some string'                      | TextField    |
-| image         | (null=True, blank=True)                    | ImageField   |
+| Name          | Validation                                                | Field Type   |
+| ------------- | --------------------------------------------------------- | ------------ |
+| date          | (max\_length=100, null=False, blank=False)                | CharField    |
+| location      | (max\_length=200, null=False, blank=False)                | CharField    |
+| distance      | (null=False, blank=False)                                 | IntegerField |
+| description   | default='some string'                                     | TextField    |
+| image         | (null=True, blank=True)                                   | ImageField   |
 
 ---
 
@@ -188,8 +207,67 @@ I was having a problem with a couple of my grids when logged in as a SuperUser. 
 #### Tools
 * [Heroku](https://www.heroku.com/)
 * [Balsamiq Wireframes](https://wireframestogo.com/)
+* [Psycopg2](https://pypi.org/project/psycopg2/)
+* [Gunicorn](https://pypi.org/project/gunicorn/)
+* [Stripe](https://stripe.com/en-gb)
+* [Amazon Web Services (AWS)](https://aws.amazon.com/)
 * [TinyPNG](https://tinypng.com/)
 * [Genfavicon](http://www.genfavicon.com/)
+
+#### Databases
+* [PostgreSQL - Production](https://www.postgresql.org/)
+* [SQlite3 - Development](https://www.sqlite.org/index.html)
+
+---
+
+## Deployment
+
+### Running this project locally
+
+Follow these steps to run this project locally
+
+You must have the folowing:
+* An IDE (Interactive Development Environment) ie [Gitpod](https://www.gitpod.io/)
+* The following installed on your machine: [PIP](https://pip.pypa.io/en/stable/installing/), [Git](https://git-scm.com/), [Python3](https://www.python.org/)
+* You will need to set up an account with [Stripe](https://stripe.com/en-gb) for processing shopping transactions.
+
+### Instructions
+
+**You may need to follow a different guide depending on which Operating System you are using.**
+
+* 1 Clone the girlsrun repository by either downloading [here](https://github.com/GarySimons/girlsrun) or entering the following command into your terminal:
+```bash
+git clone https://github.com/GarySimons/girlsrun
+```
+* 2 Navigate to this folder in your terminal
+
+* 3 In your termainal, write the following command:
+```bash
+python3 -m .venv venv
+```
+* 4 Initialize the environment with the following commad:
+```bash
+.venv\bin\activate
+```
+* 5 Install the requirements and dependancies from the requirements.txt file:
+```bash
+pip3 -r requirements.txt
+```
+* 6 With your IDE, create an **eny.py** file to store any secret information that you don't want getting out into the public domain.
+
+* 7 Enter this command into your terminal to migrate the models into your database.
+```bash
+python3 manage.py migrate
+```
+* 8 Create a Superuser with special access to the admin of the website by entering:
+```bash
+python3 manage.py createsuperuser
+```
+* 9 You can now run the website locally using:
+```bash
+python3 manage.py runserver
+```
+
 
 ---
 
