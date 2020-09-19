@@ -224,7 +224,7 @@ I was having a problem with a couple of my grids when logged in as a SuperUser. 
 
 ### Running this project locally
 
-Follow these steps to run this project locally
+**Follow these steps to run this project locally**
 
 You must have the folowing:
 * An IDE (Interactive Development Environment) ie [Gitpod](https://www.gitpod.io/)
@@ -239,7 +239,7 @@ You must have the folowing:
 ```bash
 git clone https://github.com/GarySimons/girlsrun
 ```
-* 2 Navigate to this folder in your terminal
+* 2 Navigate to this folder in your terminal.
 
 * 3 In your termainal, write the following command:
 ```bash
@@ -268,6 +268,36 @@ python3 manage.py createsuperuser
 python3 manage.py runserver
 ```
 
+### Delpoying to Heroku
+
+* 1 Create a requirements.txt file by inputting the following command to your terminal:
+```bash
+pip3 freeze > requirements.txt
+```
+* 2 Create a Procfile with this this command:
+```bash
+echo web: python3 app.py > Procfile
+```
+* 3 Save and Push these files to your repository.
+
+* 4 Create a new app for your project on the Heroku dashboard.
+
+* 5 Select your deployment method by clicking on the deploymeny menthod button and selecting GitHub.
+
+* 6 On the dashboard, go to the Config Variables section and set it up:
+
+| Key                | Value                        |
+| ------------------ | ---------------------------- | 
+| DATABASE_URL       | <your_database_url>          |
+| SECRET_KEY         | <your_secret_key>            |
+| STRIPE_PUBLISHABLE | <your_stripe_publishable_key>|
+| STRIPE_SECRET      | <your_stripe_secret_key>     |
+
+* 7 Click the deploy button.
+
+* 8 Waiting for the project build to processing.
+
+* 9 Open the app and check your site is working correctly.
 
 ---
 
