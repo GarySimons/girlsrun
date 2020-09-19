@@ -1,5 +1,47 @@
 # Girls On The Run
 
+## Contents
+
+* Overview
+* User Experience
+    - Project Goals
+    - Site owner stories
+    - User stories
+* Design
+    - Fonts
+    - Colours
+    - Grid
+    - Images
+* Wireframes
+* Features
+    - Navgation bar
+    - Home
+    - Her stories
+    - Upcoming runs
+    - Members' login
+    - Advice
+    - Shop
+    - Contact us
+- Shopping bag
+* Database design
+    - The product model
+    - The story model
+    - The event model
+* Bugs and problems
+    - Scroll bar on bottom of site
+    - Bootstrap flexbox and order
+    - Active Nav bar
+    - Code stuck in message_container
+* Technologies used
+    - Languages
+    - Frameworks and libraries
+    - Tools
+    - Databases
+* Deployment
+    - Running project locally
+    - Deploying to Heroku
+* Credits 
+
 ## Overview
 
 This is my fouth milestone project for the Code Institute Full Stack Web Developer course. It is a website to promote running to women. I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
@@ -100,7 +142,7 @@ With this page we are able to showcase many of the inspirational women who belon
 ### Upcomimg Runs
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
-### Members login page
+### Members' login page
 This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile** and see their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page.
 
 ### Advice
@@ -227,7 +269,7 @@ I was having a problem with a couple of my grids when logged in as a SuperUser. 
 **Follow these steps to run this project locally**
 
 You must have the folowing:
-* An IDE (Interactive Development Environment) ie [Gitpod](https://www.gitpod.io/)
+* An **IDE (Interactive Development Environment)** ie [Gitpod](https://www.gitpod.io/)
 * The following installed on your machine: [PIP](https://pip.pypa.io/en/stable/installing/), [Git](https://git-scm.com/), [Python3](https://www.python.org/)
 * You will need to set up an account with [Stripe](https://stripe.com/en-gb) for processing shopping transactions.
 
@@ -235,25 +277,25 @@ You must have the folowing:
 
 **You may need to follow a different guide depending on which Operating System you are using.**
 
-* 1 Clone the girlsrun repository by either downloading [here](https://github.com/GarySimons/girlsrun) or entering the following command into your terminal:
+* **1 Clone** the girlsrun repository by either downloading [here](https://github.com/GarySimons/girlsrun) or entering the following command into your terminal:
 ```bash
 git clone https://github.com/GarySimons/girlsrun
 ```
-* 2 Navigate to this folder in your terminal.
+* **2** Navigate to this folder in your terminal.
 
-* 3 In your termainal, write the following command:
+* **3** In your termainal, write the following command:
 ```bash
 python3 -m .venv venv
 ```
-* 4 Initialize the environment with the following commad:
+* **4** Initialize the environment with the following commad:
 ```bash
 .venv\bin\activate
 ```
-* 5 Install the requirements and dependancies from the requirements.txt file:
+* **5** Install the requirements and dependancies from the **requirements.txt** file:
 ```bash
 pip3 -r requirements.txt
 ```
-* 6 With your IDE, create an **eny.py** file to store any secret information that you don't want getting out into the public domain.
+* **6** With your IDE, create an **eny.py** file to store any secret information that you don't want getting out into the public domain.
 
 * 7 Enter this command into your terminal to migrate the models into your database.
 ```bash
@@ -270,21 +312,23 @@ python3 manage.py runserver
 
 ### Delpoying to Heroku
 
-* 1 Create a requirements.txt file by inputting the following command to your terminal:
+**You will need to set up an account with [Heroku](https://www.heroku.com/) to host your website.**
+
+* **1** Create a **requirements.txt** file by inputting the following command to your terminal:
 ```bash
 pip3 freeze > requirements.txt
 ```
-* 2 Create a Procfile with this this command:
+* 2 Create a **Procfile** with this this command:
 ```bash
 echo web: python3 app.py > Procfile
 ```
-* 3 Save and Push these files to your repository.
+* **3** Save and Push these files to your **repository.**
 
-* 4 Create a new app for your project on the Heroku dashboard.
+* **4** Create a **new app** for your project on the Heroku dashboard.
 
-* 5 Select your deployment method by clicking on the deploymeny menthod button and selecting GitHub.
+* **5** Select your **deployment method** by clicking on the deploymeny menthod button and selecting GitHub.
 
-* 6 On the dashboard, go to the Config Variables section and set it up:
+* **6** On the dashboard, go to the **Config Variables** section and set it up:
 
 | Key                | Value                        |
 | ------------------ | ---------------------------- | 
@@ -293,11 +337,11 @@ echo web: python3 app.py > Procfile
 | STRIPE_PUBLISHABLE | <your_stripe_publishable_key>|
 | STRIPE_SECRET      | <your_stripe_secret_key>     |
 
-* 7 Click the deploy button.
+* **7** Click the deploy button.
 
-* 8 Waiting for the project build to processing.
+* **8** Waiting for the project build to processing.
 
-* 9 Open the app and check your site is working correctly.
+* **9** Open the app and check your site is working correctly.
 
 ---
 
@@ -307,7 +351,7 @@ echo web: python3 app.py > Procfile
 
 My mentor [Simen Daehlin](https://dehlin.dev/) for all the advice and pointers. And for always pushing me to go further.
 
-All the **tutors** that helped me along the way on the **Tutor Support**. Special thanks to [Michael Park](@michael_ci), who was always there in my early mornings to offer sage advice, solutions and chat.
+All the **tutors** that helped me along the way on the **Tutor Support**. Special thanks to **Michael Park**, who was always there in my early mornings to offer sage advice, solutions and chat.
 
 ### Images
 All images were sourced from the [iStock](https://www.istockphoto.com/gb) image library. 
