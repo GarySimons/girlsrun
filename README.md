@@ -2,51 +2,51 @@
 
 ## Contents
 
-* Overview
-* User Experience
+* **Overview**
+* **User Experience**
     - Project Goals
-    - Site owner stories
-    - User stories
-* Design
+    - Site Owner Stories
+    - User Stories
+* **Design**
     - Fonts
     - Colours
     - Grid
     - Images
-* Wireframes
-* Features
-    - Navgation bar
+* **Wireframes**
+* **Features**
+    - Navgation Bar
     - Home
-    - Her stories
-    - Upcoming runs
-    - Members' login
+    - Her Stories
+    - Upcoming Runs
+    - Members' Login
     - Advice
     - Shop
-    - Contact us
-- Shopping bag
-* Database design
-    - The product model
-    - The story model
-    - The event model
-* Bugs and problems
-    - Scroll bar on bottom of site
-    - Bootstrap flexbox and order
-    - Active Nav bar
-    - Code stuck in message_container
-* Technologies used
+    - Contact Us
+    - Shopping Bag
+* **Database Design**
+    - The Product Model
+    - The Story Model
+    - The Event Model
+* **Bugs and Problems**
+    - Scroll Bar on Bottom of Site
+    - Bootstrap Flexbox and Order
+    - Active Nav Bar
+    - Code Stuck in message_container
+* **Technologies Used**
     - Languages
-    - Frameworks and libraries
+    - Frameworks and Libraries
     - Tools
     - Databases
-* Deployment
-    - Running project locally
+* **Deployment**
+    - Running Project Locally
     - Deploying to Heroku
-* Credits 
+* **Credits**
 
 ## Overview
 
-This is my fouth milestone project for the Code Institute Full Stack Web Developer course. It is a website to promote running to women. I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
+This is my **fouth milestone project for the Code Institute Full Stack Web Developer course.** It is a website to **promote running to women.** I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
 
-The project has been built using HTML, CSS, JavaScript, Python and Django. It uses SQL databases to store information and Stripe to handle payments.
+The project has been built using **HTML, CSS, JavaScript, Python and Django.** It uses **SQL databases** to store database information during development, and **Amazon Web Services (AWS)** for databases in production. Also **Stripe** to handle payments.
 
 ---
 
@@ -105,11 +105,11 @@ For my headings and main text I have used the compressed font [Oswald](https://f
 I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette down to just two colours for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
 
 
-* ![#696969](https://placehold.it/15/696969/000000?text=+) Dark Grey: #696969 - This is the main colour for most of the text on the website. It's strong enough to read, but less harsh thank standard black.
-* ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) Light Grey: #8b8b8b - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
-* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) Turquoise: #2fbdb8 - This colour is used as a contrast to the dark grey. It's bright fun and brings an energy that brings the pages to life.  
-* ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) Light Turquoise: #90d1da - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
-* ![#ff0000](https://placehold.it/15/90d1da/ff0000?text=+) Red: #ff0000 - This is used on the sign in page to highlight the text informing you of the extra content for members.
+* ![#696969](https://placehold.it/15/696969/000000?text=+) **Dark Grey: #696969** - This is the main colour for most of the text on the website. It's strong enough to read, but less harsh thank standard black.
+* ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) **Light Grey: #8b8b8b** - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
+* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) **Turquoise: #2fbdb8** - This colour is used as a contrast to the dark grey. It's bright fun and brings an energy that brings the pages to life.  
+* ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) **Light Turquoise: #90d1da** - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
+* ![#ff0000](https://placehold.it/15/90d1da/ff0000?text=+) **Red: #ff0000** - This is used on the sign in page to highlight the text informing you of the extra content for members.
 
 ### Grid
 I carried the **same basic grid through** the pages to add consistency and easy of navigation. A large **section header** quickly establishes the page you've landed on, and under that, is a panel holding the content for that page. A footer on each page hold **social media links.**
@@ -211,6 +211,22 @@ The **Event** model within the **events app** holds the following data for the u
 | distance      | (null=False, blank=False)                                 | IntegerField |
 | description   | default='some string'                                     | TextField    |
 | image         | (null=True, blank=True)                                   | ImageField   |
+
+---
+
+## Planning and Testing
+
+Planning out how my finished project would work was very important as I had to understand how all the elements would work together.
+
+Using wireframes enabled me to quickly build a basic idea of the pages needed and how they would interact with each other. I then designed more detailed wireframes using dummy text and real images in InDesign, to experiment with colours, fonts and grids. 
+
+As the project uses database models, it was vital that these were mapped out early on. Changing database models or adding new ones in later in the project could cause problems, so I wanted to get them right before I moved on too much with the site pages and interaction.
+
+I utilised Django's templating language to reuse code over mutiple pages to simplify my code. This allowed me to keep the basic page design and drop in the seperate code where needed. 
+
+
+### head
+xxxxx
 
 ---
 
@@ -351,7 +367,7 @@ echo web: python3 app.py > Procfile
 
 My mentor [Simen Daehlin](https://dehlin.dev/) for all the advice and pointers. And for always pushing me to go further.
 
-All the **tutors** that helped me along the way on the **Tutor Support**. Special thanks to **Michael Park**, who was always there in my early mornings to offer sage advice, solutions and chat.
+All the **tutors** that helped me along the way on the **Tutor Support**. Special thanks to [Michael Park](https://www.linkedin.com/in/michael-park-a04a40114/?originalSubdomain=ie), who was always there in my early mornings to offer sage advice, solutions and chat.
 
 ### Images
 All images were sourced from the [iStock](https://www.istockphoto.com/gb) image library. 

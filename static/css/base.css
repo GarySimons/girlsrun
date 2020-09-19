@@ -103,8 +103,9 @@ body {
 }
 
 #girls-run-logo-mobile {
-    max-width: 70px;
+    max-width: 65px;
     height: auto;
+    margin-right: 0.5rem;
 }
 
 .nav-link {
@@ -248,7 +249,7 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: none;
+    background-color: yellow;
     min-height: 80vh;
 }
 
@@ -860,6 +861,7 @@ footer {
     }
 
     .header-container {
+        background-color: red;
         padding-top: 140px;
     }
 }
@@ -867,6 +869,7 @@ footer {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
+        background-color: green;
         padding-top: 116px;
     }
 
