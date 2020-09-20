@@ -1,49 +1,49 @@
 {% extends "base.html" %} {% load static %} {% block page_header %}
 <div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
 {% endblock %} {% block content %}
 <div class="overlay"></div>
 <div class="container main page-container">
-  <div class="row justify-content-center">
-    <div class="block col-sm-4 col-md-8 col-lg-10">
-      <h2 class="page-header mb-3">Coaching</h2>
-    </div>
-  </div>
+	<div class="row justify-content-center">
+		<div class="block col-sm-4 col-md-8 col-lg-10">
+			<h2 class="page-header mb-3">Coaching</h2>
+		</div>
+	</div>
 
-  <div class="row justify-content-center">
-  <div class="col-sm-8 col-lg-5 order-12 order-lg-1">
-      <h4 class="page-title">Get the right training</h4>
-      <p class="page-text">
-        Having a plan will help you figure out the best way to achieve your
-        running goals. It will help you figure out where you are now, and
-        importantly, where you want to get to. This will give you focus,
-        motivations and provide you with an end goal to work towards.
-        <br><br>
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-lg-5 order-12 order-lg-1">
+			<h4 class="page-title">Get the right training</h4>
+			<p class="page-text">
+				Having a plan will help you figure out the best way to achieve your
+				running goals. It will help you figure out where you are now, and
+				importantly, where you want to get to. This will give you focus,
+				motivations and provide you with an end goal to work towards.
+				<br><br>
         We all have our own way of running. Some are natural heel-strikers,
         while others always lead with their toes. The good news is that one
         style isn’t better than the other.
-        <br><br>
+				<br><br>
         With a personal training plan, you will have access to the best advice
         and will be able to run better, faster, safer and for longer.
       </p>
-      <br>
-      <div class="text-center">
-        <a href="{% url 'contact' %}" class="btn btn-grey">
-          <span>GET YOUR PERSONALISED PLAN</span>
-        </a>
-        <br><br>
+				<br>
+				<div class="text-center">
+					<a href="{% url 'contact' %}" class="btn btn-grey">
+						<span>GET YOUR PERSONALISED PLAN</span>
+					</a>
+					<br><br>
       </div>
-    </div>
-   <div class="col-sm-8 col-lg-5 order-1 order-lg-12">
-      <img
+				</div>
+				<div class="col-sm-8 col-lg-5 order-1 order-lg-12">
+					<img
         src="{{MEDIA_URL}}coaching.jpg"
         class="mystory_image"
         alt="Coaching"
       />
     </div>
-  </div>
-</div>
-{% endblock %}
+				</div>
+		</div>
+		{% endblock %}

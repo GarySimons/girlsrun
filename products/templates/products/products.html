@@ -44,14 +44,14 @@
 											<p class="product-price-shop">£{{ product.price }}</p>
 										</div>
 									</div>
-                                    {% if request.user.is_superuser %}
-                                    <div class="edit-delete justify-content-center">
-                                        <small>
+									{% if request.user.is_superuser %}
+									<div class="edit-delete justify-content-center">
+										<small>
                                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                         </small>
-                                    </div>
-                                    {% endif %}
+									</div>
+									{% endif %}
 								</div>
 					</div>
 				</div>

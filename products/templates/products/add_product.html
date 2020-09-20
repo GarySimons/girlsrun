@@ -3,36 +3,35 @@
 
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-10 col-lg-8">
-                <h2 class="page-header-blue mb-3">Product Management</h2>
-                <h5 class="text-muted">Add a product</h5>
-            </div>
-        </div>
+<div class="overlay"></div>
+<div class="container page-container">
+	<div class="row justify-content-center">
+		<div class="col-sm-10 col-lg-8">
+			<h2 class="page-header-blue mb-3">Product Management</h2>
+			<h5 class="text-muted">Add a product</h5>
+		</div>
+	</div>
 
-        <div class="row justify-content-center">
-            <div class="col-sm-10 col-lg-8">
-                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form | crispy }}
-                    <div class="text-right">
-                        <a class="btn btn-grey" href="{% url 'products' %}">CANCEL</a>
-                        <button class="btn btn-blue" type="submit">ADD PRODUCT</button>
-                    </div>
-                </form>
-            </div>            
-        </div>
-    </div>
-   
+	<div class="row justify-content-center">
+		<div class="col-sm-10 col-lg-8">
+			<form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+				{% csrf_token %}
+				{{ form | crispy }}
+				<div class="text-right">
+					<a class="btn btn-grey" href="{% url 'products' %}">CANCEL</a>
+					<button class="btn btn-blue" type="submit">ADD PRODUCT</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
 {% endblock %}
-

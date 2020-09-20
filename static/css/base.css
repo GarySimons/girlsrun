@@ -16,18 +16,6 @@ body {
     overflow-x: hidden;
 }
 
-.blue {
-    background-color: lightskyblue;
-    min-height: 89vh;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.blue-background {
-    background-color: blueviolet;
-}
 .main {
     min-height: 87%;
     display: flex;
@@ -249,7 +237,6 @@ body {
 /* Pages */
 
 .page-container {
-    background-color: yellow;
     min-height: 80vh;
 }
 
@@ -861,7 +848,6 @@ footer {
     }
 
     .header-container {
-        background-color: red;
         padding-top: 140px;
     }
 }
@@ -869,7 +855,6 @@ footer {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        background-color: green;
         padding-top: 116px;
     }
 

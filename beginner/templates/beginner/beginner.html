@@ -1,57 +1,58 @@
 {% extends "base.html" %} {% load static %} {% block page_header %}
 <div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
 {% endblock %} {% block content %}
 <div class="overlay"></div>
 <div class="container main page-container">
-  <div class="row justify-content-center">
-    <div class="block col-sm-4 col-md-8 col-lg-10">
-      <h2 class="page-header mb-3">Getting started</h2>
-    </div>
-  </div>
+	<div class="row justify-content-center">
+		<div class="block col-sm-4 col-md-8 col-lg-10">
+			<h2 class="page-header mb-3">Getting started</h2>
+		</div>
+	</div>
 
-  <div class="row justify-content-center">
-    <div class="col-sm-8 col-lg-5 order-12 order-lg-1">
-      <h4 class="page-title">Get yourself run ready</h4>
-      <p class="page-text">
-        If you’re new to running or haven’t done much exercise for a while, then
-        it’s very important to start gradually. Start with the small things like
-        walking to work or the shops, taking the stairs instead of the lift and
-        just being a little more active. <br /><br />
-        If you’re starting an exercise program and you are either over 40,
-        overweight or have a family history of heart disease. Most GPs will be
-        more than happy to offer advice and will most likely be delighted that
-        you are thinking about your health.
-        <br /><br />
-        It can be hard to get into a habit of running. Often we struggle to see
-        how we can fit it into our day. But most of us will be able to find a
-        small window, and we should try and make it a priority of commit to
-        using it. It’s so easy to things get in the way. Be firm!
-        <br /><br />
-        It often helps new runners to try to start their runs with a brisk walk
-        to ease you in. Speed up into a slow jog when you feel ready, and walk
-        again for a while if you feel tired. After a short time doing this,
-        you’ll find that you are able to run more than you need to walk. You’ll
-        be well on your way to being a real runner in no time!
-      </p>
-      <br />
-      <div class="text-center">
-        <a href="{% url 'contact' %}" class="btn btn-grey">
-          <span>GET YOUR PERSONALISED PLAN</span>
-        </a>
-        <br /><br />
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-lg-5 order-12 order-lg-1">
+			<h4 class="page-title">Get yourself run ready</h4>
+			<p class="page-text">
+				If you’re new to running or haven’t done much exercise for a while, then
+				it’s very important to start gradually. Start with the small things like
+				walking to work or the shops, taking the stairs instead of the lift and
+				just being a little more active. 
+                <br><br>
+                If you’re starting an exercise program and you are either over 40,
+                overweight or have a family history of heart disease. Most GPs will be
+                more than happy to offer advice and will most likely be delighted that
+                you are thinking about your health.
+                <br><br>
+                It can be hard to get into a habit of running. Often we struggle to see
+                how we can fit it into our day. But most of us will be able to find a
+                small window, and we should try and make it a priority of commit to
+                using it. It’s so easy to things get in the way. Be firm!
+                <br><br>
+                It often helps new runners to try to start their runs with a brisk walk
+                to ease you in. Speed up into a slow jog when you feel ready, and walk
+                again for a while if you feel tired. After a short time doing this,
+                you’ll find that you are able to run more than you need to walk. You’ll
+                be well on your way to being a real runner in no time!
+            </p>
+				<br>
+				<div class="text-center">
+					<a href="{% url 'contact' %}" class="btn btn-grey">
+						<span>GET YOUR PERSONALISED PLAN</span>
+					</a>
+					<br><br>
       </div>
-    </div>
-    <div class="col-sm-8 col-lg-5 order-1 order-lg-12">
-      <img
+				</div>
+				<div class="col-sm-8 col-lg-5 order-1 order-lg-12">
+					<img
         src="{{MEDIA_URL}}beginner.jpg"
         class="mystory_image"
         alt="Beginner"
       />
     </div>
-  </div>
-</div>
-{% endblock %}
+				</div>
+		</div>
+		{% endblock %}

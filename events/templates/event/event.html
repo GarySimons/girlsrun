@@ -29,18 +29,18 @@
 						<p class="run-location">{{ event.location }}</p>
 						<p class="run-distance">{{ event.distance }} miles</p>
 						<p class="run-description">{{ event.description }}</p>
-                        <div class="text-center">
-                        <br>
-                            <a href="{% url 'contact' %}" class="btn btn-blue">
-                                <span>FIND OUT MORE</span>
-                            </a>
-                        <br><br>
+						<div class="text-center">
+							<br>
+							<a href="{% url 'contact' %}" class="btn btn-blue">
+								<span>FIND OUT MORE</span>
+							</a>
+							<br><br>
             </div>
+						</div>
+
+						{% endfor %}
 					</div>
-                    
-					{% endfor %}
 				</div>
 			</div>
 		</div>
-	</div>
-	{% endblock %}
+		{% endblock %}
