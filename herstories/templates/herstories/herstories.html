@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container main">
+	<div class="row">
+		<div class="row justify-content-center">
+			<div class="block col-sm-10">
+				<h2 class="page-header mb-3">Herstories</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-10">
+			<div class="row">
+				{% for herstory in herstories %}
+				<div class="col-sm-6 col-md-6 col-lg-4">
+					<div class="">
+						    <img class="card-img-top img-fluid" src="{{MEDIA_URL}}{{ herstory.image }}" alt="{{ herstory.name }}">
+						<div class="herstory_box">
+							<div class="row">
+								<div class="col-12">
+									<p class="herstory_name">{{ herstory.full_name }}</p>
+								</div>
+								<div class="col-12">
+									<p class="herstory_occupation">{{ herstory.age }} | {{ herstory.occupation }}</p>
+								</div>
+								<div class="col-12">
+									<p class="herstory_story">{{ herstory.story }}</p>
+								</div>
+							</div>
+                        </div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
