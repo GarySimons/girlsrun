@@ -1,7 +1,7 @@
 <!-- Code used here is adapted from Code Institude's E-Commerce lesson. -->
 
 <div class="collapse navbar-collapse mr-1" id="main-nav">
-	<div class="navbar row pt-lg-2 d-lg-flex collapse navbar-collapse">
+	<div class="navbar row pt-lg-2 d-md-flex collapse navbar-collapse">
 		<a href="{% url 'home' %}"><img src="{{MEDIA_URL}}GirlsOnTheRunLogo.png" id="girls-run-logo" alt="Girls On The Run Logo"></a>
 	</div>
 	<ul class="navbar-nav mr-auto">
@@ -70,7 +70,8 @@
 			<a class="{% if grand_total %}text-info {% else %}{% endif %} nav-link {% if url_name == 'view_bag' %}active{% endif %}"
 				href="{% url 'view_bag' %}">
 				<div>
-					<p class="my-0">
+                <div></div>
+					<p class="my-0"><i class="fas fa-shopping-bag fa-md"></i>
 						{% if grand_total %}
 						£{{ grand_total|floatformat:2 }}
 						{% else %}

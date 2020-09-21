@@ -39,6 +39,17 @@ body {
     background-color: #fff;
 }
 
+.overlay-blue { 
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: none;
+    z-index: -1;
+    background-color: #2fbdb8;
+}
+
 .btn-grey {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -293,12 +304,12 @@ body {
     margin-top: 2rem;
 }
 
-.page-header-black {
+.page-header-grey {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    color: #000;
+    color: #696969;
     font-size: 1.8rem;
     margin-top: 2rem;
 }
@@ -313,8 +324,18 @@ body {
     padding-bottom: 0.8rem;
 }
 
-.page-title-black {
-    color: #000;
+.page-title-white {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    padding-bottom: 0.8rem;
+}
+
+.page-title-grey {
+    color: #696969
     font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -347,6 +368,25 @@ body {
     margin-bottom: 0rem;
 }
 
+.subhead-grey {
+    color: #696969;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: 0rem;
+}
+
+.member-strapline {
+    color: #2fbdb8;
+    font-size: 0.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1rem;
+}
 
 .mystory_image {
     max-width: 100%;
