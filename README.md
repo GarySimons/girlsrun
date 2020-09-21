@@ -270,7 +270,7 @@ I was having a problem with a couple of my grids when logged in as a SuperUser. 
 * [Stripe](https://stripe.com/en-gb)
 * [Amazon Web Services (AWS)](https://aws.amazon.com/)
 * [TinyPNG](https://tinypng.com/)
-* [Genfavicon](http://www.genfavicon.com/)
+* [Favicon.io](https://favicon.io/favicon-converter/)
 
 #### Databases
 * [PostgreSQL - Production](https://www.postgresql.org/)
