@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 {% load socialaccount %}
 
 {% get_providers as socialaccount_providers %}
@@ -18,3 +21,5 @@
      href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
 </li>
 {% endfor %}
+
+</html>

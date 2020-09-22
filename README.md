@@ -143,7 +143,7 @@ With this page we are able to showcase many of the inspirational women who belon
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members' login page
-This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile** and see their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page.
+This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile**. Registering for an account also allows the user to to **retain items in their shopping bag** and view their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page.
 
 ### Advice
 This is a members only section that is revealed only when the user is logged in. It contains a dropdown menu of four pages:

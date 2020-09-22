@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <h6 class="opensans-grey">Bag Total: £{{ total|floatformat:2 }}</h6>
 <h6 class="opensans-grey">Delivery: £{{ delivery|floatformat:2 }}</h6>
 <h4 class="mt-3 opensans-grey"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
@@ -6,3 +9,5 @@
 	You could get free delivery by spending just £{{ free_delivery_delta }} more!
 </p>
 {% endif %}
+
+</html>
