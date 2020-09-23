@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
@@ -171,5 +168,3 @@
 {{ client_secret|json_script:"id_client_secret" }}
 <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
-
-</html>

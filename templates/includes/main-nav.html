@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <!-- Code used here is adapted from Code Institude's E-Commerce lesson. -->
 
 <div class="collapse navbar-collapse mr-1" id="main-nav">
@@ -18,7 +15,7 @@
         <li class="nav-item">
 			<a class="nav-link {% if url_name == 'event' %}active{% endif %}" href="{% url 'event' %}">RUNS</a>
 		</li>
-		<li class="list-inline-item dropdown">
+		<li class="list-inline-item dropdown m-0">
 			<a class="nav-link {% if url_name == 'add_product' %}active{% endif %}
             {% if url_name == 'profile' %}active{% endif %}
             {% if url_name == 'account_logout' %}active{% endif %}
@@ -26,9 +23,7 @@
             {% if url_name == 'account_login' %}active{% endif %}" 
             href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false">
-				<div>
-					<p class="nav-item">MEMBERS</p>
-				</div>
+				MEMBERS
 			</a>
 			<div class="dropdown-menu border-0" aria-labelledby="user-options">
 				{% if request.user.is_authenticated %}
@@ -44,16 +39,14 @@
 			</div>
 		</li>
         {% if request.user.is_authenticated %}
-        <li class="list-inline-item dropdown">
+        <li class="list-inline-item dropdown m-0">
 			<a class="nav-link {% if url_name == 'beginner' %}active{% endif %}
             {% if url_name == 'gear' %}active{% endif %}
             {% if url_name == 'nutrition' %}active{% endif %}
             {% if url_name == 'coaching' %}active{% endif %}" 
             href="#" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false">
-				<div>
-					<p class="nav-item">ADVICE</p>
-				</div>
+                ADVICE
 			</a>
 			<div class="dropdown-menu border-0" aria-labelledby="user-options">
                 <a href="{% url 'beginner' %}" class="dropdown-item">GETTING STARTED</a>
@@ -87,5 +80,3 @@
         {% endwith %}
 	</ul>
 </div>
-
-</html>
