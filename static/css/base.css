@@ -605,6 +605,13 @@ body {
     z-index: -1;
 }
 
+#contact-message {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #2fbdb8;
+}
+
 .contact-textbox {
     background: #fff;
 }

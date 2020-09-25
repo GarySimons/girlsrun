@@ -22,15 +22,14 @@
 
 			<div class="row justify-content-center">
 				<div class="col-sm-12 col-md-10">
-					<p>please feel free to get in touch.
-						<br>
+					<p id="contact-message">please feel free to get in touch.
                     I'd love to hear from you!</p>
 				</div>
 			</div>
 
-			<form id="contact-us-form" method="post" action="contact.php" role="form">
+			<form id="contact-us-form" method="post" action="contact.php" role="form" onsubmit="return sendMail(this);">
+                {% csrf_token %}
 				<div class="row justify-content-center">
-
 					<div class="center-form col-sm-12 col-md-10">
 						<form>
 							<input type="text" name="name" id="fullname" class="form-control"
@@ -47,7 +46,11 @@
 									<span>SEND</span>
 								</a>
 								<br><br>
-            </div>
+                            </div>
+                            <div class="text-center">
+								<input type="submit" />
+								<br><br>
+                            </div>
 						</form>
 					</div>
 				</div>
@@ -55,4 +58,10 @@
 		</div>
 	</div>
 </div>
+
+{% endblock %}
+
+<!-- EmailJS Script-->
+{% block postloadjs %}
+<script src="{% static 'js/sendEmail.js' %}"></script>
 {% endblock %}

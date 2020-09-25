@@ -30,7 +30,6 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['girls-on-the-run.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
