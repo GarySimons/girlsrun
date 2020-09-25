@@ -27,37 +27,34 @@
 				</div>
 			</div>
 
-			<form id="contact-us-form" method="post" action="contact.php" role="form" onsubmit="return sendMail(this);">
-                {% csrf_token %}
+			<form id="contact-us-form" method="post" action="contact.php" role="form">
+                
 				<div class="row justify-content-center">
 					<div class="center-form col-sm-12 col-md-10">
 						<form>
-							<input type="text" name="name" id="fullname" class="form-control"
-                        placeholder="What's your name?" required />
-							<br>
-							<input type="text" name="email" id="emailaddress" class="form-control"
-                        placeholder="What's your email?" required />
-							<br>
-							<textarea rows="5" name="getintouch" id="getintouch" class="form-control"
-                        placeholder="What's on your mind?" required></textarea>
-							<br>
-							<div class="text-center">
-								<a href="{% url 'contact' %}" class="btn btn-grey">
-									<span>SEND</span>
-								</a>
-								<br><br>
-                            </div>
-                            <div class="text-center">
-								<input type="submit" />
-								<br><br>
-                            </div>
 						</form>
+                        
+                        <form onsubmit="return sendMail(this);">
+                        {% csrf_token %}
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                            <br>
+                            <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                            <br>
+                            <textarea rows="5" name="message" class="form-control" id="message" placeholder="What's on your mind?" required></textarea>
+                            <br>
+                            <div class="text-center">
+								<button type="submit" class="btn btn-grey">SEND</button>
+								<br><br>
+                            </div>
+                        </form>
+
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
 </div>
+
 
 {% endblock %}
 
