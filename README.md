@@ -127,6 +127,7 @@ View my **Balsamiq** wireframes <a href="https://github.com/GarySimons/girlsrun/
 
 View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/jpg">here.</a>
 
+---
 
 ## Features
 
@@ -143,10 +144,10 @@ With this page we are able to showcase many of the inspirational women who belon
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members' login page
-This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile**. Registering for an account also allows the user to to **retain items in their shopping bag** and view their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page.
+This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile**. Registering for an account also allows the user to to **retain items in their shopping bag** and view their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page. Logged in members also gain an extra navigation bar item, **Advive** (see below).
 
 ### Advice
-This is a members only section that is revealed only when the user is logged in. It contains a dropdown menu of four pages:
+**This is a members only section that is revealed in the navigation bar only when the user is logged in. It contains a dropdown menu of four pages:**
 #### Getting Started
 For women new to running. This page offers advive on the best was to ease yourself into running and getting motivated. link to pay for a personalised plan.
 #### Gear
@@ -160,10 +161,22 @@ with some tips for helping your body to achive the best results. All these pages
 Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
 
 ### Contact Us
-This is where users can **get in touch with site owner**. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
+This is where users can **get in touch with site owner**. I created an email account for site owner, Hannah Roberts. I then used **EmailJS** to set up an email template that is linked to the form on this page. When the form is submitted, the message is emailed to her address. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
 
 ### Shopping bag
 This page in **linked from the shopping bag total** shown on the far right of the nav bar. It show's the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a Stripe payment page where they can input their details.
+
+---
+
+### Features to be developed in the future
+
+Given more time I would have liked to add some more featues to the website:
+
+#### Booking calendar for running events
+Currently there are links under each of the running events on the Runs page. These links take the user to the Contact Us page. This is not ideal, and I would like to set up a booking system, where users to go to the event, view details and book themseleves onto, and pay for, the run.
+
+#### Booking system for links on the member advice pages
+Currently there are links under each of the special member only advice pages of getting started, gear, nutrition and coaching. These links are for the logged on member to book themselves onto the various packages on offer. These links take the user to the Contact Us page to send the owner and email. This is not ideal, and I would like to set up a booking system, where users to go to the package, view details and book themseleves on and pay.
 
 ---
 
@@ -271,6 +284,7 @@ I was having a problem with a couple of my grids when logged in as a SuperUser. 
 * [Amazon Web Services (AWS)](https://aws.amazon.com/)
 * [TinyPNG](https://tinypng.com/)
 * [Favicon.io](https://favicon.io/favicon-converter/)
+* [EnailJS](https://www.emailjs.com/)
 
 #### Databases
 * [PostgreSQL - Production](https://www.postgresql.org/)
