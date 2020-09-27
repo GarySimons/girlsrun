@@ -893,6 +893,7 @@ footer {
     .header-container {
         padding-top: 140px;
     }
+    
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -903,6 +904,16 @@ footer {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .nav-link {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
     }
 }
 
