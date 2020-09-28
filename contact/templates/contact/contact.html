@@ -27,13 +27,10 @@
 				</div>
 			</div>
 
-			<form id="contact-us-form" method="post" action="contact.php" role="form">
                 
 				<div class="row justify-content-center">
 					<div class="center-form col-sm-12 col-md-10">
-						<form>
-						</form>
-                        
+	
                         <form onsubmit="return sendMail(this);">
                         {% csrf_token %}
                             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
@@ -50,7 +47,6 @@
 
 					</div>
 				</div>
-			</form>
 		</div>
 	</div>
 </div>
