@@ -10,7 +10,7 @@ function sendMail(contactForm) {
             console.log("SUCCESS", response);
             contactForm.name.value = ""
             contactForm.emailaddress.value = ""
-            contactForm.name.value = ""
+            contactForm.message.value = ""
         },
         function(error) {
             console.log("FAILED", error);
