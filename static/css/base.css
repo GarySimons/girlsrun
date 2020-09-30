@@ -151,7 +151,7 @@ body {
     justify-content: center;
 }
 
-.homequote {
+#homequote {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     letter-spacing: 0.25rem;
@@ -161,7 +161,7 @@ body {
     color: #fff;
 }
 
-.homequote2 {
+#homequote2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     letter-spacing: 0.25rem;
@@ -247,11 +247,11 @@ body {
     min-height: 80vh;
 }
 
-.mystory-container {
+#mystory-container {
     background-color: #2fbdb8;
 }
 
-.what-container {
+#what-container {
     background-color: #696969;
 }
 
@@ -384,22 +384,18 @@ body {
     margin-bottom: 1rem;
 }
 
-.mystory_image {
+.image {
     max-width: 100%;
     height: auto;
     margin-bottom: 1.5rem;
 }
 
-.hannah_image {
+#hannah-name {
     max-width: 100%;
     height: auto;
 }
 
 /* Shop main page */
-
-.shop-container {
-    background-color: #fff;
-}
 
 .product-name-shop  {
     color: #2fbdb8 !important;
@@ -503,13 +499,13 @@ body {
     background-color: #fff;
 }
 
-.checkout-background {
+#checkout-background {
     background-color: #fff;
     min-height: 89vh;
 }
 
 .stripe-text {
-    color: #696969;
+    color: red;
 }
 
 /* Spinner */
@@ -594,7 +590,7 @@ body {
 
 /* Contact Us Page */
 
-.contact-page {
+#contact-page {
     background: url('/media/contact_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
@@ -642,29 +638,6 @@ body {
 .contactbox h2 {
     color: #696969;
 }
-
-#btn-send {
-    height: 1.3rem;
-    width: 4rem;
-    font-size: 0.85rem;
-    background-color: #696969;
-    border: #696969;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    text-align: center !important;
-    text-decoration: none !important;
-}
-
-#btn-send:hover {
-    text-decoration: none !important;
-    background-color: #2fbdb8;
-    color: #fff !important;
-    transition: .1s ease-in-out;
-}
-
 
 /* Upcoming Run Page */
 

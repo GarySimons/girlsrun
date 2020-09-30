@@ -160,7 +160,7 @@ Giving advice on the best types of running kit needed from shoes and bras to pla
 #### Nutrition 
 With a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. Contains link to pay for a personalised plan. 
 #### Coaching 
-with some tips for helping your body to achive the best results. Contains link offering a chance to get a personalised plan.
+with some tips for helping your body to achive the best results. Contains link to pay for a personalised plan.
 
 ### Shop
 Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
