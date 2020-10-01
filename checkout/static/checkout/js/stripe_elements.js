@@ -14,7 +14,7 @@ var elements = stripe.elements();
 var style = {
     base: {
         color: '#696969',
-        fontFamily: '"Merriweather", serif',
+        fontFamily: '"Open Sans", sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
