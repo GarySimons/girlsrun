@@ -62,7 +62,7 @@ The project has been built using **HTML, CSS, JavaScript, Python and Django.** I
 
 This website is aimed at **women** and **encouraging** them to engage in running with the help and support of a running club designed around them. 
 
-I wanted to build this website after seeing the **disengagement of the women** in my own family with sports and excercise. It's well know that lots of girls and women are put off excercise for many complex and varied reasons. I wanted to build a website that would **inspire and engage women of all ages and abilities** and show that that they can do anything they want. They just have to take that first step.
+I wanted to build this website after seeing the **disengagement of the women** in my own family with sports and exercise. It's well know that lots of girls and women are put off exercise for many complex and varied reasons. I wanted to build a website that would **inspire and engage women of all ages and abilities** and show that that they can do anything they want. They just have to take that first step.
 
 I wanted it to be able to **build a like-minded, supportive and inclusive network of women.** This will help them with achieving their exercise goals, making good friends and connecting with others in similar situations.
 
@@ -87,7 +87,7 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user of the website, I want to find a **supportive group** to join to help with personal exercise goals.
 * As a user of the website, I want to **build friendships** and **personal networks.**
 * As a user of the website, I want to **get fit.**
-* As a user of the website, I want to **build persoanal confidence.**
+* As a user of the website, I want to **build personal confidence.**
 * As a user of the website, I want to **create an account** to track orders and purchases on the website.
 * As a user of the website, I want to **log in and out of my account.**
 * As a user of the website, I want to **gain information and advice** to help support my fitness goals.
@@ -108,7 +108,7 @@ I wanted the website to have a friendly and welcoming feel, to make it appeal to
 For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 300 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 300 light weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), also in the 300 weight. This font is very readable and compliments the more stylized Oswald.
 
 ### Colours
-I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette right down for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
+I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette right down for a clean and consistent feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
 
 
 * ![#696969](https://placehold.it/15/696969/000000?text=+) **Dark Grey: #696969** - This is the main colour for most of the text on the website. It's strong enough to read, but less harsh thank standard black.
