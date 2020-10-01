@@ -75,7 +75,7 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As the website owner, I want to **build a network of women** to help and support each other.
 * As the website owner, I want to **sell group running sessions** as a revenue stream
 * As the website owner, I want to **sell branded merchandise** on site as a revenue stream.
-* As the website owner, I want to **collect user data** for market research and promtional purposes.
+* As the website owner, I want to **collect user data** for market research and promotional purposes.
 * As the website owner, I want to **sell extra services** such as personal nutrition and coaching advice.
 
 ### User Stories
@@ -140,12 +140,12 @@ View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/gir
 **This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey. The **advice** button only shows up once a user has **registered and logged in**. This active button contains **member only content** on various aspects of training, food and kit on a dropdown menu of four pages. A link on the far right is a link to the **shopping bag** and shows the current total.
 
 ### Home
-This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** with a friendly welcome message, on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
+This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** with a friendly welcome message, on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reassuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
 
 ### Her Stories
 With this page we are able to showcase many of the inspirational women who belong to the running club. An image of them enjoying running with a short inspiration paragraph about their lives and how running has helped them will encourage other women. The images show a wide range of ages and sizes of women to show the inclusiveness of the group. This will help to make women feel included and represented.
 
-### Upcomimg Runs
+### Upcoming Runs
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members' login page
@@ -154,13 +154,13 @@ This allows users to **create** an account or **login** to an existing one. Once
 ### Advice
 **This is a members only section that is revealed in the navigation bar only when the user is logged in. It contains a dropdown menu of four pages:**
 #### Getting Started
-For women new to running. This page offers advive on the best was to ease yourself into running and getting motivated. Contains link to pay for a personalised plan.
+For women new to running. This page offers advice on the best was to ease yourself into running and getting motivated. Contains link to pay for a personalised plan.
 #### Gear
 Giving advice on the best types of running kit needed from shoes and bras to playlists to get you set up right. Contains link to pay for a personalised plan.
 #### Nutrition 
 With a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. Contains link to pay for a personalised plan. 
 #### Coaching 
-with some tips for helping your body to achive the best results. Contains link to pay for a personalised plan.
+with some tips for helping your body to achieve the best results. Contains link to pay for a personalised plan.
 
 ### Shop
 Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
@@ -175,13 +175,13 @@ This page in **linked from the shopping bag total** shown on the far right of th
 
 ### Features to be developed in the future
 
-Given more time I would have liked to add some more featues to the website:
+Given more time I would have liked to add some more features to the website:
 
 ### Booking calendar for running events
-Currently there are links under each of the running events on the Runs page. These links take the user to the Contact Us page. This is not ideal, and I would like to set up a booking system, where users to go to the event, view details and book themseleves onto, and pay for, the run.
+Currently there are links under each of the running events on the Runs page. These links take the user to the Contact Us page. This is not ideal, and I would like to set up a booking system, where users to go to the event, view details and book themselves onto, and pay for, the run.
 
 ### Booking system for links on the member advice pages
-Currently there are links under each of the special member only advice pages of getting started, gear, nutrition and coaching. These links are for the logged on member to book themselves onto the various packages on offer. These links take the user to the Contact Us page to send the owner and email. This is not ideal, and I would like to set up a booking system, where users to go to the package, view details and book themseleves on and pay.
+Currently there are links under each of the special member only advice pages of getting started, gear, nutrition and coaching. These links are for the logged on member to book themselves onto the various packages on offer. These links take the user to the Contact Us page to send the owner and email. This is not ideal, and I would like to set up a booking system, where users to go to the package, view details and book themselves on and pay.
 
 ---
 
@@ -240,7 +240,7 @@ Using **wireframes** enabled me to quickly build a basic idea of the pages neede
 
 As the project uses **database models**, it was vital that these were mapped out early on. Changing database models or adding new ones in later in the project could cause problems, so I wanted to get them right before I moved on too much with the site pages and interaction.
 
-I utilised **Django's templating language** to reuse code over mutiple pages to simplify my code. This allowed me to keep the basic page design and drop in the seperate code where needed. 
+I utilised **Django's templating language** to reuse code over multiple pages to simplify my code. This allowed me to keep the basic page design and drop in the separate code where needed. 
 
 
 ### Shopping
@@ -252,7 +252,7 @@ I utilised **Django's templating language** to reuse code over mutiple pages to 
 ```bash
 python3 manage.py startapp products
 ```
-and added it to **Installed Apps** in my settings.py file. Next I made a folder called **fixtures** in the app, to which I added two **JSON** files containing the data needed to create the database. I then created the **product model** that defined the elements to be included, and mirgrated it into the database:
+and added it to **Installed Apps** in my settings.py file. Next I made a folder called **fixtures** in the app, to which I added two **JSON** files containing the data needed to create the database. I then created the **product model** that defined the elements to be included, and migrated it into the database:
 ```bash
 python3 manage.py makemigrations --dry-run
 python3 manage.py makemigrations 
@@ -287,9 +287,9 @@ which I added to **Installed Apps** in my settings.py file. I then created a **v
 * In my EmailJS account I now set up the **email template** which will be used when users are sending in an email from the form.
 * Following the EmailJS documentation I was able to connect my contact form to send emails to the owner's GMail account.
 <strong>Testing</strong>
-* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
+* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been received by the owner's GMail account and that all the fields were displaying correctly.
 <strong>Results</strong>
-* I was able to fill in the fields of the contact form and the **send** button sent the message. The message was recieved by the correct email account and all the fields were displaying correctly.
+* I was able to fill in the fields of the contact form and the **send** button sent the message. The message was received by the correct email account and all the fields were displaying correctly.
 
 ---
 
@@ -348,7 +348,7 @@ I was having a problem with a couple of my grids when logged in as a super user.
 
 **Follow these steps to run this project locally**
 
-You must have the folowing:
+You must have the following:
 * An **IDE (Interactive Development Environment)** ie [Gitpod](https://www.gitpod.io/)
 * The following installed on your machine: [PIP](https://pip.pypa.io/en/stable/installing/), [Git](https://git-scm.com/), [Python3](https://www.python.org/)
 * You will need to set up an account with [Stripe](https://stripe.com/en-gb) for processing shopping transactions.
@@ -367,7 +367,7 @@ git clone https://github.com/GarySimons/girlsrun
 ```bash
 python3 -m .venv venv
 ```
-* **4** Initialize the environment with the following commad:
+* **4** Initialize the environment with the following command:
 ```bash
 .venv\bin\activate
 ```
@@ -406,7 +406,7 @@ echo web: python3 app.py > Procfile
 
 * **4** Create a **new app** for your project on the Heroku dashboard.
 
-* **5** Select your **deployment method** by clicking on the deploymeny menthod button and selecting GitHub.
+* **5** Select your **deployment method** by clicking on the deployment method button and selecting GitHub.
 
 * **6** On the dashboard, go to the **Config Variables** section and set it up:
 
