@@ -127,7 +127,6 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'girls_run.wsgi.application'
 
 
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
