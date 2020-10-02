@@ -83,6 +83,25 @@ body {
     transition: .1s ease-in-out;
 }
 
+#btn-signout {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#btn-signout:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+    border-color: #8b8b8b;
+}
+
 .button {
     color: #ff0000 !important;
 }
