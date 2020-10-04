@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap');
+
 html {
     height: 100%;
 }
@@ -23,91 +25,6 @@ body {
 .remove-item {
     font-size: 0.7rem;
     cursor: pointer;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: none;
-    z-index: -1;
-    background-color: #fff;
-}
-
-.overlay-blue { 
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: none;
-    z-index: -1;
-    background-color: #2fbdb8;
-}
-
-.btn-grey {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    text-align: center;
-    background: #696969;
-    color: #fff !important; 
-    font-size: 0.8rem;
-    border-radius: 0;
-    text-transform: uppercase;
-}
-
-.btn-grey:hover {
-    background: #8b8b8b;
-    color: #fff !important;
-    transition: .1s ease-in-out;
-}
-
-.btn-blue {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    text-align: center;
-    background: #2fbdb8;
-    color: #fff !important; 
-    font-size: 0.8rem;
-    border-radius: 0;
-    text-transform: uppercase;
-}
-
-.btn-blue:hover {
-    background: #90d1da;
-    color: #fff !important;
-    transition: .1s ease-in-out;
-}
-
-#btn-signout {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    text-align: center;
-    background: #696969;
-    color: #fff !important; 
-    font-size: 0.8rem;
-    border-radius: 0;
-    text-transform: uppercase;
-}
-
-#btn-signout:hover {
-    background: #8b8b8b;
-    color: #fff !important;
-    transition: .1s ease-in-out;
-    border-color: #8b8b8b;
-}
-
-.button {
-    color: #ff0000 !important;
-}
-
-.text-white {
-    color: #fff;
 }
 
 /* Nav Bar */
@@ -154,6 +71,160 @@ body {
     color: #2fbdb8 !important;
 }
 
+/* Buttons */
+
+.btn-grey {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.btn-grey:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+.btn-grey-advice {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 0.6rem 0rem;
+}
+
+.btn-grey-advice:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+#btn-grey-mystory {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+#btn-grey-mystory:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+#btn-grey-contact {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+#btn-grey-contact:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+.btn-blue {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #2fbdb8;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.btn-blue:hover {
+    background: #90d1da;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+.btn-blue-what {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #2fbdb8;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.btn-blue-what:hover {
+    background: #90d1da;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+.btn-blue-event {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    background: #2fbdb8;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.btn-blue-event:hover {
+    background: #90d1da;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+#btn-signout {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#btn-signout:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+    border-color: #8b8b8b;
+}
+
+.button {
+    color: #ff0000 !important;
+}
+
 /* Home Page */
 
 #introcontainer {
@@ -196,87 +267,33 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+
+/* Pages General */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: none;
+    z-index: -1;
+    background-color: #fff;
 }
 
-/* Allauth forms */
-
-.allauth-form-inner-content p{
-    margin-top: 1.5rem;
-    color: #696969;
-}
-
-.allauth-form-inner-content input {
-    border-color: #696969;
-    border-radius: 0;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
-}
-
-.allauth-form-inner-content input::placeholder {
-    color: #bababa;
-}
-
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #696969;
-    border: 1px solid #696969;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
-}
-
-.allauth-form-inner-content a {
-	color: #2fbdb8; /* text-info */
-}
-
-/* Pages */
-
-.page-container {
-    min-height: 80vh;
-}
-
-#mystory-container {
+.overlay-blue { 
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: none;
+    z-index: -1;
     background-color: #2fbdb8;
 }
 
-#what-container {
-    background-color: #696969;
-}
-
-.what-panel {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.page-container {
+    min-height: 80vh;
 }
 
 .page-header {
@@ -364,6 +381,7 @@ body {
     font-weight: 300;
     color: #696969;
     font-size: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .white-text {
@@ -371,6 +389,7 @@ body {
     font-weight: 300;
     color: #fff;
     font-size: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .subhead {
@@ -393,14 +412,21 @@ body {
     margin-bottom: 0rem;
 }
 
-.member-strapline {
-    color: #2fbdb8;
-    font-size: 0.8rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    margin-bottom: 1rem;
+/* What We Do Page */
+
+#what-container {
+    background-color: #696969;
+}
+
+.what-panel {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* My Story Page */
+
+#mystory-container {
+    background-color: #2fbdb8;
 }
 
 .image {
@@ -413,6 +439,20 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+
+/* Members Advice Pages */
+
+.member-strapline {
+    color: #2fbdb8;
+    font-size: 0.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1rem;
+}
+
 
 /* Shop main page */
 
@@ -587,6 +627,7 @@ body {
     font-size: 0.9rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: 0.25rem;
     color: #000;
     padding: 0rem 1rem;
@@ -658,6 +699,11 @@ body {
     color: #696969;
 }
 
+.form-control {
+    margin-bottom: 1.2rem;
+    border-radius: 0;
+}
+
 /* Upcoming Run Page */
 
 .run-image {
@@ -675,7 +721,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #696969;
     text-align: center;
     margin-bottom: 0.1rem;
@@ -696,11 +742,12 @@ body {
 .run-distance {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: 0.25rem;
     font-size: 0.8rem;
     color: #696969;
     text-align: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .run-description {
@@ -719,7 +766,6 @@ body {
 }
 
 /* Sign In & Out Pages */
-
 
 .background-panel {
     background-color: #d9faf9;
@@ -789,6 +835,70 @@ footer {
     transition: .1s ease-in-out;
     text-decoration: none !important;
 }
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* Allauth forms */
+
+.allauth-form-inner-content p{
+    margin-top: 1.5rem;
+    color: #696969;
+}
+
+.allauth-form-inner-content input {
+    border-color: #696969;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #bababa;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #696969;
+    border: 1px solid #696969;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #2fbdb8; /* text-info */
+}
+
 
 /* Bootstrap toasts */
 

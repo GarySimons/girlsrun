@@ -22,7 +22,7 @@
 
 			<div class="row justify-content-center">
 				<div class="col-sm-12 col-md-10">
-					<p id="contact-message">please feel free to get in touch.
+					<p id="contact-message">Please feel free to get in touch.
                     I'd love to hear from you! <strong>Hannah x</strong></p>
 				</div>
 			</div>
@@ -33,14 +33,10 @@
                         <form onsubmit="return sendMail(this);">
                         {% csrf_token %}
                             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                            <br>
                             <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                            <br>
                             <textarea rows="5" name="message" class="form-control" id="message" placeholder="What's on your mind?" required></textarea>
-                            <br>
                             <div class="text-center">
-								<button type="submit" class="btn btn-grey">SEND</button>
-								<br><br>
+								<button type="submit" class="btn" id="btn-grey-contact">SEND</button>
                             </div>
                         </form>
 

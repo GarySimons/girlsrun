@@ -30,17 +30,15 @@
 						<p class="run-distance">{{ event.distance }} miles</p>
 						<p class="run-description">{{ event.description }}</p>
 						<div class="text-center">
-							<br>
-							<a href="{% url 'contact' %}" class="btn btn-blue">
+							<a href="{% url 'contact' %}" class="btn btn-blue-event">
 								<span>FIND OUT MORE</span>
 							</a>
-							<br><br>
-            </div>
 						</div>
-
-						{% endfor %}
 					</div>
+
+					{% endfor %}
 				</div>
 			</div>
 		</div>
-		{% endblock %}
+	</div>
+	{% endblock %}

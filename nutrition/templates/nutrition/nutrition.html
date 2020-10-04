@@ -10,7 +10,7 @@
 	<div class="row justify-content-center">
 		<div class="block col-sm-4 col-md-8 col-lg-10">
 			<p class="member-strapline">Special members only content</p>
-            <h2 class="page-header mb-3">Nutrition</h2>
+			<h2 class="page-header mb-3">Nutrition</h2>
 		</div>
 	</div>
 
@@ -22,7 +22,6 @@
 				run stronger and longer. The wrong fuel can slow you down or give you
 				digestive problems.
 			</p>
-
 			<p class="page-text">
 				Muscle cells have two main sources of fuel: sugar and fat. These come
 				from the food we eat or from what’s stored in our own bodies.
@@ -43,27 +42,24 @@
 				before the muscles can use them. This makes them less readily available
 				than carbs and less efficient as fuel.
 			</p>
-
 			<p class="page-text">
 				Stored body fat on the other hand as even the slimmest of runners has a
 				lot of it. As you run regularly your body adapts of become better at
 				using that fat as fuel.
 			</p>
-			<br>
-			<div class="text-center">
-				<a href="{% url 'contact' %}" class="btn btn-grey">
+			<div>
+				<a href="{% url 'contact' %}" class="btn btn-grey-advice">
 					<span>GET YOUR PERSONALISED PLAN</span>
 				</a>
-				<br>
-      </div>
 			</div>
-			<div class="col-sm-8 col-lg-5 order-1 order-lg-12">
-				<img
+		</div>
+		<div class="col-sm-8 col-lg-5 order-1 order-lg-12">
+			<img
         src="{{MEDIA_URL}}nutrition.jpg"
         class="image"
         alt="Nutrition"
       />
     </div>
-			</div>
 		</div>
-		{% endblock %}
+	</div>
+	{% endblock %}

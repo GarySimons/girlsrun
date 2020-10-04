@@ -57,7 +57,8 @@
 		</li>
         {% endif %}
 		<li class="nav-item">
-			<a class="nav-link {% if url_name == 'products' %}active{% endif %}" href="{% url 'products' %}">SHOP</a>
+			<a class="nav-link {% if url_name == 'products' %}active{% endif %}" 
+            href="{% url 'products' %}">SHOP</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">CONTACT US</a>
