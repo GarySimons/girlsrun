@@ -18,3 +18,6 @@ function sendMail(contactForm) {
     );
     return false;  
 }
+
+
+$("#contact-form").onsubmit="return sendMail(this);"

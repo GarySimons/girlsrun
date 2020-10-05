@@ -2,57 +2,72 @@
 
 ## Contents
 
-* **Overview**
-* **User Experience**
-    - Project Goals
-    - Site Owner Stories
-    - User Stories
-* **Design**
-    - Fonts
-    - Colours
-    - Grid
-    - Images
-* **Wireframes**
-* **Features**
-    - Navgation Bar
-    - Home
-    - Her Stories
-    - Upcoming Runs
-    - Members' Login
-    - Advice
-    - Shop
-    - Contact Us
-    - Shopping Bag
-* **Features to be developed in the future**
-    - Booking calendar for running events
-    - Booking system for links on the member advice pages
-* **Database Design**
-    - The Product Model
-    - The Story Model
-    - The Event Model
-* **Planning and Testing**
-    - Shopping
-    - Contact Us Form
-* **Bugs and Problems**
-    - Scroll Bar on Bottom of Site
-    - Bootstrap Flexbox and Order
-    - Active Nav Bar
-    - Code Stuck in message_container
-* **Technologies Used**
-    - Languages
-    - Frameworks and Libraries
-    - Tools
-    - Databases
-* **Deployment**
-    - Running Project Locally
-    - Deploying to Heroku
-* **Credits**
+- [Overview](#overview)
+- [User Experience](#user-experience)
+  * [Project Goals](#project-goals)
+- [User Stories](#user-stories)
+  * [Site Owner](#site-owner)
+  * [User](#user)
+  * [Logged In Member](#logged-in-member)
+- [Design](#design)
+  * [Fonts](#fonts)
+  * [Colours](#colours)
+  * [Grid](#grid)
+  * [Images](#images)
+- [Wireframes](#wireframes)
+- [Features](#features)
+  * [Navigation bar](#navigation-bar)
+  * [Home](#home)
+  * [Her Stories](#her-stories)
+  * [Upcomimg Runs](#upcomimg-runs)
+  * [Members' login page](#members--login-page)
+  * [Advice](#advice)
+    + [Getting Started](#getting-started)
+    + [Gear](#gear)
+    + [Nutrition](#nutrition)
+    + [Coaching](#coaching)
+  * [Shop](#shop)
+  * [Contact Us](#contact-us)
+  * [Shopping bag](#shopping-bag)
+  * [Features to be developed in the future](#features-to-be-developed-in-the-future)
+  * [Booking calendar for running events](#booking-calendar-for-running-events)
+  * [Booking system for links on the member advice pages](#booking-system-for-links-on-the-member-advice-pages)
+- [Database Design](#database-design)
+  * [The Product Model:](#the-product-model-)
+  * [The Story Model:](#the-story-model-)
+  * [The Event Model:](#the-event-model-)
+- [Planning and Testing](#planning-and-testing)
+  * [Shopping](#shopping)
+  * [Contact Us form](#contact-us-form)
+- [Bugs and Problems](#bugs-and-problems)
+  * [Scroll bar on bottom of website](#scroll-bar-on-bottom-of-website)
+  * [Bootstrap Flex box and Order](#bootstrap-flex-box-and-order)
+  * [Highlighting active nav bar button](#highlighting-active-nav-bar-button)
+  * [Code stuck in ‘message-container’](#code-stuck-in--message-container-)
+- [Technologies used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks and libraries](#frameworks-and-libraries)
+  * [Tools](#tools)
+  * [Databases](#databases)
+- [Deployment](#deployment)
+  * [Running this project locally](#running-this-project-locally)
+  * [Instructions](#instructions)
+  * [Delpoying to Heroku](#delpoying-to-heroku)
+- [Credits](#credits)
+  * [Thanks](#thanks)
+  * [Images](#images-1)
+  * [Text](#text)
+  * [Shopping pages code](#shopping-pages-code)
+  * [Inspiration](#inspiration)
+  * [Advice](#advice-1)
+  * [Technical help](#technical-help)
+  * [Disclaimer](#disclaimer)
 
 ## Overview
 
-This is my **fouth milestone project for the Code Institute Full Stack Web Developer course.** It is a website to **promote running to women.** I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
+This is a website for a fictitious **Sussex based women only running club**. I wanted to create a website to **promote running to women.** I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
 
-The project has been built using **HTML, CSS, JavaScript, Python and Django.** It uses **SQL databases** to store database information during development, and **Amazon Web Services (AWS)** for databases in production. Also **Stripe** to handle payments.
+The website has been built using **HTML, CSS, JavaScript, Python and Django.** It uses **SQL databases** to store database information during development, and **Amazon Web Services (AWS)** for databases in production. Also **Stripe** to handle payments.
 
 ---
 
@@ -70,34 +85,41 @@ The project required that a user can **create an account,** log in and use that 
 
 The project also needed an **e-commerce** element, using **Stripe** to control payment from users. I have set up an online shop selling branded merchandise. This allows users to browse, add to a shopping bag and purchase the items.
 
-### Site Owner Stories
-* As the website owner, I want to **build brand awareness** and **grow membership.**
-* As the website owner, I want to **build a network of women** to help and support each other.
-* As the website owner, I want to **sell group running sessions** as a revenue stream
-* As the website owner, I want to **sell branded merchandise** on site as a revenue stream.
-* As the website owner, I want to **collect user data** for market research and promtional purposes.
-* As the website owner, I want to **sell extra services** such as personal nutrition and coaching advice.
+---
 
-### User Stories
-* As a user of the website, I want to **navigate easily** and find the **information I need quickly.**
-* As a user of the website, I want an **engaging design** that is visually appealing and stimulating.
-* As a user of the website, I want **good user experience** to keep the me engaged.
-* As a user of the website, I want to **view it on all devices** and it still to look good and work perfectly.
-* As a user of the website, I want to be able to **contact the site owner.**
-* As a user of the website, I want to find a **supportive group** to join to help with personal exercise goals.
-* As a user of the website, I want to **build friendships** and **personal networks.**
-* As a user of the website, I want to **get fit.**
-* As a user of the website, I want to **build persoanal confidence.**
-* As a user of the website, I want to **create an account** to track orders and purchases on the website.
-* As a user of the website, I want to **log in and out of my account.**
-* As a user of the website, I want to **gain information and advice** to help support my fitness goals.
-* As a user of the website, I want to **shop for branded merchandise** to feel part of a team.
-* As a user of the website, I want to **view individual product details.**
-* As a user of the website, I want to **view a total cost of my purchases** to track my spending.
-* As a user of the website, I want to **select quantity of products** to add to my shopping bag.
-* As a user of the website, I want to **adjust quantity of products** in my shopping bag.
-* As a user of the website, I want to **remove products** from my shopping bag.
-* As a user of the website, I want to **select sizes of products** to add to my shopping bag.
+## User Stories
+
+### Site Owner
+* As a user, I want to **build brand awareness** and **grow membership.**
+* As a user, I want to **build a network of women** to help and support each other.
+* As a user, I want to **sell group running sessions** as a revenue stream
+* As a user, I want to **sell branded merchandise** on site as a revenue stream.
+* As a user, I want to **collect user data** for market research and promtional purposes.
+* As a user, I want to **sell extra services** such as personal nutrition and coaching advice.
+
+### User
+* As a user, I want to **navigate easily** and find the **information I need quickly.**
+* As a user, I want an **engaging design** that is visually appealing and stimulating.
+* As a user, I want **good user experience** to keep the me engaged.
+* As a user, I want to **view it on all devices** and it still to look good and work perfectly.
+* As a user, I want to be able to **contact the site owner.**
+* As a user, I want to find a **supportive group** to join to help with personal exercise goals.
+* As a user, I want to **build friendships** and **personal networks.**
+* As a user, I want to **create an account** to track orders and purchases on the website.
+* As a user, I want to **shop for branded merchandise** to feel part of a team.
+* As a user, I want to **view individual product details.**
+* As a user, I want to **view a total cost of my purchases** to track my spending.
+* As a user, I want to **select quantity of products** to add to my shopping bag.
+* As a user, I want to **adjust quantity of products** in my shopping bag.
+* As a user, I want to **remove products** from my shopping bag.
+* As a user, I want to **select sizes of products** to add to my shopping bag.
+
+### Logged In Member
+* As a user, I want to **log in and out of my account.**
+* As a user, I want to **have access to special member only content.**
+* As a user, I want to **gain information and advice** to help support my fitness goals.
+* As a user, I want to **holding items in my shopping bag for later purchase.**
+* As a user, I want to **have accesss to my purchase history.**
 
 ---
 
@@ -105,7 +127,7 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 I wanted the website to have a friendly and welcoming feel, to make it appeal to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
 
 ### Fonts
-For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 400 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 300 light weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), in 300 weight. This font is very readable and compliments the more stylized Oswald.
+For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 400 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 400 weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), in 300 weight. This font is very readable and compliments the more stylized Oswald.
 
 ### Colours
 I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette right down for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
