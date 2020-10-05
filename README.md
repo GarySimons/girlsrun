@@ -2,66 +2,7 @@
 
 ## Contents
 
-- [Overview](#overview)
-- [User Experience](#user-experience)
-  * [Project Goals](#project-goals)
-- [User Stories](#user-stories)
-  * [Site Owner](#site-owner)
-  * [User](#user)
-  * [Logged In Member](#logged-in-member)
-- [Design](#design)
-  * [Fonts](#fonts)
-  * [Colours](#colours)
-  * [Grid](#grid)
-  * [Images](#images)
-- [Wireframes](#wireframes)
-- [Features](#features)
-  * [Navigation bar](#navigation-bar)
-  * [Home](#home)
-  * [Her Stories](#her-stories)
-  * [Upcomimg Runs](#upcomimg-runs)
-  * [Members' login page](#members--login-page)
-  * [Advice](#advice)
-    + [Getting Started](#getting-started)
-    + [Gear](#gear)
-    + [Nutrition](#nutrition)
-    + [Coaching](#coaching)
-  * [Shop](#shop)
-  * [Contact Us](#contact-us)
-  * [Shopping bag](#shopping-bag)
-  * [Features to be developed in the future](#features-to-be-developed-in-the-future)
-  * [Booking calendar for running events](#booking-calendar-for-running-events)
-  * [Booking system for links on the member advice pages](#booking-system-for-links-on-the-member-advice-pages)
-- [Database Design](#database-design)
-  * [The Product Model:](#the-product-model-)
-  * [The Story Model:](#the-story-model-)
-  * [The Event Model:](#the-event-model-)
-- [Planning and Testing](#planning-and-testing)
-  * [Shopping](#shopping)
-  * [Contact Us form](#contact-us-form)
-- [Bugs and Problems](#bugs-and-problems)
-  * [Scroll bar on bottom of website](#scroll-bar-on-bottom-of-website)
-  * [Bootstrap Flex box and Order](#bootstrap-flex-box-and-order)
-  * [Highlighting active nav bar button](#highlighting-active-nav-bar-button)
-  * [Code stuck in ‘message-container’](#code-stuck-in--message-container-)
-- [Technologies used](#technologies-used)
-  * [Languages](#languages)
-  * [Frameworks and libraries](#frameworks-and-libraries)
-  * [Tools](#tools)
-  * [Databases](#databases)
-- [Deployment](#deployment)
-  * [Running this project locally](#running-this-project-locally)
-  * [Instructions](#instructions)
-  * [Delpoying to Heroku](#delpoying-to-heroku)
-- [Credits](#credits)
-  * [Thanks](#thanks)
-  * [Images](#images-1)
-  * [Text](#text)
-  * [Shopping pages code](#shopping-pages-code)
-  * [Inspiration](#inspiration)
-  * [Advice](#advice-1)
-  * [Technical help](#technical-help)
-  * [Disclaimer](#disclaimer)
+
 
 ## Overview
 
@@ -148,7 +89,11 @@ All images were sourced from the [iStock](https://www.istockphoto.com/gb) image 
 ---
 
 ## Wireframes
-I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy way to work out the basic pages and element and how the would interact with each other. I then mocked up more detailed versions using **Adobe InDesign** to allow me to play with fonts, colours and images. The basic structure from my wireframes remained much the same, but colours, fonts, styling and some elements were adapted as I built the website and saw how it worked as a whole. The main change to the pages was the home page. It was felt that a user landing on the home page didn't have enough clues as to the purpose of the website. I reduced the height of the main image to introduced a **'What we do'** that would show just above the fold of the page to entice the user to scroll down. I also **moved the 'My Story' page** to the home page to further introduce the idea behind the website and give it a personality.
+I built my wireframes using **Balsamiq Wireframes**. This was a quick and easy way to work out the basic pages and element and how the would interact with each other. I then mocked up more detailed versions using **Adobe InDesign** to allow me to play with fonts, colours and images. 
+
+The basic structure from my wireframes remained much the same, but colours, fonts, styling and some elements were adapted as I built the website and saw how it worked as a whole. The main change to the pages was the home page. It was felt that a user landing on the home page didn't have enough clues as to the purpose of the website. 
+
+I reduced the height of the main image to introduced a **'What we do'** that would show just above the fold of the page to entice the user to scroll down. I also **moved the 'My Story' page** to the home page to further introduce the idea behind the website and give it a personality.
 
 View my **Balsamiq** wireframes <a href="https://github.com/GarySimons/girlsrun/tree/master/wireframes/png">here.</a>
 
@@ -159,10 +104,16 @@ View my **Adobe InDesign** wireframes <a href="https://github.com/GarySimons/gir
 ## Features
 
 ### Navigation bar
-**This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey. The **advice** button only shows up once a user has **registered and logged in**. This active button contains **member only content** on various aspects of training, food and kit on a dropdown menu of four pages. A link on the far right is a link to the **shopping bag** and shows the current total.
+**This holds all the links to the sections of the site:** Logo (home button), home, about, projects and contact. This allows the user to navigate quickly to the relevant section. The **navigation bar** is always visible when you are on the site, allowing for easy navigation to any part, no matter where you first land. The **home button and logo** will take you right back to the **home page** where you can get your bearings and start your journey. 
+
+The **advice** button only shows up once a user has **registered and logged in**. This active button contains **member only content** on various aspects of training, food and kit on a dropdown menu of four pages. A link on the far right is a link to the **shopping bag** and shows the current total.
 
 ### Home
-This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** with a friendly welcome message, on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
+This is the first page a user comes to and it has to make a big impact. It has the job of informing the user as to what sort of site this is and to entice them to move further and engage with it. It opens with **strong simple typography** with a friendly welcome message, on a background image of a woman about to start a run. Having these visuals announces very quickly what the website is about. 
+
+Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. 
+
+Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
 
 ### Her Stories
 With this page we are able to showcase many of the inspirational women who belong to the running club. An image of them enjoying running with a short inspiration paragraph about their lives and how running has helped them will encourage other women. The images show a wide range of ages and sizes of women to show the inclusiveness of the group. This will help to make women feel included and represented.
@@ -199,10 +150,10 @@ This page in **linked from the shopping bag total** shown on the far right of th
 
 Given more time I would have liked to add some more featues to the website:
 
-### Booking calendar for running events
+#### Booking calendar for running events
 Currently there are links under each of the running events on the Runs page. These links take the user to the Contact Us page. This is not ideal, and I would like to set up a booking system, where users to go to the event, view details and book themseleves onto, and pay for, the run.
 
-### Booking system for links on the member advice pages
+#### Booking system for links on the member advice pages
 Currently there are links under each of the special member only advice pages of getting started, gear, nutrition and coaching. These links are for the logged on member to book themselves onto the various packages on offer. These links take the user to the Contact Us page to send the owner and email. This is not ideal, and I would like to set up a booking system, where users to go to the package, view details and book themseleves on and pay.
 
 ---
@@ -251,6 +202,22 @@ The **Event** model within the **events app** holds the following data for the u
 | distance      | (null=False, blank=False)                                 | IntegerField |
 | description   | default='some string'                                     | TextField    |
 | image         | (null=True, blank=True)                                   | ImageField   |
+
+---
+
+## Bugs and Problems
+
+### Scroll bar on bottom of website
+I had a problem with having a scroll bar on bottom of site. I made coloured backgrounds for all the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, I concluded that it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
+
+### Bootstrap Flex box and Order
+I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
+
+### Highlighting active nav bar button
+I wanted to show the user which page they were currently on by highlighting the corresponding button in the nav bar. There were a few options offered up by various Google searches, but the one that worked for me and seemed to be the simplest was to add a **with statement** within the nav bar that matched up the url names **{% with url_name=request.resolver_match.url_name %}** which created an active button if they matched **{% if url_name == ‘xxxxx’ %}active{% endif %}**. With an **active** CSS style created, this makes it clear to the user where they are.
+
+### Code stuck in ‘message-container’
+I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
 
 ---
 
@@ -312,22 +279,6 @@ which I added to **Installed Apps** in my settings.py file. I then created a **v
 * To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
 <strong>Results</strong>
 * I was able to fill in the fields of the contact form and the **send** button sent the message. The message was recieved by the correct email account and all the fields were displaying correctly.
-
----
-
-## Bugs and Problems
-
-### Scroll bar on bottom of website
-I had a problem with having a scroll bar on bottom of site. I made coloured backgrounds for all the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, I concluded that it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
-
-### Bootstrap Flex box and Order
-I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
-
-### Highlighting active nav bar button
-I wanted to show the user which page they were currently on by highlighting the corresponding button in the nav bar. There were a few options offered up by various Google searches, but the one that worked for me and seemed to be the simplest was to add a **with statement** within the nav bar that matched up the url names **{% with url_name=request.resolver_match.url_name %}** which created an active button if they matched **{% if url_name == ‘xxxxx’ %}active{% endif %}**. With an **active** CSS style created, this makes it clear to the user where they are.
-
-### Code stuck in ‘message-container’
-I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
 
 ---
 
@@ -412,7 +363,7 @@ python3 manage.py createsuperuser
 python3 manage.py runserver
 ```
 
-### Delpoying to Heroku
+### Deploying to Heroku
 
 **You will need to set up an account with [Heroku](https://www.heroku.com/) to host your website.**
 
