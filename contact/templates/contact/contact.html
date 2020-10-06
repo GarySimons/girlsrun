@@ -29,8 +29,7 @@
 
 				<div class="row justify-content-center">
 					<div class="center-form col-sm-12 col-md-10">
-	
-                        <form onsubmit="return sendMail(this);">
+                        <form>
                         {% csrf_token %}
                             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                             <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
@@ -39,7 +38,6 @@
 								<button type="submit" class="btn" id="btn-grey-contact">SEND</button>
                             </div>
                         </form>
-
 					</div>
 				</div>
 		</div>

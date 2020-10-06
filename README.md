@@ -2,7 +2,7 @@
 
 ## Contents
 
-
+---
 
 ## Overview
 
@@ -45,7 +45,6 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user, I want to **view it on all devices** and it still to look good and work perfectly.
 * As a user, I want to be able to **contact the site owner.**
 * As a user, I want to find a **supportive group** to join to help with personal exercise goals.
-* As a user, I want to **build friendships** and **personal networks.**
 * As a user, I want to **create an account** to track orders and purchases on the website.
 * As a user, I want to **shop for branded merchandise** to feel part of a team.
 * As a user, I want to **view individual product details.**
@@ -221,78 +220,17 @@ I was having a problem with a couple of my grids when logged in as a super user.
 
 ---
 
-## Planning and Testing
-
-Planning out how my finished project would work was very important as I had to understand how all the elements would work together.
-
-Using **wireframes** enabled me to quickly build a basic idea of the pages needed and how they would interact with each other. I then designed more detailed wireframes using dummy text and real images in InDesign, to experiment with colours, fonts and grids. 
-
-As the project uses **database models**, it was vital that these were mapped out early on. Changing database models or adding new ones in later in the project could cause problems, so I wanted to get them right before I moved on too much with the site pages and interaction.
-
-I utilised **Django's templating language** to reuse code over mutiple pages to simplify my code. This allowed me to keep the basic page design and drop in the seperate code where needed. 
-
-
-### Shopping
-<strong>Plan</strong>
-* As part of the requirements, my project requires an e-commerce element. I wanted the users of the site to be able buy branded merchandise from the running club. The e-commerce part of the website was only to be a relatively small part of the overall experience, so I concentrated on providing a small selection of quality items that I believed members might want, rather than a large, less targeted offering. 
-
-<strong>Implementation</strong>
-* To make the shopping page, I first imported the product images into my **media** folder. I then created a Products app using:
-```bash
-python3 manage.py startapp products
-```
-and added it to **Installed Apps** in my settings.py file. Next I made a folder called **fixtures** in the app, to which I added two **JSON** files containing the data needed to create the database. I then created the **product model** that defined the elements to be included, and mirgrated it into the database:
-```bash
-python3 manage.py makemigrations --dry-run
-python3 manage.py makemigrations 
-python3 manage.py migrate --plan
-python3 manage.py migrate
-```
-* I then registered the new model in the **admin.py** file. 
-Once done, I was able to load all the data from the two JSON files into my database using:
-```bash
-python3 manage.py loaddata categories
-python3 manage.py loaddata products
-```
-* I created the **view** in the products app which sends a request to the database which returns all the products. This allowed me to set up my HTML template, and use Django's template code that **looped** through all the products and displayed them on the page with each one's image and details. 
-
-<strong>Testing</strong>
-* To test that my shopping page was working, I navigated to my **products.html** page and checked that all of the products from my database were being displayed with their correct image and details. 
-
-<strong>Results</strong>
-* All of my products were correctly displayed on my shopping page with all the correct details.
-
-### Contact Us form
-<strong>Plan</strong>
-* I wanted to have a page with a form to allow users to contact the site owner in a safe and secure manner. For this, the simplest way was to use the **EmailJS** service.
-- <strong>Implementation</strong>
-* I created a **Contact** app using:
-```bash
-python3 manage.py startapp contact
-```
-which I added to **Installed Apps** in my settings.py file. I then created a **view**, a **templates** folder for my **contact.html** file and a **urls.py** file. Finally I added the url to my **main urls.py file.**
-* I created a new GMail account for **hannahrobertsruns@gmail.com** who is the fictional owner of the website.
-* Using **EmailJS** I was able to link up to this new GMail account.
-* In my EmailJS account I now set up the **email template** which will be used when users are sending in an email from the form.
-* Following the EmailJS documentation I was able to connect my contact form to send emails to the owner's GMail account.
-<strong>Testing</strong>
-* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
-<strong>Results</strong>
-* I was able to fill in the fields of the contact form and the **send** button sent the message. The message was recieved by the correct email account and all the fields were displaying correctly.
-
----
-
 ## Technologies used
 
 ### Languages
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Python](https://www.python.org/)
-* [Django](https://www.djangoproject.com/)
 * [JavaScript](https://www.javascript.com/)
-* [jQuery](https://jquery.com/)
 
 ### Frameworks and libraries
+* [Django](https://www.djangoproject.com/)
+* [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 * [Font Awesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
@@ -312,6 +250,60 @@ which I added to **Installed Apps** in my settings.py file. I then created a **v
 ### Databases
 * [PostgreSQL - Production](https://www.postgresql.org/)
 * [SQlite3 - Development](https://www.sqlite.org/index.html)
+
+---
+
+## Planning and Testing
+
+Planning out how my finished project would work was very important as I had to understand how all the elements would work together.
+
+Using **wireframes** enabled me to quickly build a basic idea of the pages needed and how they would interact with each other. I then designed more detailed wireframes using dummy text and real images in InDesign, to experiment with colours, fonts and grids. 
+
+As the project uses **database models**, it was vital that these were mapped out early on. Changing database models or adding new ones in later in the project could cause problems, so I wanted to get them right before I moved on too much with the site pages and interaction.
+
+I utilised **Django's templating language** to reuse code over mutiple pages to simplify my code. This allowed me to keep the basic page design and drop in the seperate code where needed. 
+
+The HMTL was put through the [W3C Markup Validation Service](https://validator.w3.org/), and has no errors.
+
+The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and has no errors.
+
+
+### Shopping
+<strong>Plan</strong>
+* I wanted the users of the site to be able buy branded merchandise from the running club. The e-commerce part of the website was only to be a relatively small part of the overall experience, so I concentrated on providing a small selection of quality items that I believed members might want, rather than a large, less targeted offering. 
+
+<strong>Implementation</strong>
+* To make the shopping page, I first imported the product images into my **media** folder. I then created the Products app. Next I made a folder called **fixtures** in the app, to which I added two **JSON** files containing the data needed to create the database. I then created the **product model** that defined the elements to be included, and mirgrated it into the database. 
+
+* I created the **view** in the products app which sends a request to the database which returns all the products. This allowed me to set up my HTML template, and use Django's template code that **looped** through all the products and displayed them on the page with each one's image and details. 
+
+<strong>Testing</strong>
+* To test that my shopping page was working, I navigated to my **products.html** page and checked that all of the products from my database were being displayed with their correct image and details. 
+
+<strong>Results</strong>
+* All of my products were correctly displayed on my shopping page with all the correct details.
+
+<strong>Verdict</strong>
+* The test passed, and the user is able to view the merchandise.
+
+
+### Contact Us form
+<strong>Plan</strong>
+* I wanted to have a page with a form to allow users to contact the site owner in a safe and secure manner. For this, the simplest way was to use the **EmailJS** service.
+- <strong>Implementation</strong>
+* I created a **Contact** app using:
+```bash
+python3 manage.py startapp contact
+```
+which I added to **Installed Apps** in my settings.py file. I then created a **view**, a **templates** folder for my **contact.html** file and a **urls.py** file. Finally I added the url to my **main urls.py file.**
+* I created a new GMail account for **hannahrobertsruns@gmail.com** who is the fictional owner of the website.
+* Using **EmailJS** I was able to link up to this new GMail account.
+* In my EmailJS account I now set up the **email template** which will be used when users are sending in an email from the form.
+* Following the EmailJS documentation I was able to connect my contact form to send emails to the owner's GMail account.
+<strong>Testing</strong>
+* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
+<strong>Results</strong>
+* I was able to fill in the fields of the contact form and the **send** button sent the message. The message was recieved by the correct email account and all the fields were displaying correctly.
 
 ---
 
