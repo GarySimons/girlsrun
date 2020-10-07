@@ -704,6 +704,18 @@ body {
     border-radius: 0;
 }
 
+#email-sent {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #2fbdb8;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+
 /* Upcoming Run Page */
 
 .run-image {
