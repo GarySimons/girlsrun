@@ -1,5 +1,4 @@
 function sendMail(contactForm) {
-    debugger;
     emailjs.send("girls on the run","Run", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
@@ -18,12 +17,4 @@ function sendMail(contactForm) {
         }
     );
     return false;  
-}
-
-// Submitting form
-
-document.getElementById("btn-grey-contact").addEventListener("submit", myFunction);
-
-function myFunction() {
-  onsubmit="return sendMail(this)";
 }
