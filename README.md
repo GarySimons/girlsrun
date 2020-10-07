@@ -45,7 +45,8 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user, I want to **view it on all devices** and it still to look good and work perfectly.
 * As a user, I want to be able to **contact the site owner.**
 * As a user, I want to find a **supportive group** to join to help with personal exercise goals.
-* As a user, I want to **create an account** to track orders and purchases on the website.
+* As a user, I want to **create an account.**
+* As a user, I want to use my account to **track orders and purchases** on the website.
 * As a user, I want to **shop for branded merchandise** to feel part of a team.
 * As a user, I want to **view individual product details.**
 * As a user, I want to **view a total cost of my purchases** to track my spending.
@@ -204,22 +205,6 @@ The **Event** model within the **events app** holds the following data for the u
 
 ---
 
-## Bugs and Problems
-
-### Scroll bar on bottom of website
-I had a problem with having a scroll bar on bottom of site. I made coloured backgrounds for all the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, I concluded that it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
-
-### Bootstrap Flex box and Order
-I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
-
-### Highlighting active nav bar button
-I wanted to show the user which page they were currently on by highlighting the corresponding button in the nav bar. There were a few options offered up by various Google searches, but the one that worked for me and seemed to be the simplest was to add a **with statement** within the nav bar that matched up the url names **{% with url_name=request.resolver_match.url_name %}** which created an active button if they matched **{% if url_name == ‘xxxxx’ %}active{% endif %}**. With an **active** CSS style created, this makes it clear to the user where they are.
-
-### Code stuck in ‘message-container’
-I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
-
----
-
 ## Technologies used
 
 ### Languages
@@ -255,6 +240,8 @@ I was having a problem with a couple of my grids when logged in as a super user.
 
 ## Planning and Testing
 
+### Planning
+
 Planning out how my finished project would work was very important as I had to understand how all the elements would work together.
 
 Using **wireframes** enabled me to quickly build a basic idea of the pages needed and how they would interact with each other. I then designed more detailed wireframes using dummy text and real images in InDesign, to experiment with colours, fonts and grids. 
@@ -267,6 +254,7 @@ The HMTL was put through the [W3C Markup Validation Service](https://validator.w
 
 The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and has no errors.
 
+### Feature Testing
 
 ### Shopping
 <strong>Plan</strong>
@@ -284,26 +272,73 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 * All of my products were correctly displayed on my shopping page with all the correct details.
 
 <strong>Verdict</strong>
-* The test passed, and the user is able to view the merchandise.
+* The test passed, based on the above information and requirements.
 
 
 ### Contact Us form
 <strong>Plan</strong>
 * I wanted to have a page with a form to allow users to contact the site owner in a safe and secure manner. For this, the simplest way was to use the **EmailJS** service.
+
 - <strong>Implementation</strong>
-* I created a **Contact** app using:
-```bash
-python3 manage.py startapp contact
-```
-which I added to **Installed Apps** in my settings.py file. I then created a **view**, a **templates** folder for my **contact.html** file and a **urls.py** file. Finally I added the url to my **main urls.py file.**
+* I created my **Contact** app. I then created a **view**, a **templates** folder for my **contact.html** file and a **urls.py** file. Finally I added the url to my **main urls.py file.**
 * I created a new GMail account for **hannahrobertsruns@gmail.com** who is the fictional owner of the website.
 * Using **EmailJS** I was able to link up to this new GMail account.
 * In my EmailJS account I now set up the **email template** which will be used when users are sending in an email from the form.
 * Following the EmailJS documentation I was able to connect my contact form to send emails to the owner's GMail account.
+
 <strong>Testing</strong>
 * To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
+
 <strong>Results</strong>
 * I was able to fill in the fields of the contact form and the **send** button sent the message. The message was recieved by the correct email account and all the fields were displaying correctly.
+
+<strong>Verdict</strong>
+* The test passed, based on the above information and requirements.
+
+
+### Member only content
+<strong>Plan</strong>
+* I want users to register so I can **obtain their data.** There has to be a reason for the user to **want to register and log in** to the website. One of the big draws is that the user is able to create and account, which will allow them to store their details and also track their previous orders. 
+
+* I also wanted to create some **exclusive member only content** as another hook. I created an **advice** section, that only appears in the navigation **once the user is logged in.** This new section has a dropdown menu with four seperate pages: getting started, gear, nutrition and coaching. These pages have useful advice to help the member with their running.
+
+- <strong>Implementation</strong>
+* I created a user profile model and app to store the user's details, that they would need when logged into the website. Using **Code Insitute's** course material I made the register, login and sign in functions. I also created the xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+* I created the four advice apps, and added useful content. Then in my main-nav.html file, I made a dropdown section and added the url links. In order that these were only available to logged in members, I wrapped them in a **{% if request.user.is_authenticated %}** if statement. This means that only authenticated users will see this option.
+
+<strong>Testing</strong>
+* To test that the user profile was working, I went to the register page and filled in my details. I then follow the instructions and logged into the webite. I then purchased an item from the shopping page and filled in my details. It then saved my details and I was able to review the order history.
+
+* To test that the advive section was working, I first tried the website as a non logged in user. The advice dropdown was hidden from me. Next I logged in as a member and tried again. This time the advice dropdown was visible and I could navigate to the four new pages.
+
+<strong>Results</strong>
+* I was able to register and log into my account. I could save my details and review my order history.
+
+* I was able to see the advice dropdown and naigate to and view the four new member only pages.
+
+<strong>Verdict</strong>
+* The test passed, based on the above information and requirements.
+
+
+---
+
+## Bugs and Problems
+
+### Scroll bar on bottom of website
+I had a problem with having a scroll bar on bottom of site. I made coloured backgrounds for all the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, I concluded that it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
+
+### Bootstrap Flex box and Order
+I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
+
+### Highlighting active nav bar button
+I wanted to show the user which page they were currently on by highlighting the corresponding button in the nav bar. There were a few options offered up by various Google searches, but the one that worked for me and seemed to be the simplest was to add a **with statement** within the nav bar that matched up the url names **{% with url_name=request.resolver_match.url_name %}** which created an active button if they matched **{% if url_name == ‘xxxxx’ %}active{% endif %}**. With an **active** CSS style created, this makes it clear to the user where they are.
+
+### Code stuck in ‘message-container’
+I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
+
+### Contact Us form
+When creating this form I used an line of **JavaScript** in the form that sends the emails to the GMail account I had set up for the website owner. This worked fine and emails were going to the address. **I was aware that it would be better if the JavaScript was in it's own seperate JavaScript file to be loaded in.** However, I couldn't get the emails to send once I removed this JavaScript. I finally asked for help, and had **five different tutors** try and fix this bug. After nearly two days of trying various ways to make it work, I was **advised** by the tutor to use the JavaScript in the form as before. I'm frustrated that I wasn't able to fix this bug, but I thought it would be better if the form worked, rather than fail. Hopefully this could be fixed at a later date. 
 
 ---
 
