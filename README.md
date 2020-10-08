@@ -2,6 +2,36 @@
 
 ## Contents
 
+- [Overview](#overview)
+- [Project Goals](#project-goals)
+- [User Stories](#user-stories)
+  * [Site Owner](#site-owner)
+  * [User](#user)
+  * [Logged In Member](#logged-in-member)
+- [Design](#design)
+  * [Fonts](#fonts)
+  * [Colours](#colours)
+  * [Grid](#grid)
+  * [Images](#images)
+- [Wireframes](#wireframes)
+- [Features](#features)
+  * [Navigation bar](#navigation-bar)
+  * [Home](#home)
+  * [Her Stories](#her-stories)
+  * [Upcomimg Runs](#upcomimg-runs)
+  * [Members' login page](#members--login-page)
+  * [Advice](#advice)
+  * [Shop](#shop)
+  * [Contact Us](#contact-us)
+  * [Shopping bag](#shopping-bag)
+  * [Features to be developed in the future](#features-to-be-developed-in-the-future)
+- [Database Design](#database-design)
+- [Technologies used](#technologies-used)
+- [Planning and Testing](#planning-and-testing)
+- [Bugs and Problems](#bugs-and-problems)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 ---
 
 ## Overview
@@ -12,9 +42,7 @@ The website has been built using **HTML, CSS, JavaScript, Python and Django.** I
 
 ---
 
-## User Experience
-
-### Project Goals
+## Project Goals
 
 This website is aimed at **women** and **encouraging** them to engage in running with the help and support of a running club designed around them. 
 
