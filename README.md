@@ -83,7 +83,6 @@ I created a **simple, complimentary, sophisticated colour scheme** that carries 
 I carried the **same basic grid through** the pages to add consistency and easy of navigation. A large **section header** quickly establishes the page you've landed on, and under that, is a panel holding the content for that page. A footer on each page hold **social media links.**
 
 ### Images
-
 All images were sourced from the [iStock](https://www.istockphoto.com/gb) image library. I used images of many different shapes, sizes and ages of women to show the inclusive nature of the site. This will hopefully make women feel more represented and less intimidated. I want any woman or girl to feel like this is a space where the are accepted and not judged.
 
 ---
@@ -139,7 +138,7 @@ with some tips for helping your body to achive the best results. Contains link t
 Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
 
 ### Contact Us
-This is where users can **get in touch with site owner**. I created an email account for site owner, Hannah Roberts. I then used **EmailJS** to set up an email template that is linked to the form on this page. When the form is submitted, the message is emailed to her address. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
+This is where users can **get in touch with site owner**. I created an email account for site owner, Hannah Roberts. I then used **EmailJS** to set up an email template that is linked to the form on this page. When the form is submitted, the message is emailed to her address. On sending the message a pop up **success message** shows. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
 
 ### Shopping bag
 This page in **linked from the shopping bag total** shown on the far right of the nav bar. It show's the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a **Stripe** payment page where they can input their details.
@@ -177,7 +176,6 @@ The **Product** model within the **products app** holds the following data for t
 | image\_url    | (max\_length=1024, null=True, blank=True)                 | URLField     |
 | image         | (max\_length=50, null=False, blank=False)                 | ImageField   |
 
-
 ### The Story Model:
 
 The **Story** model within the **stories app** holds the following data for the women who are part of the club:
@@ -189,7 +187,6 @@ The **Story** model within the **stories app** holds the following data for the 
 | occupation    | (max\_length=254, null=False, blank=False)                | CharField    |
 | details       | default='some string'                                     | TextField    |
 | image         | (null=True, blank=True)                                   | ImageField   |
-
 
 ### The Event Model:
 
@@ -274,7 +271,6 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 <strong>Verdict</strong>
 * The test passed, based on the above information and requirements.
 
-
 ### Contact Us form
 <strong>Plan</strong>
 * I wanted to have a page with a form to allow users to contact the site owner in a safe and secure manner. For this, the simplest way was to use the **EmailJS** service.
@@ -285,41 +281,48 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 * Using **EmailJS** I was able to link up to this new GMail account.
 * In my EmailJS account I now set up the **email template** which will be used when users are sending in an email from the form.
 * Following the EmailJS documentation I was able to connect my contact form to send emails to the owner's GMail account.
+* Using **jQuery's hide and show** funtion, I set up a **success message** to show when the email had been sent.
 
 <strong>Testing</strong>
-* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
+* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. The success message was displayed. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
 
 <strong>Results</strong>
-* I was able to fill in the fields of the contact form and the **send** button sent the message. The message was recieved by the correct email account and all the fields were displaying correctly.
+* I was able to fill in the fields of the contact form and the **send** button sent the message. The success message was displayed. The message was recieved by the correct email account and all the fields were displaying correctly.
 
 <strong>Verdict</strong>
 * The test passed, based on the above information and requirements.
 
-
-### Member only content
+### Member account
 <strong>Plan</strong>
 * I want users to register so I can **obtain their data.** There has to be a reason for the user to **want to register and log in** to the website. One of the big draws is that the user is able to create and account, which will allow them to store their details and also track their previous orders. 
 
-* I also wanted to create some **exclusive member only content** as another hook. I created an **advice** section, that only appears in the navigation **once the user is logged in.** This new section has a dropdown menu with four seperate pages: getting started, gear, nutrition and coaching. These pages have useful advice to help the member with their running.
-
 - <strong>Implementation</strong>
-* I created a user profile model and app to store the user's details, that they would need when logged into the website. Using **Code Insitute's** course material I made the register, login and sign in functions. I also created the xxxxxxxxxxxxxxxxxxxxxxxxxx
-
-* I created the four advice apps, and added useful content. Then in my main-nav.html file, I made a dropdown section and added the url links. In order that these were only available to logged in members, I wrapped them in a **{% if request.user.is_authenticated %}** if statement. This means that only authenticated users will see this option.
+* I created a user profile model and app to store the user's details. Using **Code Insitute's** course material I made the register, login and sign in functions. I also created the **order history page** to allow them to see past purchases.
 
 <strong>Testing</strong>
-* To test that the user profile was working, I went to the register page and filled in my details. I then follow the instructions and logged into the webite. I then purchased an item from the shopping page and filled in my details. It then saved my details and I was able to review the order history.
-
-* To test that the advive section was working, I first tried the website as a non logged in user. The advice dropdown was hidden from me. Next I logged in as a member and tried again. This time the advice dropdown was visible and I could navigate to the four new pages.
+* To test that the user profile was working, I went to the register page and filled in my details. I then follow the instructions and logged into the webite. I then **purchased an item** from the shopping page and filled in my details. It then **saved** my details and I was able to review the **order history.**
 
 <strong>Results</strong>
 * I was able to register and log into my account. I could save my details and review my order history.
 
+<strong>Verdict</strong>
+* The test passed, based on the above information and requirements.
+
+### Member only content
+<strong>Plan</strong>
+* I wanted to create some **exclusive member only content** as hook to get them to register. I created an **advice** section, that only appears in the navigation **once the user is logged in.** This new section has a dropdown menu with four seperate pages: getting started, gear, nutrition and coaching. These pages have useful advice to help the member with their running.
+
+- <strong>Implementation</strong>
+* I created the four advice apps, and added useful content. Then in my main-nav.html file, I made a dropdown section and added the url links. In order that these were only available to logged in members, I wrapped them in a **{% if request.user.is_authenticated %}** if statement. This means that only authenticated users will see this option.
+
+<strong>Testing</strong>
+* To test that the advive section was working, I first tried the website as a non logged in user. The advice dropdown was hidden from me. Next I logged in as a member and tried again. This time the advice dropdown was visible and I could navigate to the four new pages.
+
+<strong>Results</strong>
 * I was able to see the advice dropdown and naigate to and view the four new member only pages.
 
 <strong>Verdict</strong>
 * The test passed, based on the above information and requirements.
-
 
 ---
 
@@ -338,7 +341,7 @@ I wanted to show the user which page they were currently on by highlighting the 
 I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
 
 ### Contact Us form
-When creating this form I used an line of **JavaScript** in the form that sends the emails to the GMail account I had set up for the website owner. This worked fine and emails were going to the address. **I was aware that it would be better if the JavaScript was in it's own seperate JavaScript file to be loaded in.** However, I couldn't get the emails to send once I removed this JavaScript. I finally asked for help, and had **five different tutors** try and fix this bug. After nearly two days of trying various ways to make it work, I was **advised** by the tutor to use the JavaScript in the form as before. I'm frustrated that I wasn't able to fix this bug, but I thought it would be better if the form worked, rather than fail. Hopefully this could be fixed at a later date. 
+When creating this form I used an line of **JavaScript** in the form that sends the emails to the GMail account I had set up for the website owner. This worked fine and emails were going to the address. **I was aware that it would be better if the JavaScript was in it's own seperate JavaScript file to be loaded in.** However, I couldn't get the emails to send once I removed this JavaScript. I finally asked for help, and had **five different tutors** try and fix this bug. After nearly two days of trying various ways to make it work, I was **advised** by the tutors to use the JavaScript in the form, as before. I'm frustrated that I wasn't able to fix this bug, but I thought it would be better if the form worked, rather than fail. Hopefully this could be fixed at a later date. 
 
 ---
 
@@ -463,7 +466,7 @@ As much as I could I tried to use find my own solutions to questions and problem
 * Swapping order of columns at different sizes using **order** [Stack Overflow](https://stackoverflow.com/questions/37814508/order-columns-through-bootstrap4)
 * Swapping order of columns at different sizes using **flex** [codeply.com](https://www.codeply.com/go/6vWQN2ocxe)
 * Getting rid of **horizontal scroll** at the bottom of website [Stack Overflow](https://stackoverflow.com/questions/40418627/how-do-i-remove-horizontal-scroll-bar-at-the-bottom-of-my-page-css)
-
+* To add a **email sent successfully message** to my contact form with jQuery's hide a show funtion [Pretty Printed - The jQuery Hide, Show, and Toggle Functions](https://www.youtube.com/watch?v=WhU38HV-Iu8) 
 
 ### Disclaimer
 
