@@ -128,25 +128,6 @@ body {
     transition: .1s ease-in-out;
 }
 
-#btn-grey-contact {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    text-align: center;
-    background: #696969;
-    color: #fff !important; 
-    font-size: 0.8rem;
-    border-radius: 0;
-    text-transform: uppercase;
-    margin-top: 2rem;
-}
-
-#btn-grey-contact:hover {
-    background: #8b8b8b;
-    color: #fff !important;
-    transition: .1s ease-in-out;
-}
-
 .btn-blue {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -663,7 +644,7 @@ body {
 
 #contact-message {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: #2fbdb8;
 }
@@ -704,15 +685,34 @@ body {
     border-radius: 0;
 }
 
+#btn-grey-contact {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#btn-grey-contact:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
 #email-sent {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 300;
-    color: #2fbdb8;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    margin-top: 0.8rem;
-    margin-bottom: 0rem;
+    margin-top: 1.2rem;
+    padding: 0.4rem 0rem 0.3rem;
+    background-color: #2fbdb8
 }
 
 

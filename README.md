@@ -460,13 +460,13 @@ For the member only **advice pages**, I wanted to get some expert information, w
 
 ### Technical help
 As much as I could I tried to use find my own solutions to questions and problems that I had. Some of the sites I used to solve my problems included:
-* To **create active links** in the nav bar [Master Code Online - Django Tutorial - Create An Active Link In Django](https://www.youtube.com/watch?v=0StdrQY8074)
-* To create a **transparent box** for my contact us page [css-tricks.com](https://css-tricks.com/snippets/css/transparent-background-images/)
-* For the **loading spinner** on my shopping page [mdbootstrap.com](https://mdbootstrap.com/docs/jquery/components/spinners/)
-* Swapping order of columns at different sizes using **order** [Stack Overflow](https://stackoverflow.com/questions/37814508/order-columns-through-bootstrap4)
-* Swapping order of columns at different sizes using **flex** [codeply.com](https://www.codeply.com/go/6vWQN2ocxe)
-* Getting rid of **horizontal scroll** at the bottom of website [Stack Overflow](https://stackoverflow.com/questions/40418627/how-do-i-remove-horizontal-scroll-bar-at-the-bottom-of-my-page-css)
-* To add a **email sent successfully message** to my contact form with jQuery's hide a show funtion [Pretty Printed - The jQuery Hide, Show, and Toggle Functions](https://www.youtube.com/watch?v=WhU38HV-Iu8) 
+* To **create active links** in the nav bar: [Master Code Online - Django Tutorial - Create An Active Link In Django](https://www.youtube.com/watch?v=0StdrQY8074)
+* To create a **transparent box** for my contact us page: [css-tricks.com](https://css-tricks.com/snippets/css/transparent-background-images/)
+* For the **loading spinner** on my shopping page: [mdbootstrap.com](https://mdbootstrap.com/docs/jquery/components/spinners/)
+* Swapping order of columns at different sizes using **order**: [Stack Overflow](https://stackoverflow.com/questions/37814508/order-columns-through-bootstrap4)
+* Swapping order of columns at different sizes using **flex**: [codeply.com](https://www.codeply.com/go/6vWQN2ocxe)
+* Getting rid of **horizontal scroll** at the bottom of website: [Stack Overflow](https://stackoverflow.com/questions/40418627/how-do-i-remove-horizontal-scroll-bar-at-the-bottom-of-my-page-css)
+* To add a **email sent successfully message** to my contact form with jQuery's hide a show funtion: [Pretty Printed - The jQuery Hide, Show, and Toggle Functions](https://www.youtube.com/watch?v=WhU38HV-Iu8) 
 
 ### Disclaimer
 
