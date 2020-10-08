@@ -18,7 +18,7 @@
   * [Navigation bar](#navigation-bar)
   * [Home](#home)
   * [Her Stories](#her-stories)
-  * [Upcomimg Runs](#upcomimg-runs)
+  * [Upcoming Runs](#upcoming-runs)
   * [Members' login page](#members--login-page)
   * [Advice](#advice)
   * [Shop](#shop)
@@ -36,7 +36,7 @@
 
 ## Overview
 
-This is a website for a fictitious **Sussex based women only running club**. I wanted to create a website to **promote running to women.** I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do someting positive that would empower women and give them confidence to git it a go.
+This is a website for a fictitious **Sussex based women only running club**. I wanted to create a website to **promote running to women.** I feel that there are many barriers that stop women and girls from taking up exercise. I wanted to do something positive that would empower women and give them confidence to give it a go.
 
 The website has been built using **HTML, CSS, JavaScript, Python and Django.** It uses **SQL databases** to store database information during development, and **Amazon Web Services (AWS)** for databases in production. Also **Stripe** to handle payments.
 
@@ -46,7 +46,7 @@ The website has been built using **HTML, CSS, JavaScript, Python and Django.** I
 
 This website is aimed at **women** and **encouraging** them to engage in running with the help and support of a running club designed around them. 
 
-I wanted to build this website after seeing the **disengagement of the women** in my own family with sports and excercise. It's well know that lots of girls and women are put off excercise for many complex and varied reasons. I wanted to build a website that would **inspire and engage women of all ages and abilities** and show that that they can do anything they want. They just have to take that first step.
+I wanted to build this website after seeing the **disengagement of the women** in my own family with sports and exercise. It's well know that lots of girls and women are put off exercise for many complex and varied reasons. I wanted to build a website that would **inspire and engage women of all ages and abilities** and show that they can do anything they want. They just have to take that first step.
 
 I wanted it to be able to **build a like-minded, supportive and inclusive network of women.** This will help them with achieving their exercise goals, making good friends and connecting with others in similar situations.
 
@@ -63,7 +63,7 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user, I want to **build a network of women** to help and support each other.
 * As a user, I want to **sell group running sessions** as a revenue stream
 * As a user, I want to **sell branded merchandise** on site as a revenue stream.
-* As a user, I want to **collect user data** for market research and promtional purposes.
+* As a user, I want to **collect user data** for market research and promotional purposes.
 * As a user, I want to **sell extra services** such as personal nutrition and coaching advice.
 
 ### User
@@ -75,7 +75,7 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user, I want to find a **supportive group** to join to help with personal exercise goals.
 * As a user, I want to **create an account.**
 * As a user, I want to use my account to **track orders and purchases** on the website.
-* As a user, I want to **shop for branded merchandise** to feel part of a team.
+* As a user, I want to **shop for branded merchandise.** 
 * As a user, I want to **view individual product details.**
 * As a user, I want to **view a total cost of my purchases** to track my spending.
 * As a user, I want to **select quantity of products** to add to my shopping bag.
@@ -88,23 +88,23 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 * As a user, I want to **have access to special member only content.**
 * As a user, I want to **gain information and advice** to help support my fitness goals.
 * As a user, I want to **holding items in my shopping bag for later purchase.**
-* As a user, I want to **have accesss to my purchase history.**
+* As a user, I want to **have access to my purchase history.**
 
 ---
 
 ## Design
-I wanted the website to have a friendly and welcoming feel, to make it appeal to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
+I wanted the website to have a friendly and welcoming feel, to make it appealing to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
 
 ### Fonts
 For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 400 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 400 weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), in 300 weight. This font is very readable and compliments the more stylized Oswald.
 
 ### Colours
-I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette right down for a clean and consistant feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
+I created a **simple, complimentary, sophisticated colour scheme** that carries through the site. I cut the colour palette right down for a clean and consistent feel. I wanted a strong grey to carry the main text with a bright turquoise to balance it out. The turquoise is a colour that appears on many women's sports wear items. I felt this would appeal to a wider audience than the standard and possibly patronising pink that might usually be used. I have used an alternative lighter turquoise and a lighter grey for the hovers on the grey and blue button classes. The subtle change is very sophisticated and user friendly.
 
 
-* ![#696969](https://placehold.it/15/696969/000000?text=+) **Dark Grey: #696969** - This is the main colour for most of the text on the website. It's strong enough to read, but less harsh thank standard black.
+* ![#696969](https://placehold.it/15/696969/000000?text=+) **Dark Grey: #696969** - This is the main colour for most of the text on the website. It's strong enough to read, but less harsh than standard black.
 * ![#8b8b8b](https://placehold.it/15/8b8b8b/000000?text=+) **Light Grey: #8b8b8b** - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
-* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) **Turquoise: #2fbdb8** - This colour is used as a contrast to the dark grey. It's bright fun and brings an energy that brings the pages to life.  
+* ![#2fbdb8](https://placehold.it/15/3297a8/000000?text=+) **Turquoise: #2fbdb8** - This colour is used as a contrast to the dark grey. It's bright fun and brings energy that bring the pages to life.  
 * ![#90d1da](https://placehold.it/15/90d1da/000000?text=+) **Light Turquoise: #90d1da** - This is only used as a subtle hover colour on the btn-grey class buttons. It creates a simple, elegant feel as the mouse glides over it.
 
 ### Grid
@@ -140,48 +140,48 @@ This is the first page a user comes to and it has to make a big impact. It has t
 
 Just above the fold of the page you can see the top of a section called **'What we do'**, which explains a bit about the ideas behind the website. Showing this just above the fold **entices the user to scroll down to see what it says**. 
 
-Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reasuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
+Underneath is another panel called **'My Story'**. On this panel we are **introduced to the site owner** and the founder of the running club. The friendly image of her in running gear is very inviting and engaging, reassuring the user that this is a safe space. The inspirational personal story of the owner and how she overcame adversity and found happiness and friendship through running will inspire other women to follow in her foot steps. **A Get in touch button** links through to the Contact page. 
 
 ### Her Stories
 With this page we are able to showcase many of the inspirational women who belong to the running club. An image of them enjoying running with a short inspiration paragraph about their lives and how running has helped them will encourage other women. The images show a wide range of ages and sizes of women to show the inclusiveness of the group. This will help to make women feel included and represented.
 
-### Upcomimg Runs
+### Upcoming Runs
 This is the page where the site owner can advertise all the events that are coming up. Users can find the date, time, place and a indicator of run length. There is also a short description and a button to find out more and book yourself on the run.
 
 ### Members' login page
-This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile**. Registering for an account also allows the user to to **retain items in their shopping bag** and view their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page. Logged in members also gain an extra navigation bar item, **Advice** (see below).
+This allows users to **create** an account or **login** to an existing one. Once logged in the dropdown options change, allowing the logged in user to **edit their profile**. Registering for an account also allows the user to **retain items in their shopping bag** and view their **order history**. If logged in as a **super user,** there is the option to **add, edit and delete** items on the shopping page. Logged in members also gain an extra navigation bar item, **Advice** (see below).
 
 ### Advice
 **This is a members only section that is revealed in the navigation bar only when the user is logged in. It contains a dropdown menu of four pages:**
 #### Getting Started
-For women new to running. This page offers advive on the best was to ease yourself into running and getting motivated. Contains link to pay for a personalised plan.
+For women new to running. This page offers advice on the best was to ease yourself into running and getting motivated. Contains button for a personalised plan.
 #### Gear
-Giving advice on the best types of running kit needed from shoes and bras to playlists to get you set up right. Contains link to pay for a personalised plan.
+Giving advice on the best types of running kit needed from shoes and bras to playlists, to get you set up right. Contains button for a personalised plan.
 #### Nutrition 
-With a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. Contains link to pay for a personalised plan. 
+With a breakdown of what to eat to get the best results. Broken down into the basic food types and how each group affects your performance. Contains button for a personalised plan. 
 #### Coaching 
-with some tips for helping your body to achive the best results. Contains link to pay for a personalised plan.
+With some tips for helping your body to achieve the best results. Contains button for a personalised plan.
 
 ### Shop
-Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **super users** have the ability to **edit and delete items** from the store.
+Here we have the e-commerce section of the website. Users can purchase branded merchandise from the club. Here items can be browsed and selected to be added to a shopping basket. **Super users** have the ability to **edit and delete items** from the store.
 
 ### Contact Us
 This is where users can **get in touch with site owner**. I created an email account for site owner, Hannah Roberts. I then used **EmailJS** to set up an email template that is linked to the form on this page. When the form is submitted, the message is emailed to her address. On sending the message a pop up **success message** shows. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
 
 ### Shopping bag
-This page in **linked from the shopping bag total** shown on the far right of the nav bar. It show's the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a **Stripe** payment page where they can input their details.
+This page in **linked from the shopping bag total** shown on the far right of the nav bar. It shows the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a **Stripe** payment page where they can input their details.
 
 ---
 
 ### Features to be developed in the future
 
-Given more time I would have liked to add some more featues to the website:
+Given more time I would have liked to add some more features to the website:
 
 #### Booking calendar for running events
-Currently there are links under each of the running events on the Runs page. These links take the user to the Contact Us page. This is not ideal, and I would like to set up a booking system, where users to go to the event, view details and book themseleves onto, and pay for, the run.
+Currently there are links under each of the running events on the Runs page. These links take the user to the Contact Us page. This is not ideal, and I would like to set up a booking system, where users to go to the event, view details and book themselves onto, and pay for, the run.
 
 #### Booking system for links on the member advice pages
-Currently there are links under each of the special member only advice pages of getting started, gear, nutrition and coaching. These links are for the logged on member to book themselves onto the various packages on offer. These links take the user to the Contact Us page to send the owner and email. This is not ideal, and I would like to set up a booking system, where users to go to the package, view details and book themseleves on and pay.
+Currently there are links under each of the special member only advice pages of getting started, gear, nutrition and coaching. These links are for the logged on member to book themselves onto the various packages on offer. These links take the user to the Contact Us page to send the owner and email. This is not ideal, and I would like to set up a booking system, where users to go to the package, view details and book themselves on and pay.
 
 ---
 
@@ -238,7 +238,7 @@ The **Event** model within the **events app** holds the following data for the u
 * [Python](https://www.python.org/)
 * [JavaScript](https://www.javascript.com/)
 
-### Frameworks and libraries
+### Frameworks and Libraries
 * [Django](https://www.djangoproject.com/)
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
@@ -273,7 +273,7 @@ Using **wireframes** enabled me to quickly build a basic idea of the pages neede
 
 As the project uses **database models**, it was vital that these were mapped out early on. Changing database models or adding new ones in later in the project could cause problems, so I wanted to get them right before I moved on too much with the site pages and interaction.
 
-I utilised **Django's templating language** to reuse code over mutiple pages to simplify my code. This allowed me to keep the basic page design and drop in the seperate code where needed. 
+I utilised **Django's templating language** to reuse code over multiple pages to simplify my code. This allowed me to keep the basic page design and drop in the separate code where needed. 
 
 The HMTL was put through the [W3C Markup Validation Service](https://validator.w3.org/), and has no errors.
 
@@ -286,7 +286,7 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 * I wanted the users of the site to be able buy branded merchandise from the running club. The e-commerce part of the website was only to be a relatively small part of the overall experience, so I concentrated on providing a small selection of quality items that I believed members might want, rather than a large, less targeted offering. 
 
 <strong>Implementation</strong>
-* To make the shopping page, I first imported the product images into my **media** folder. I then created the Products app. Next I made a folder called **fixtures** in the app, to which I added two **JSON** files containing the data needed to create the database. I then created the **product model** that defined the elements to be included, and mirgrated it into the database. 
+* To make the shopping page, I first imported the product images into my **media** folder. I then created the Products app. Next I made a folder called **fixtures** in the app, to which I added two **JSON** files containing the data needed to create the database. I then created the **product model** that defined the elements to be included, and migrated it into the database. 
 
 * I created the **view** in the products app which sends a request to the database which returns all the products. This allowed me to set up my HTML template, and use Django's template code that **looped** through all the products and displayed them on the page with each one's image and details. 
 
@@ -303,19 +303,19 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 <strong>Plan</strong>
 * I wanted to have a page with a form to allow users to contact the site owner in a safe and secure manner. For this, the simplest way was to use the **EmailJS** service.
 
-- <strong>Implementation</strong>
+<strong>Implementation</strong>
 * I created my **Contact** app. I then created a **view**, a **templates** folder for my **contact.html** file and a **urls.py** file. Finally I added the url to my **main urls.py file.**
 * I created a new GMail account for **hannahrobertsruns@gmail.com** who is the fictional owner of the website.
 * Using **EmailJS** I was able to link up to this new GMail account.
 * In my EmailJS account I now set up the **email template** which will be used when users are sending in an email from the form.
 * Following the EmailJS documentation I was able to connect my contact form to send emails to the owner's GMail account.
-* Using **jQuery's hide and show** funtion, I set up a **success message** to show when the email had been sent.
+* Using **jQuery's hide and show** function, I set up a **success message** to show when the email had been sent.
 
 <strong>Testing</strong>
-* To test my contact form was working, I nagivated to **contact.html** page and filled in the contact us form, and clicked send. The success message was displayed. I then checked that the email had been recieved by the owner's GMail account and that all the fields were displaying correctly.
+* To test my contact form was working, I navigated to **contact.html** page and filled in the contact us form, and clicked send. The success message was displayed. I then checked that the email had been received by the owner's GMail account and that all the fields were displaying correctly.
 
 <strong>Results</strong>
-* I was able to fill in the fields of the contact form and the **send** button sent the message. The success message was displayed. The message was recieved by the correct email account and all the fields were displaying correctly.
+* I was able to fill in the fields of the contact form and the **send** button sent the message. The success message was displayed. The message was received by the correct email account and all the fields were displaying correctly.
 
 <strong>Verdict</strong>
 * The test passed, based on the above information and requirements.
@@ -324,11 +324,11 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 <strong>Plan</strong>
 * I want users to register so I can **obtain their data.** There has to be a reason for the user to **want to register and log in** to the website. One of the big draws is that the user is able to create and account, which will allow them to store their details and also track their previous orders. 
 
-- <strong>Implementation</strong>
-* I created a user profile model and app to store the user's details. Using **Code Insitute's** course material I made the register, login and sign in functions. I also created the **order history page** to allow them to see past purchases.
+<strong>Implementation</strong>
+* I created a user profile model and app to store the user's details. Using **Code Institute's** course material I made the register, login and sign in functions. I also created the **order history page** to allow them to see past purchases.
 
 <strong>Testing</strong>
-* To test that the user profile was working, I went to the register page and filled in my details. I then follow the instructions and logged into the webite. I then **purchased an item** from the shopping page and filled in my details. It then **saved** my details and I was able to review the **order history.**
+* To test that the user profile was working, I went to the register page and filled in my details. I then follow the instructions and logged into the website. I then **purchased an item** from the shopping page and filled in my details. It then **saved** my details and I was able to review the **order history.**
 
 <strong>Results</strong>
 * I was able to register and log into my account. I could save my details and review my order history.
@@ -338,16 +338,16 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 
 ### Member only content
 <strong>Plan</strong>
-* I wanted to create some **exclusive member only content** as hook to get them to register. I created an **advice** section, that only appears in the navigation **once the user is logged in.** This new section has a dropdown menu with four seperate pages: getting started, gear, nutrition and coaching. These pages have useful advice to help the member with their running.
+* I wanted to create some **exclusive member only content** as hook to get them to register. I created an **advice** section, that only appears in the navigation **once the user is logged in.** This new section has a dropdown menu with four separate pages: getting started, gear, nutrition and coaching. These pages have useful advice to help the member with their running.
 
-- <strong>Implementation</strong>
-* I created the four advice apps, and added useful content. Then in my main-nav.html file, I made a dropdown section and added the url links. In order that these were only available to logged in members, I wrapped them in a **{% if request.user.is_authenticated %}** if statement. This means that only authenticated users will see this option.
+<strong>Implementation</strong>
+* I created the four advice apps, and added useful content. Then in my main-nav.html file, I made a dropdown section and added the url links. In order that these were only available to logged in members, I wrapped them in a **{% if request.user.is_authenticated %}** if statement. This means that only **authenticated users** will see this option.
 
 <strong>Testing</strong>
-* To test that the advive section was working, I first tried the website as a non logged in user. The advice dropdown was hidden from me. Next I logged in as a member and tried again. This time the advice dropdown was visible and I could navigate to the four new pages.
+* To test that the advice section was working, I first tried the website as a non logged in user. The advice dropdown was **hidden** from me. Next I logged in as a member and tried again. This time the advice dropdown was **visible** and I could navigate to the four new pages.
 
 <strong>Results</strong>
-* I was able to see the advice dropdown and naigate to and view the four new member only pages.
+* I was able to see the advice dropdown and navigate to and view the four new member only pages.
 
 <strong>Verdict</strong>
 * The test passed, based on the above information and requirements.
@@ -357,16 +357,16 @@ The CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 ## Bugs and Problems
 
 ### Scroll bar on bottom of website
-I had a problem with having a scroll bar on bottom of site. I made coloured backgrounds for all the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, I concluded that it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
+I had a problem with having a scroll bar on bottom of site. I made the panels and divs that it could be and made them all **90vw**. There was still a scroll bar. After looking for solutions online, I concluded that it was the body of that the was causing the problem. I gave it a width of **98vw and the scroll bar disappeared.** However I how had my home page image and the panels underneath with a white line down the right hand side because of the 98vw. After a bit of searching in discovered that adding **'overflow-x: hidden;’** to body on the CSS fixed the problem.
 
 ### Bootstrap Flex box and Order
-I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
+I wanted the order of the columns on some of my pages to change from desktop to tablet and mobile on the **My Story panel** and **Advice pages**. On desktop I wanted the text column one the left and image column on the right as I felt this worked best visually. But when switching to smaller screens I needed the image to be at the top to draw in the eye and create visual clues and impact. After searching for a solution I came across using **Bootstrap flex box** to solve it. Using **‘flex-column-reverse flex-md-row’** flipped my second column to the top on smaller screens. However, this didn’t seem to work so well on the Advice pages as it threw out the grid on tablets. So for these I used **Bootstrap’s order** class to tell each column it’s position at each breakpoint.
 
 ### Highlighting active nav bar button
 I wanted to show the user which page they were currently on by highlighting the corresponding button in the nav bar. There were a few options offered up by various Google searches, but the one that worked for me and seemed to be the simplest was to add a **with statement** within the nav bar that matched up the url names **{% with url_name=request.resolver_match.url_name %}** which created an active button if they matched **{% if url_name == ‘xxxxx’ %}active{% endif %}**. With an **active** CSS style created, this makes it clear to the user where they are.
 
 ### Code stuck in ‘message-container’
-I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my toast files. After much trial and error and some advice, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
+I was having a problem with a couple of my grids when logged in as a super user. Both my **‘order history’** and **‘edit product’** pages had grids that were behaving badly and not showing the nav bar. In the **Inspect** view I could see that it was telling me that they were inside the message-container div which is only a thin column down the right of the page. As it was in the messages I felt it must be to do with my **toast files.** After much trial and error, it was tracked down to **not closing the div** in my toast-info.html file. That fixed, the pages looked great.
 
 ### Contact Us form
 When creating this form I used an line of **JavaScript** in the form that sends the emails to the GMail account I had set up for the website owner. This worked fine and emails were going to the address. **I was aware that it would be better if the JavaScript was in it's own seperate JavaScript file to be loaded in.** However, I couldn't get the emails to send once I removed this JavaScript. I finally asked for help, and had **five different tutors** try and fix this bug. After nearly two days of trying various ways to make it work, I was **advised** by the tutors to use the JavaScript in the form, as before. I'm frustrated that I wasn't able to fix this bug, but I thought it would be better if the form worked, rather than fail. Hopefully this could be fixed at a later date. 
@@ -379,7 +379,7 @@ When creating this form I used an line of **JavaScript** in the form that sends 
 
 **Follow these steps to run this project locally**
 
-You must have the folowing:
+You must have the following:
 * An **IDE (Interactive Development Environment)** ie [Gitpod](https://www.gitpod.io/)
 * The following installed on your machine: [PIP](https://pip.pypa.io/en/stable/installing/), [Git](https://git-scm.com/), [Python3](https://www.python.org/)
 * You will need to set up an account with [Stripe](https://stripe.com/en-gb) for processing shopping transactions.
@@ -398,11 +398,11 @@ git clone https://github.com/GarySimons/girlsrun
 ```bash
 python3 -m .venv venv
 ```
-* **4** Initialize the environment with the following commad:
+* **4** Initialize the environment with the following command:
 ```bash
 .venv\bin\activate
 ```
-* **5** Install the requirements and dependancies from the **requirements.txt** file:
+* **5** Install the requirements and dependencies from the **requirements.txt** file:
 ```bash
 pip3 -r requirements.txt
 ```
@@ -412,7 +412,7 @@ pip3 -r requirements.txt
 ```bash
 python3 manage.py migrate
 ```
-* **8** Create a Superuser with special access to the admin of the website by entering:
+* **8** Create a superuser with special access to the admin of the website by entering:
 ```bash
 python3 manage.py createsuperuser
 ```
@@ -429,7 +429,7 @@ python3 manage.py runserver
 ```bash
 pip3 freeze > requirements.txt
 ```
-* **2** Create a **Procfile** with this this command:
+* **2** Create a **Procfile** with this command:
 ```bash
 echo web: python3 app.py > Procfile
 ```
@@ -437,7 +437,7 @@ echo web: python3 app.py > Procfile
 
 * **4** Create a **new app** for your project on the Heroku dashboard.
 
-* **5** Select your **deployment method** by clicking on the deploymeny menthod button and selecting GitHub.
+* **5** Select your **deployment method** by clicking on the deployment method button and selecting GitHub.
 
 * **6** On the dashboard, go to the **Config Variables** section and set it up:
 
@@ -476,7 +476,7 @@ Much of the code for the **e-commerce section** of my website was achieved by fo
 ### Inspiration
 **I was very inspired by a few of websites I found, that made me want to do build this project. All these sites were very important in helping me understand what angle to approach the subject:**
 * One of the main things I had in my mind when I started this project was the [This Girl Can](https://www.thisgirlcan.co.uk/) campaign that was launched a few years ago. It was great as it wanted to show women of all ages and sizes that they could get involved. It had lovely stories about real women and didn't try and make it too glamorous. 
-* I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/home.html) website. 
+* I loved the beautiful feeling of community and support on the [These Girls Can Run](http://thesegirlscanrun.weebly.com/) website. 
 * I also got more professional ideas on what should be included on my site from [She Runs Outside](https://www.sherunsoutdoors.com/). 
 * Another inspiring website I found was [Brighton and Hove Women's Running Club](https://bhwrc.org/) which had some great ideas. 
 
@@ -494,7 +494,7 @@ As much as I could I tried to use find my own solutions to questions and problem
 * Swapping order of columns at different sizes using **order**: [Stack Overflow](https://stackoverflow.com/questions/37814508/order-columns-through-bootstrap4)
 * Swapping order of columns at different sizes using **flex**: [codeply.com](https://www.codeply.com/go/6vWQN2ocxe)
 * Getting rid of **horizontal scroll** at the bottom of website: [Stack Overflow](https://stackoverflow.com/questions/40418627/how-do-i-remove-horizontal-scroll-bar-at-the-bottom-of-my-page-css)
-* To add a **email sent successfully message** to my contact form with jQuery's hide a show funtion: [Pretty Printed - The jQuery Hide, Show, and Toggle Functions](https://www.youtube.com/watch?v=WhU38HV-Iu8) 
+* To add a **email sent successfully message** to my contact form with jQuery's hide a show function: [Pretty Printed - The jQuery Hide, Show, and Toggle Functions](https://www.youtube.com/watch?v=WhU38HV-Iu8) 
 
 ### Disclaimer
 
