@@ -12,18 +12,18 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container main page-container">
-       <div class="row justify-content-center"> 
-            <div class="block col-sm-4 col-md-10">
-                <h2 class="page-header mb-3">Her Stories: Our Amazing Women</h2>
-            </div>
-       </div>
+	<div class="row justify-content-center">
+		<div class="block col-sm-4 col-md-10">
+			<h2 class="page-header mb-3">Her Stories: Our Amazing Women</h2>
+		</div>
+	</div>
 	<div class="row justify-content-center">
 		<div class="col-sm-12 col-md-10">
 			<div class="row">
 				{% for story in stories %}
 				<div class="col-sm-6 col-md-6 col-lg-4">
 					<div class="">
-						    <img class="card-img-top img-fluid" src="{{MEDIA_URL}}{{ story.image }}" alt="{{ story.name }}">
+						<img class="card-img-top img-fluid" src="{{MEDIA_URL}}{{ story.image }}" alt="{{ story.name }}">
 						<div class="herstory_box">
 							<div class="row">
 								<div class="col-12">
@@ -36,7 +36,7 @@
 									<p class="herstory_story">{{ story.details }}</p>
 								</div>
 							</div>
-                        </div>
+						</div>
 					</div>
 				</div>
 				{% endfor %}

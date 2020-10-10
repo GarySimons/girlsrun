@@ -1,18 +1,17 @@
-<!-- Code used here is adapted from Code Institude's E-Commerce lesson. -->
-
 <div class="collapse navbar-collapse mr-1" id="main-nav">
 	<div class="navbar row pt-lg-2 d-md-none collapse navbar-collapse">
 		<a href="{% url 'home' %}"><img src="{{MEDIA_URL}}GirlsOnTheRunLogo.png" id="girls-run-logo" alt="Girls On The Run Logo"></a>
 	</div>
 	<ul class="navbar-nav mr-auto">
-        {% with url_name=request.resolver_match.url_name %}
+		{% with url_name=request.resolver_match.url_name %}
 		<li class="nav-item">
 			<a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">HOME</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link {% if url_name == 'stories' %}active{% endif %}" href="{% url 'stories' %}">HER STORIES</a>
+			<a class="nav-link {% if url_name == 'stories' %}active{% endif %}" href="{% url 'stories' %}">HER
+				STORIES</a>
 		</li>
-        <li class="nav-item">
+		<li class="nav-item">
 			<a class="nav-link {% if url_name == 'event' %}active{% endif %}" href="{% url 'event' %}">RUNS</a>
 		</li>
 		<li class="list-inline-item dropdown m-0">
@@ -20,16 +19,15 @@
             {% if url_name == 'profile' %}active{% endif %}
             {% if url_name == 'account_logout' %}active{% endif %}
             {% if url_name == 'account_signup' %}active{% endif %}
-            {% if url_name == 'account_login' %}active{% endif %}" 
-            href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false">
+            {% if url_name == 'account_login' %}active{% endif %}" href="#" id="user-options" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
 				MEMBERS
 			</a>
 			<div class="dropdown-menu border-0" aria-labelledby="user-options">
 				{% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                {% endif %}
+				{% if request.user.is_superuser %}
+				<a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+				{% endif %}
 				<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
 				<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
 				{% else %}
@@ -38,36 +36,35 @@
 				{% endif %}
 			</div>
 		</li>
-        {% if request.user.is_authenticated %}
-        <li class="list-inline-item dropdown m-0">
+		{% if request.user.is_authenticated %}
+		<li class="list-inline-item dropdown m-0">
 			<a class="nav-link {% if url_name == 'beginner' %}active{% endif %}
             {% if url_name == 'gear' %}active{% endif %}
             {% if url_name == 'nutrition' %}active{% endif %}
-            {% if url_name == 'coaching' %}active{% endif %}" 
-            href="#" data-toggle="dropdown" aria-haspopup="true"
+            {% if url_name == 'coaching' %}active{% endif %}" href="#" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false">
-                ADVICE
+				ADVICE
 			</a>
 			<div class="dropdown-menu border-0" aria-labelledby="user-options">
-                <a href="{% url 'beginner' %}" class="dropdown-item">GETTING STARTED</a>
+				<a href="{% url 'beginner' %}" class="dropdown-item">GETTING STARTED</a>
 				<a href="{% url 'gear' %}" class="dropdown-item">GEAR</a>
 				<a href="{% url 'nutrition' %}" class="dropdown-item">NUTRITION</a>
-                <a href="{% url 'coaching' %}" class="dropdown-item">COACHING</a>
+				<a href="{% url 'coaching' %}" class="dropdown-item">COACHING</a>
 			</div>
 		</li>
-        {% endif %}
+		{% endif %}
 		<li class="nav-item">
-			<a class="nav-link {% if url_name == 'products' %}active{% endif %}" 
-            href="{% url 'products' %}">SHOP</a>
+			<a class="nav-link {% if url_name == 'products' %}active{% endif %}" href="{% url 'products' %}">SHOP</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">CONTACT US</a>
+			<a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">CONTACT
+				US</a>
 		</li>
 		<li class="list-inline-item nav-item">
 			<a class="{% if grand_total %}text-info {% else %}{% endif %} nav-link {% if url_name == 'view_bag' %}active{% endif %}"
 				href="{% url 'view_bag' %}">
 				<div>
-                <div></div>
+					<div></div>
 					<p class="my-0"><i class="fas fa-shopping-bag fa-md"></i>
 						{% if grand_total %}
 						£{{ grand_total|floatformat:2 }}
@@ -78,6 +75,6 @@
 				</div>
 			</a>
 		</li>
-        {% endwith %}
+		{% endwith %}
 	</ul>
 </div>
