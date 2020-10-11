@@ -623,7 +623,7 @@ body {
 }
 
 .stripe-text {
-    color: red;
+    color: #ff0000;
 }
 
 /* Spinner */
@@ -678,7 +678,7 @@ body {
 .herstory_age {
     font-size: 0.9rem;
     letter-spacing: 0.25rem;
-    color: #000;
+    color: #696969;
     padding: 0rem 1rem;
 }
 
@@ -688,7 +688,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    color: #000;
+    color: #696969;
     padding: 0rem 1rem;
     margin-bottom: 0.5rem;
 }
@@ -927,6 +927,7 @@ footer {
 }
 
 /* from Bulma */
+
 .icon {
     align-items: center;
     display: inline-flex;

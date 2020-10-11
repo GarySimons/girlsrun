@@ -169,7 +169,7 @@ Here we have the e-commerce section of the website. Users can purchase branded m
 This is where users can **get in touch with site owner**. I created an email account for site owner, Hannah Roberts. I then used **EmailJS** to set up an email template that is linked to the form on this page. When the form is submitted, the message is emailed to her address. On sending the message a pop up **success message** shows. The background image shows a woman running through a puddle. This is to reflect the real life situations and conditions that runners often face. It shows determination and spirit as it's telling you that this isn't easy, but it will be worth it.
 
 ### Shopping bag
-This page in **linked from the shopping bag total** shown on the far right of the nav bar. It shows the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a **Stripe** payment page where they can input their details.
+This page in **linked from the shopping bag total** shown on the far right of the nav bar. It shows the user the items in their bag with amounts, prices, sizes and the total. The user can also add or remove items from this page. The **secure checkout button** takes the user to a **Stripe** payment page where they can input their details. On successful purchase of items, a thank you email is sent to users email address.
 
 ---
 
