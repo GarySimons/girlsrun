@@ -496,6 +496,3 @@ As much as I could I tried to use find my own solutions to questions and problem
 * Getting rid of **horizontal scroll** at the bottom of website: [Stack Overflow](https://stackoverflow.com/questions/40418627/how-do-i-remove-horizontal-scroll-bar-at-the-bottom-of-my-page-css)
 * To add a **email sent successfully message** to my contact form with jQuery's hide a show function: [Pretty Printed - The jQuery Hide, Show, and Toggle Functions](https://www.youtube.com/watch?v=WhU38HV-Iu8) 
 
-### Disclaimer
-
-This website is a Milestone Project for the **Full Stack Web Development** course at [Code Institute](https://codeinstitute.net/). It is for educational purposes only.
