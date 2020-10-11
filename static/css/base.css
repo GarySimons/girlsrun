@@ -202,6 +202,44 @@ body {
     border-color: #8b8b8b;
 }
 
+#btn-grey-password {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#btn-grey-password:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+    border-color: #8b8b8b;
+}
+
+#btn-grey-sign {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    background: #696969;
+    color: #fff !important; 
+    font-size: 0.8rem;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#btn-grey-sign:hover {
+    background: #8b8b8b;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+    border-color: #8b8b8b;
+}
+
 .button {
     color: #ff0000 !important;
 }
