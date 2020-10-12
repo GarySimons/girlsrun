@@ -52,7 +52,7 @@ I wanted it to be able to **build a like-minded, supportive and inclusive networ
 
 The project required that a user can **create an account,** log in and use that account to access their profile and to get extra member content. I achieved this with **Django's** useful features which quickly allow accounts to be created and tracked.
 
-The project also needed an **e-commerce** element, using **Stripe** to control payment from users. I have set up an online shop selling branded merchandise. This allows users to browse, add to a shopping bag and purchase the items.
+The website needed to have an **e-commerce** element, using **Stripe** to control payment from users. I have set up an online shop selling branded merchandise. This allows users to browse, add to a shopping bag and purchase the items.
 
 ---
 
@@ -93,7 +93,7 @@ The project also needed an **e-commerce** element, using **Stripe** to control p
 ---
 
 ## Design
-I wanted the website to have a friendly and welcoming feel, to make it appealing to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and at home.
+I wanted the website to have a friendly and welcoming feel, to make it appealing to a female market. The use of images or 'real' women and not just athletic ones, helps to make women feel more included and comfortable.
 
 ### Fonts
 For my headings and main text I have used the compressed font [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) in the 400 weight, with some **sophisticated letter spacing** to add to the airy feel. I like the no-nonsense clean lines of the font, and feel it suits the website perfectly. The 400 weight looks stylish without being too thin or thick. For any other text, I've used [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open), in 300 weight. This font is very readable and compliments the more stylized Oswald.
